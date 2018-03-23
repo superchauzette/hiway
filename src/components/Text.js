@@ -17,7 +17,7 @@ export const textDecorationLine = props =>
     : null
 
 const Text = styled.p`
-  font-family: "Circular-Std-Book";
+  font-family: "'Roboto', sans-serif";
   ${space} ${color} ${fontSize} ${fontWeight} ${textAlign} ${lineHeight} ${textDecorationLine};
 `
 

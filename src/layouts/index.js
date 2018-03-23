@@ -4,7 +4,6 @@ import Helmet from 'react-helmet'
 import { ThemeProvider } from 'styled-components'
 import theme from './theme'
 
-import Header from '../components/Header'
 import './index.css'
 
 const TemplateWrapper = ({ children }) => (
@@ -14,6 +13,12 @@ const TemplateWrapper = ({ children }) => (
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
+      ]}
+      link={[
+        {
+          href: 'https://fonts.googleapis.com/css?family=Roboto',
+          rel: 'stylesheet',
+        },
       ]}
     />
     <ThemeProvider theme={theme}>{children()}</ThemeProvider>
