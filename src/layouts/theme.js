@@ -9,7 +9,7 @@ const colors = {
   mauve: '#8870F5',
   pink: '#FF7283',
   teal: '#1ED6BB',
-  yellow: '#FFFF33',
+  yellow: 'rgb(248,210,101)',
   prune: '#444387',
   orange: '#FF6500',
   lavender: '#8195E5',

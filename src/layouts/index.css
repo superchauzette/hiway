@@ -632,6 +632,11 @@ textarea {
   background-color: transparent;
 }
 
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
 .picture {
   border-radius: 50%;
 }
@@ -640,10 +645,22 @@ p {
   color: rgb(119, 119, 119);
 }
 
+h1,
+h2,
+h3 {
+  color: #484848;
+}
+
 .way {
   color: white;
 }
 .way p {
+  color: white;
+}
+.way h2 {
+  color: white;
+}
+.h2 h3 {
   color: white;
 }
 
@@ -657,6 +674,6 @@ button[type='submit'] {
   padding-left: 16px;
   min-width: 52px;
   border-color: transparent;
-  background: #d43242;
+  background: #ff5a5f;
   border-radius: 4px;
 }
