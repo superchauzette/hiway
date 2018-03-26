@@ -17,13 +17,14 @@ const H3 = styled.h3`
   color: rgb(255, 200, 42);
 `
 
-const Frenlancing = () => (
+const Frenlancing = ({ isVisible }) => (
   <Box
     bg="white"
     flexDirection="column"
     p="30px"
     alignItems="center"
     textAlign="center"
+    // className={`${isVisible ? 'visible' : 'transparent'}`}
   >
     <h1>C’est le moment de devenir freelance</h1>
     <h2>
@@ -49,12 +50,12 @@ const Frenlancing = () => (
 
       <Box justifyContent="space-around" mt="40px" flexWrap="wrap">
         <Box width="250px" flexDirection="column" mx="40px">
-          <Svg src={skills} />
+          <Svg src={happy} />
           <H3>Bonheur</H3>
           <p>Organise ta vie comme tu veux et fais toi plaisir</p>
         </Box>
         <Box width="250px" flexDirection="column" mx="40px">
-          <Svg src={freedom} />
+          <Svg src={skills} />
           <H3>Compétences</H3>
           <p>Deviens un chef d’entreprise</p>
         </Box>

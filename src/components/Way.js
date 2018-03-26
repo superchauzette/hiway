@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Text } from '../components'
 
-const Offre2Way = () => (
+const Way = () => (
   <Box
     flexDirection="column"
     p={['15px', '22.5px', '30px']}
@@ -10,13 +10,14 @@ const Offre2Way = () => (
     textAlign="center"
   >
     <h1>2 voies pour devenir un chef d’entreprise</h1>
-    <Way />
-    <Way1 />
-    <Way2 />
+
+    <CoachingFreelancing />
+    <LearnUnderstand />
+    <ManageDelegate />
   </Box>
 )
 
-const Way = () => (
+const CoachingFreelancing = () => (
   <Box
     p={[0, 0, '30px']}
     mb="20px"
@@ -55,7 +56,7 @@ const Way = () => (
   </Box>
 )
 
-const Way1 = () => (
+const LearnUnderstand = () => (
   <Box
     p={[0, 0, '30px']}
     mb="20px"
@@ -66,45 +67,50 @@ const Way1 = () => (
     <Box
       bg="blue"
       flexDirection="column"
-      p={'20px'}
       width="580px"
       textAlign="center"
       color="white"
     >
-      <h2>Apprendre</h2>
-      <p>
-        Un parcours d’apprentissage pragmatique pour devenir un parfait chef
-        d’entreprise en 1 an :
-      </p>
+      <Box bg="#8d75ffd1" flexDirection="column" p={'20px'}>
+        <h2>Apprendre</h2>
+        <p>
+          Un parcours d’apprentissage pragmatique pour devenir un parfait chef
+          d’entreprise en 1 an :
+        </p>
+      </Box>
 
-      <p style={{ textAlign: 'left', color: 'white' }}>
-        <b>
-          13 ateliers de coaching délivrés par les spécialistes Hiway de la
-          gestion d’entreprise sur les thémes suivants :
-        </b>
-      </p>
-      <ul style={{ textAlign: 'left' }}>
-        <li>Se lancer et créer sa société dans les meilleures conditions</li>
-        <li> S’entourer de partenaires de confiance</li>
-        <li> Trouver sa 1ère mission</li>
-        <li> Gérer son entreprise efficacement</li>
-        <li> Optimiser sa fiscalité et maximiser sa rémunération</li>
-        <li>Faire son bilan</li>
-      </ul>
+      <Box bg="#8870f5b3" flexDirection="column" p={'20px'}>
+        <p style={{ textAlign: 'left', color: 'white' }}>
+          <b>
+            13 ateliers de coaching délivrés par les spécialistes Hiway de la
+            gestion d’entreprise sur les thémes suivants :
+          </b>
+        </p>
+        <ul style={{ textAlign: 'left' }}>
+          <li>Se lancer et créer sa société dans les meilleures conditions</li>
+          <li> S’entourer de partenaires de confiance</li>
+          <li> Trouver sa 1ère mission</li>
+          <li> Gérer son entreprise efficacement</li>
+          <li> Optimiser sa fiscalité et maximiser sa rémunération</li>
+          <li>Faire son bilan</li>
+        </ul>
+      </Box>
 
-      <p style={{ textAlign: 'left' }}>
-        <b>
-          Un format centré sur l’humain qui associe le travail à des moments de
-          partage agréables
-        </b>
-      </p>
-      <ul style={{ textAlign: 'left' }}>
-        <li>Ateliers individuels et personnalisés</li>
-        <li> Toujours en présentiel</li>
-        <li> Lieux de rencontre sympas et proches de toi</li>
-        <li> Agenda adapté au tien </li>
-        <li> Événements au sein de la Communauté Hiway </li>
-      </ul>
+      <Box bg="#8870f552" flexDirection="column" p={'20px'}>
+        <p style={{ textAlign: 'left' }}>
+          <b>
+            Un format centré sur l’humain qui associe le travail à des moments
+            de partage agréables
+          </b>
+        </p>
+        <ul style={{ textAlign: 'left' }}>
+          <li>Ateliers individuels et personnalisés</li>
+          <li> Toujours en présentiel</li>
+          <li> Lieux de rencontre sympas et proches de toi</li>
+          <li> Agenda adapté au tien </li>
+          <li> Événements au sein de la Communauté Hiway </li>
+        </ul>
+      </Box>
     </Box>
     <Box
       bg="mauve"
@@ -147,7 +153,7 @@ const Way1 = () => (
   </Box>
 )
 
-const Way2 = () => (
+const ManageDelegate = () => (
   <Box
     p={[0, 0, '30px']}
     justifyContent="space-around"
@@ -192,7 +198,7 @@ const Way2 = () => (
       textAlign="center"
       color="white"
     >
-      <h2>DÉLÉGUER</h2>
+      <h2>Déléguer</h2>
       <p>
         En confiant la gestion administrative de ta société à Hiway, tu décides
         de te libérer des contraintes quotidiennes d’un chef d’entreprise et tu
@@ -227,4 +233,4 @@ const Way2 = () => (
   </Box>
 )
 
-export default Offre2Way
+export default Way
