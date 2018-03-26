@@ -639,3 +639,10 @@ textarea {
 p {
   color: rgb(119, 119, 119);
 }
+
+.way {
+  color: white;
+}
+.way p {
+  color: white;
+}

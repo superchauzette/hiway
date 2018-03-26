@@ -230,8 +230,10 @@ const Contact = () => (
 )
 
 const Offre2Way = () => (
-  <Box flexDirection="column" p={['30px']} alignItems="center">
-    <h1> 2 voies pour devenir un chef d’entreprise</h1>
+  <Box flexDirection="column" p={['30px']} alignItems="center" className="way">
+    <h1 style={{ color: 'black' }}>
+      2 voies pour devenir un chef d’entreprise
+    </h1>
     <Way />
     <Way1 />
     <Way2 />
@@ -254,7 +256,7 @@ const Way = () => (
       color="white"
     >
       <h2>Coaching</h2>
-      <p style={{ color: 'white' }}>
+      <p>
         Devient un chef d’entreprise autonome en apprenant pendant un an avec
         des coachs à tes côtés
       </p>
@@ -268,7 +270,7 @@ const Way = () => (
       color="white"
     >
       <h2>Freelancing as a Service</h2>
-      <p style={{ color: 'white' }}>
+      <p>
         Devient un chef d’entreprise libéré en confiant la gestion
         administrative aux spécialistes Hiway
       </p>
@@ -292,7 +294,7 @@ const Way1 = () => (
       color="white"
     >
       <h2>Apprendre</h2>
-      <p style={{ color: 'white' }}>
+      <p>
         Un parcours d’apprentissage pragmatique pour devenir un parfait chef
         d’entreprise en 1 an :
       </p>
@@ -335,7 +337,7 @@ const Way1 = () => (
       color="white"
     >
       <h2>Comprendre</h2>
-      <p style={{ color: 'white' }}>
+      <p>
         Un accompagnent pour réussir ton démarrage dans le freelancing et une
         formation centrée sur les principes essentiels de la gestion d’une
         entreprise :
