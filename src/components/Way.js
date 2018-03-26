@@ -2,7 +2,13 @@ import React from 'react'
 import { Box, Text } from '../components'
 
 const Offre2Way = () => (
-  <Box flexDirection="column" p={['30px']} alignItems="center" className="way">
+  <Box
+    flexDirection="column"
+    p={['15px', '22.5px', '30px']}
+    alignItems="center"
+    className="way"
+    textAlign="center"
+  >
     <h1>2 voies pour devenir un chef d’entreprise</h1>
     <Way />
     <Way1 />
@@ -13,6 +19,7 @@ const Offre2Way = () => (
 const Way = () => (
   <Box
     p={[0, 0, '30px']}
+    mb="20px"
     justifyContent="space-around"
     width="100%"
     flexWrap="wrap"
@@ -20,7 +27,7 @@ const Way = () => (
     <Box
       bg="mauve"
       flexDirection="column"
-      p="30px"
+      p={'20px'}
       width="580px"
       textAlign="center"
       color="white"
@@ -34,7 +41,7 @@ const Way = () => (
     <Box
       bg="blue"
       flexDirection="column"
-      p="30px"
+      p={'20px'}
       width="580px"
       textAlign="center"
       color="white"
@@ -51,6 +58,7 @@ const Way = () => (
 const Way1 = () => (
   <Box
     p={[0, 0, '30px']}
+    mb="20px"
     justifyContent="space-around"
     width="100%"
     flexWrap="wrap"
@@ -58,7 +66,7 @@ const Way1 = () => (
     <Box
       bg="blue"
       flexDirection="column"
-      p="20px"
+      p={'20px'}
       width="580px"
       textAlign="center"
       color="white"
@@ -101,7 +109,7 @@ const Way1 = () => (
     <Box
       bg="mauve"
       flexDirection="column"
-      p="30px"
+      p={'30px'}
       width="580px"
       textAlign="center"
       color="white"

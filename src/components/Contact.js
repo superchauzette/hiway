@@ -3,7 +3,7 @@ import { Box, Text } from '../components'
 
 const Contact = () => (
   <Box bg="transparent" flexDirection="column" p="30px" width="100%">
-    <h1> Be freelance </h1>
+    <h1> Be Freelance </h1>
     <form
       name="contact"
       method="POST"
@@ -24,7 +24,7 @@ const Contact = () => (
             style={{ width: '100%' }}
             type="text"
             name="phone"
-            placeholder="Numéro"
+            placeholder="Téléphone"
           />
         </Box>
         <Box mb="25px" width="100%">

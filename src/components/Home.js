@@ -13,23 +13,18 @@ const Home = () => (
     justifyContent="center"
     backgroundImage={bgheader}
   >
-    <div
-      style={{ textAlign: 'center', marginTop: '-200px', marginLeft: '-400px' }}
+    <Box
+      style={{ textAlign: 'center' }}
+      flexDirection="column"
+      mt={[0, 0, '-200px']}
+      ml={[0, 0, '-400px']}
     >
-      <img src={logo} />
+      <div>
+        <img src={logo} style={{ maxWidth: '80%' }} />
+      </div>
       <h1 style={{ color: 'rgb(255, 200, 42)' }}>Freelancing is cool</h1>
       <h2 style={{ color: 'white' }}>Solutions pour devenir freelance</h2>
-    </div>
-    <div
-      style={{
-        position: 'absolute',
-        backgroundColor: '#ffffff75',
-        right: '30px',
-        width: '416px',
-      }}
-    >
-      <Contact />
-    </div>
+    </Box>
   </Box>
 )
 

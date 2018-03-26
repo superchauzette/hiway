@@ -2,9 +2,17 @@ import React from 'react'
 import { Box, Text } from '../components'
 
 const EngagementHiway = () => (
-  <Box bg="white" flexDirection="column" p="30px" alignItems="center">
+  <Box
+    bg="white"
+    flexDirection="column"
+    p="30px"
+    alignItems="center"
+    textAlign="center"
+  >
     <h1> L’engagement d’Hiway</h1>
-    <h2>Hiway t’accompagne pour devenir freelance et garantit ta réussite</h2>
+    <h2 style={{ color: '#ff5a5f' }}>
+      Hiway t’accompagne pour devenir freelance et garantit ta réussite
+    </h2>
     <Box flexDirection="column" textAlign="center" width="80%">
       <Box justifyContent="space-around" mt="60px" flexWrap="wrap">
         <Box width="250px" flexDirection="column" mx="40px">
@@ -28,7 +36,7 @@ const EngagementHiway = () => (
 
       <Box
         flexDirection="row"
-        justifyContent="space-between"
+        justifyContent="space-around"
         mt="40px"
         flexWrap="wrap"
       >
