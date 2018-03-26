@@ -238,6 +238,9 @@ const Contact = () => (
           placeholder="Message"
         />
       </Box>
+      <Box mt="15px" width="100%">
+        <button type="submit">Envoyer</button>
+      </Box>
     </form>
   </Box>
 )

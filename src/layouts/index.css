@@ -646,3 +646,17 @@ p {
 .way p {
   color: white;
 }
+
+button[type='submit'] {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: white;
+  font-weight: normal;
+  border: 1px solid transparent;
+  padding-right: 16px;
+  padding-left: 16px;
+  min-width: 52px;
+  border-color: transparent;
+  background: #d43242;
+  border-radius: 4px;
+}
