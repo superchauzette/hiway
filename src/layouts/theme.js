@@ -3,7 +3,7 @@ const colors = {
   text: '#024',
   blue: '#07c',
   silver: '#ECECEC',
-  gray: '#ABABAB',
+  gray: '#f5f5f5',
   chalk: '#5A5A5A',
   nearBlack: '#28363C',
   mauve: '#8870F5',
