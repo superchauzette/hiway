@@ -205,27 +205,29 @@ const Teams = () => (
 const Contact = () => (
   <Box bg="gray" flexDirection="column" p="30px" alignItems="center">
     <h1> Be freelance / Contact</h1>
-    <Box bg="gray" flexDirection="column" width={['100%', '100%', '500px']}>
-      <Box mb="10px" width="100%">
-        <input
-          type="text"
-          style={{
-            width: '100%',
-            backgroundColor: 'transparent',
-            border: 0,
-            borderBottom: '1px solid gray',
-          }}
-          placeholder="Nom Prénom"
-        />
+    <form name="contact" method="POST" netlify>
+      <Box bg="gray" flexDirection="column" width={['100%', '100%', '500px']}>
+        <Box mb="10px" width="100%">
+          <input
+            type="text"
+            style={{
+              width: '100%',
+              backgroundColor: 'transparent',
+              border: 0,
+              borderBottom: '1px solid gray',
+            }}
+            placeholder="Nom Prénom"
+          />
+        </Box>
+        <Box mb="10px" width="100%">
+          <input style={{ width: '100%' }} type="text" placeholder="Numéro" />
+        </Box>
+        <Box mb="25px" width="100%">
+          <input style={{ width: '100%' }} type="email" placeholder="Email" />
+        </Box>
+        <textarea style={{ width: '100%' }} type="" placeholder="Message" />
       </Box>
-      <Box mb="10px" width="100%">
-        <input style={{ width: '100%' }} type="text" placeholder="Numéro" />
-      </Box>
-      <Box mb="25px" width="100%">
-        <input style={{ width: '100%' }} type="email" placeholder="Email" />
-      </Box>
-      <textarea style={{ width: '100%' }} type="" placeholder="Message" />
-    </Box>
+    </form>
   </Box>
 )
 
