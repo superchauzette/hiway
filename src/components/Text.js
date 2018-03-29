@@ -17,7 +17,6 @@ export const textDecorationLine = props =>
     : null
 
 const Text = styled.p`
-  font-family: "'Roboto', sans-serif";
   ${width} ${space} ${color} ${fontSize} ${fontWeight} ${textAlign} ${lineHeight} ${textDecorationLine};
 `
 

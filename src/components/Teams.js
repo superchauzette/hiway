@@ -7,10 +7,18 @@ const clement =
   'https://medias.unifrance.org/medias/147/213/120211/format_page/clement-aubert.jpg'
 
 const Team = ({ name, photo, metier }) => (
-  <Box flexDirection="column" p="10px">
+  <Box flexDirection="column" p="10px" alignItems="center">
     <img src={photo} className="picture" alt="" width="150px" height="150px" />
-    <p>
-      <span className="yellow">{name}</span> <br /> {metier}
+    <p style={{ marginTop: '10px' }}>
+      <h3 className="yellow">{name}</h3>
+      <span
+        style={{
+          width: '200px',
+          display: 'inline-block',
+        }}
+      >
+        {metier}
+      </span>
     </p>
   </Box>
 )
@@ -43,7 +51,7 @@ const Teams = () => (
       <Team
         name="Maxime"
         photo={alex}
-        metier="Conseillier professionnel et parimonianal"
+        metier="Conseiller professionnel et patrimonial"
       />
       <Team name="Clememt" photo={clement} metier="Agent assureur Axa" />
       <Team name="Fredédric" photo={alex} metier="Expert Comptable" />

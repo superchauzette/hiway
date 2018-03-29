@@ -18,7 +18,7 @@ const H3 = styled.h3`
 `
 
 const Point = ({ title, src, text }) => (
-  <Box width="230px" flexDirection="column" mx="30px">
+  <Box width="200px" flexDirection="column" mx="30px">
     <Svg src={src} />
     <H3>{title}</H3>
     <p>{text}</p>
@@ -40,7 +40,7 @@ const Frenlancing = () => (
     </h2>
 
     <Box flexDirection="column" textAlign="center" width="100%">
-      <Box justifyContent="space-around" mt="60px">
+      <Box justifyContent="space-around" mt="60px" flexWrap="wrap">
         <Point
           src={freedom}
           title="Liberté"

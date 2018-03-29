@@ -28,8 +28,8 @@ const IndexPage = () => (
     <Frenlancing />
     <Teams />
     <EngagementHiway />
-    <Members />
     <Way />
+    <Members />
 
     <Box bg="gray" width="100%" justifyContent="center">
       <Box width="500px">

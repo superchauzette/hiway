@@ -3,20 +3,15 @@ import { Box, Text } from '../components'
 
 const Engagement = ({ title, text }) => (
   <Box
-    width="260px"
+    width="280px"
     height="235px"
     flexDirection="column"
     justifyContent="center"
     alignItems="center"
-    mx="40px"
     mb="20px"
     p="10px"
     bg="white"
-    style={{
-      //s border: '1px solid rgba(228, 235, 238)',
-      zIndex: 3,
-      borderRadius: '10px',
-    }}
+    style={{ zIndex: 3, borderRadius: '10px' }}
     className="card"
   >
     <h3>{title}</h3>
@@ -31,6 +26,7 @@ const Line = ({ top, translateX = -15 }) => (
       position: 'absolute',
       transform: `translateX(${translateX}px)`,
     }}
+    width={[0, 0, '100%']}
     className="dotted-gradient yellow"
   />
 )
@@ -50,14 +46,14 @@ const EngagementHiway = () => (
     <h2 className="yellow">
       Hiway t’accompagne pour devenir freelance et garantit ta réussite
     </h2>
-    <Box flexDirection="column" textAlign="center" width="80%">
+    <Box flexDirection="column" textAlign="center" width="90%">
       <Box justifyContent="space-around" mt="60px" flexWrap="wrap">
         <Engagement
           title="Démarre dans les meilleures conditions"
           text={() => (
             <span>
-              Choix du bon statut juridique. <br /> Création complète de ta
-              société.
+              Choix du bon statut juridique <br />
+              Création complète de ta société
             </span>
           )}
         />
@@ -65,7 +61,9 @@ const EngagementHiway = () => (
           title="Entoure-toi de spécialistes"
           text={() => (
             <span>
-              2 coachs <br /> 1 expert-comptable<br /> 1 banquier
+              2 coachs <br />
+              1 expert-comptable<br />
+              1 banquier
             </span>
           )}
         />
@@ -73,7 +71,9 @@ const EngagementHiway = () => (
           title="Signe le bon projet"
           text={() => (
             <span>
-              Coaching pour trouver ta mission. Négociation. Contractualisation
+              Coaching pour trouver ta mission<br />
+              Négociation<br />
+              Contractualisation
             </span>
           )}
         />
@@ -82,21 +82,31 @@ const EngagementHiway = () => (
       <Box justifyContent="space-around" mt="40px" flexWrap="wrap">
         <Engagement
           title="Gère facilement et sans erreur"
-          text={() =>
-            'Gestion administrative simplifiée. Fiscalité maîtrisée. Préparation du bilan'
-          }
+          text={() => (
+            <span>
+              Gestion administrative simplifiée<br />
+              Fiscalité maîtrisée<br />
+              Préparation du bilan
+            </span>
+          )}
         />
         <Engagement
           title="Gagne un maximum d’argent"
-          text={() =>
-            'Pilotage financier. Optimisation fiscale Maximisation des revenus'
-          }
+          text={() => (
+            <span>
+              Pilotage financier<br />
+              Optimisation fiscale<br />
+              Maximisation des revenus
+            </span>
+          )}
         />
         <Engagement
           title="Rejoins une communauté"
-          text={() =>
-            'Réseau de développeurs freelances connectés et solidaires www.weareheroes.io'
-          }
+          text={() => (
+            <span>
+              Réseau de développeurs freelances connectés et solidaires
+            </span>
+          )}
         />
       </Box>
     </Box>

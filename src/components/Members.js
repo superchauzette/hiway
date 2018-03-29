@@ -8,7 +8,7 @@ const Member = ({ name, metier, src, temoignage }) => (
     flexDirection="column"
     mb="20px"
     bg="white"
-    width="450px"
+    width={['100%', '450px', '450px']}
     className="card"
   >
     <Box justifyContent="space-around" style={{ overflow: 'hidden' }}>
@@ -22,7 +22,7 @@ const Member = ({ name, metier, src, temoignage }) => (
     <Box>
       <Text p="10px" width="100%" m="0">
         {name} <br />
-        {metier}
+        <span className="yellow">{metier}</span>
       </Text>
     </Box>
     <Box className="overlay">
@@ -37,7 +37,7 @@ const Member = ({ name, metier, src, temoignage }) => (
 
 const Members = () => (
   <Box
-    bg="gray"
+    bg="white"
     flexDirection="column"
     p="30px"
     alignItems="center"

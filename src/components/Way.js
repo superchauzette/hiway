@@ -3,23 +3,24 @@ import { Box, Text } from '../components'
 
 const Way = () => (
   <Box
+    bg="gray"
     flexDirection="column"
     p={['15px', '22.5px', '30px']}
     alignItems="center"
     className="way"
     textAlign="center"
+    width="100%"
   >
     <h1>2 voies pour devenir un chef d’entreprise</h1>
-
-    <Box justifyContent="space-around">
+    <Box width="100%" justifyContent="space-around" flexWrap="wrap">
       <CoachingFreelancing />
       <FreanLanceAsService />
     </Box>
   </Box>
 )
 
-const Title = ({ title, sousTitle }) => (
-  <Box bg="blue">
+const Title = ({ bg = 'blue', title, sousTitle }) => (
+  <Box bg={bg}>
     <Box flexDirection="column" textAlign="center" p="30px">
       <h2 style={{ color: 'white' }}>{title}</h2>
       <p style={{ color: 'white' }}>{sousTitle}</p>
@@ -28,8 +29,15 @@ const Title = ({ title, sousTitle }) => (
 )
 
 const CoachingFreelancing = () => (
-  <Box width="45%" className="card" flexDirection="column">
+  <Box
+    width={['100%', '45%', '45%']}
+    height="1505px"
+    mb="30px"
+    flexDirection="column"
+    className="card CoachingFreelancing"
+  >
     <Title
+      bg="yellow"
       title="Coaching"
       sousTitle="Devient un chef d’entreprise autonome en apprenant pendant un an avec des coachs à tes côtés"
     />
@@ -43,18 +51,20 @@ const CoachingFreelancing = () => (
 )
 
 const FreanLanceAsService = () => (
-  <Box width="45%" flexDirection="column" className="card">
-    <Box bg="blue">
-      <Box flexDirection="column" textAlign="center" p="30px">
-        <h2 style={{ color: 'white' }}>Freelancing as a Service</h2>
-        <p style={{ color: 'white' }}>
-          Devient un chef d’entreprise libéré en confiant la gestion
-          administrative aux spécialistes Hiway
-        </p>
-      </Box>
-    </Box>
+  <Box
+    width={['100%', '45%', '45%']}
+    height="1505px"
+    flexDirection="column"
+    className="card FreanLanceAsService"
+  >
+    <Title
+      bg="blue"
+      title="Freelancing as a Service"
+      sousTitle="Devient un chef d’entreprise libéré en confiant la gestion
+      administrative aux spécialistes Hiway"
+    />
     <Box flexDirection="column">
-      <Box bg="gray" pb={['235px']}>
+      <Box bg="gray" pb={['180px']}>
         <Manage />
       </Box>
       <Delegate />
@@ -62,9 +72,9 @@ const FreanLanceAsService = () => (
   </Box>
 )
 const Learn = () => (
-  <Box flexDirection="column" p={'20px'} px={[0, 0, '30px']}>
+  <Box flexDirection="column" p={'20px'}>
     <Box flexDirection="column" textAlign="center">
-      <h2>Apprendre</h2>
+      <h3 className="yellow">Apprendre</h3>
       <p>
         Un parcours d’apprentissage pragmatique pour devenir un parfait chef
         d’entreprise en 1 an :
@@ -109,7 +119,7 @@ const Learn = () => (
 const Understand = () => (
   <Box flexDirection="column" p={'20px'}>
     <Box flexDirection="column" textAlign="center">
-      <h2>Comprendre</h2>
+      <h3 className="yellow">Comprendre</h3>
       <p>
         Un accompagnent pour réussir ton démarrage dans le freelancing et une
         formation centrée sur les principes essentiels de la gestion d’une
@@ -143,18 +153,14 @@ const Understand = () => (
 )
 
 const Manage = () => (
-  <Box
-    flexDirection="column"
-    p="20px"
-    width="580px"
-    textAlign="center"
-    px={[0, 0, '30px']}
-  >
-    <h2>Gérer</h2>
-    <p>
-      Des outils faciles, des méthodologies efficaces et un support permanent de
-      spécialistes pour que tu gères ton entreprise sereinement
-    </p>
+  <Box flexDirection="column" p="20px">
+    <Box flexDirection="column" textAlign="center">
+      <h3 className="blue">Gérer</h3>
+      <p>
+        Des outils faciles, des méthodologies efficaces et un support permanent
+        de spécialistes pour que tu gères ton entreprise sereinement
+      </p>
+    </Box>
 
     <p style={{ textAlign: 'left' }}>
       <b>La gestion de mon entreprise sans erreur avec :</b>
@@ -177,7 +183,7 @@ const Manage = () => (
 const Delegate = () => (
   <Box flexDirection="column" p="20px">
     <Box flexDirection="column" textAlign="center">
-      <h2>Déléguer</h2>
+      <h3 className="blue">Déléguer</h3>
       <p>
         En confiant la gestion administrative de ta société à Hiway, tu décides
         de te libérer des contraintes quotidiennes d’un chef d’entreprise et tu
