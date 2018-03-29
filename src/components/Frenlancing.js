@@ -17,53 +17,54 @@ const H3 = styled.h3`
   color: rgb(255, 200, 42);
 `
 
-const Frenlancing = ({ isVisible }) => (
+const Point = ({ title, src, text }) => (
+  <Box width="260px" flexDirection="column" mx="40px">
+    <Svg src={src} />
+    <H3>{title}</H3>
+    <p>{text}</p>
+  </Box>
+)
+
+const Frenlancing = () => (
   <Box
     bg="white"
     flexDirection="column"
     p="30px"
     alignItems="center"
     textAlign="center"
-    // className={`${isVisible ? 'visible' : 'transparent'}`}
   >
     <h1>C’est le moment de devenir freelance</h1>
-    <h2>
+    <h2 className="yellow">
       Le freelancing est le meilleur statut pour s’épanouir dans sa vie comme
       dans son job
     </h2>
 
     <Box flexDirection="column" textAlign="center" width="80%">
       <Box justifyContent="space-around" mt="60px" flexWrap="wrap">
-        <Box width="250px" flexDirection="column" mx="40px">
-          <Svg src={freedom} />
-          <H3>Liberté</H3>
-          <p>
-            Sois libre de décider : missions, clients, durée, technos, tarifs
-          </p>
-        </Box>
-        <Box width="250px" flexDirection="column" mx="40px">
-          <Svg src={coins} />
-          <H3>Revenus</H3>
-          <p>Gagne 2 fois plus qu’en CDI</p>
-        </Box>
+        <Point
+          src={freedom}
+          title="Liberté"
+          text="Sois libre de décider : missions, clients, durée, technos, tarifs"
+        />
+        <Point src={coins} title="Revenus" text="Gagne 2 fois plus qu’en CDI" />
+        <Point
+          src={happy}
+          title="Bonheur"
+          text="Organise ta vie comme tu veux et fais toi plaisir"
+        />
       </Box>
 
       <Box justifyContent="space-around" mt="40px" flexWrap="wrap">
-        <Box width="250px" flexDirection="column" mx="40px">
-          <Svg src={happy} />
-          <H3>Bonheur</H3>
-          <p>Organise ta vie comme tu veux et fais toi plaisir</p>
-        </Box>
-        <Box width="250px" flexDirection="column" mx="40px">
-          <Svg src={skills} />
-          <H3>Compétences</H3>
-          <p>Deviens un chef d’entreprise</p>
-        </Box>
-        <Box width="250px" flexDirection="column" mx="40px">
-          <Svg src={missions} />
-          <H3>Missions</H3>
-          <p>Tes compétences sont très recherchées</p>
-        </Box>
+        <Point
+          src={skills}
+          title="Compétences"
+          text="Deviens un chef d’entreprise"
+        />
+        <Point
+          src={missions}
+          title="Missions"
+          text="Tes compétences sont très recherchées"
+        />
       </Box>
     </Box>
   </Box>

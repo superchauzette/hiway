@@ -1,6 +1,38 @@
 import React from 'react'
 import { Box, Text } from '../components'
 
+const Engagement = ({ title, text }) => (
+  <Box
+    width="250px"
+    flexDirection="column"
+    justifyContent="center"
+    alignItems="center"
+    mx="40px"
+    mb="20px"
+    p="10px"
+    bg="white"
+    style={{
+      border: '1px solid rgba(228, 235, 238)',
+      zIndex: 3,
+      borderRadius: '10px',
+    }}
+  >
+    <h3>{title}</h3>
+    <p style={{ margin: 0 }}>{text}</p>
+  </Box>
+)
+
+const Line = ({ top, translateX = -15 }) => (
+  <Box
+    mt={[top]}
+    style={{
+      position: 'absolute',
+      transform: `translateX(${translateX}px)`,
+    }}
+    className="dotted-gradient yellow"
+  />
+)
+
 const EngagementHiway = () => (
   <Box
     bg="white"
@@ -9,57 +41,42 @@ const EngagementHiway = () => (
     alignItems="center"
     textAlign="center"
   >
+    <Line top={315} />
+    <Line top={590} />
+
     <h1> L’engagement d’Hiway</h1>
-    <h2 style={{ color: '#ff5a5f' }}>
+    <h2 className="yellow">
       Hiway t’accompagne pour devenir freelance et garantit ta réussite
     </h2>
     <Box flexDirection="column" textAlign="center" width="80%">
       <Box justifyContent="space-around" mt="60px" flexWrap="wrap">
-        <Box width="250px" flexDirection="column" mx="40px">
-          <h3>Démarre dans les meilleures conditions</h3>
-          <p>Choix du bon statut juridique. Création complète de ta société.</p>
-        </Box>
-        <Box width="250px" flexDirection="column" mx="40px">
-          <h3>Entoure-toi de spécialistes</h3>
-          <p>
-            2 coachs, 1 expert-comptable, 1 banquier, 1 assureur spécialisé en
-            protection sociale, 1 avocat, 1 CE
-          </p>
-        </Box>
-        <Box width="250px" flexDirection="column" mx="40px">
-          <h3>Signe le bon projet</h3>
-          <p>
-            Coaching pour trouver ta mission. Négociation. Contractualisation
-          </p>
-        </Box>
+        <Engagement
+          title="Démarre dans les meilleures conditions"
+          text="Choix du bon statut juridique. Création complète de ta société.E"
+        />
+        <Engagement
+          title="Entoure-toi de spécialistes"
+          text="2 coachs, 1 expert-comptable, 1 banquier, 1 assureur spécialisé en protection sociale, 1 avocat, 1 CE"
+        />
+        <Engagement
+          title="Signe le bon projet"
+          text="Coaching pour trouver ta mission. Négociation. Contractualisation"
+        />
       </Box>
 
-      <Box
-        flexDirection="row"
-        justifyContent="space-around"
-        mt="40px"
-        flexWrap="wrap"
-      >
-        <Box width="250px" flexDirection="column" mx="40px">
-          <h3>Gère facilement et sans erreur</h3>
-          <p>
-            Gestion administrative simplifiée. Fiscalité maîtrisée. Préparation
-            du bilan
-          </p>
-        </Box>
-        <Box width="250px" flexDirection="column" mx="40px">
-          <h3>Gagne un maximum d’argent</h3>
-          <p>
-            Pilotage financier. Optimisation fiscale Maximisation des revenus.
-          </p>
-        </Box>
-        <Box width="250px" flexDirection="column" mx="40px">
-          <h3>Rejoins une communauté</h3>
-          <p>
-            Réseau de développeurs freelances connectés et solidaires
-            www.weareheroes.io
-          </p>
-        </Box>
+      <Box justifyContent="space-around" mt="40px" flexWrap="wrap">
+        <Engagement
+          title="Gère facilement et sans erreur"
+          text="Gestion administrative simplifiée. Fiscalité maîtrisée. Préparation du bilan"
+        />
+        <Engagement
+          title="Gagne un maximum d’argent"
+          text="Pilotage financier. Optimisation fiscale Maximisation des revenus"
+        />
+        <Engagement
+          title="Rejoins une communauté"
+          text="Réseau de développeurs freelances connectés et solidaires www.weareheroes.io"
+        />
       </Box>
     </Box>
   </Box>

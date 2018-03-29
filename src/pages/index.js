@@ -15,7 +15,7 @@ const IndexPage = () => (
   <Box flexDirection="column">
     <Home />
 
-    <Box
+    {/* <Box
       position={['relative', 'relative', 'absolute']}
       bg={['gray', 'gray', '#ffffff75']}
       mt={[0, 0, '100px']}
@@ -23,7 +23,7 @@ const IndexPage = () => (
       width={['100%', '100%', '416px']}
     >
       <Contact />
-    </Box>
+    </Box> */}
 
     <Frenlancing />
     <Teams />
@@ -31,11 +31,11 @@ const IndexPage = () => (
     <Members />
     <Way />
 
-    {/* <Box bg="gray" width="100%" justifyContent="center">
+    <Box bg="gray" width="100%" justifyContent="center">
       <Box width="500px">
         <Contact />
       </Box>
-    </Box> */}
+    </Box>
   </Box>
 )
 
