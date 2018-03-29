@@ -25,7 +25,7 @@ const Member = ({ name, metier, src, temoignage }) => (
         <span className="yellow">{metier}</span>
       </Text>
     </Box>
-    <Box className="overlay">
+    <Box className="overlay" height="360px">
       <blockquote>
         <Text color="white" pt="10px">
           &ldquo;{temoignage}&rdquo;
