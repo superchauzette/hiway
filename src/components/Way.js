@@ -53,8 +53,8 @@ const FreanLanceAsService = () => (
         </p>
       </Box>
     </Box>
-    <Box flexDirection="column" px={[0, 0, '30px']}>
-      <Box mb={['225px']}>
+    <Box flexDirection="column">
+      <Box bg="gray" pb={['235px']}>
         <Manage />
       </Box>
       <Delegate />
@@ -143,7 +143,13 @@ const Understand = () => (
 )
 
 const Manage = () => (
-  <Box flexDirection="column" p="20px" width="580px" textAlign="center">
+  <Box
+    flexDirection="column"
+    p="20px"
+    width="580px"
+    textAlign="center"
+    px={[0, 0, '30px']}
+  >
     <h2>Gérer</h2>
     <p>
       Des outils faciles, des méthodologies efficaces et un support permanent de
@@ -169,13 +175,15 @@ const Manage = () => (
 )
 
 const Delegate = () => (
-  <Box flexDirection="column" p="30px" width="580px" textAlign="center">
-    <h2>Déléguer</h2>
-    <p>
-      En confiant la gestion administrative de ta société à Hiway, tu décides de
-      te libérer des contraintes quotidiennes d’un chef d’entreprise et tu te
-      concentres uniquement sur ton métier. Bien sur, tu restes le patron !
-    </p>
+  <Box flexDirection="column" p="20px">
+    <Box flexDirection="column" textAlign="center">
+      <h2>Déléguer</h2>
+      <p>
+        En confiant la gestion administrative de ta société à Hiway, tu décides
+        de te libérer des contraintes quotidiennes d’un chef d’entreprise et tu
+        te concentres uniquement sur ton métier. Bien sur, tu restes le patron !
+      </p>
+    </Box>
     <p style={{ textAlign: 'left' }}>
       <b>
         Hiway révolutionne l’entrepreneuriat en créant la le « Freelancing as a
