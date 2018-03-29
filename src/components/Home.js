@@ -1,6 +1,7 @@
 import React from 'react'
 import { Box, Text, Contact } from './index'
-import bgheader from '../assets/bg-header.jpg'
+// import bgheader from '../assets/bg-header.jpg'
+import bgheader from '../assets/road.jpg'
 import logo from '../assets/hiway.png'
 
 const Home = () => (
@@ -12,14 +13,16 @@ const Home = () => (
     flexDirection="column"
     justifyContent="center"
     backgroundImage={bgheader}
+    textAlign="center"
+    position="relative"
   >
-    <Box style={{ textAlign: 'center' }} flexDirection="column">
-      <div>
-        <img src={logo} style={{ maxWidth: '80%' }} />
-      </div>
-      <h1 style={{ color: '#00cc7e' }}>Freelancing is cool</h1>
-      <h2 style={{ color: 'white' }}>Solutions pour devenir freelance</h2>
-    </Box>
+    <div>
+      <img src={logo} style={{ maxWidth: '80%' }} />
+    </div>
+    <h1 style={{ color: 'white', marginTop: '160px', fontWeight: 700 }}>
+      Freelancing is cool
+    </h1>
+    <h2 style={{ color: 'white' }}>Solutions pour devenir freelance</h2>
   </Box>
 )
 
