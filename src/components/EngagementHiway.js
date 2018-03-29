@@ -3,7 +3,8 @@ import { Box, Text } from '../components'
 
 const Engagement = ({ title, text }) => (
   <Box
-    width="250px"
+    width="260px"
+    height="235px"
     flexDirection="column"
     justifyContent="center"
     alignItems="center"
@@ -12,13 +13,14 @@ const Engagement = ({ title, text }) => (
     p="10px"
     bg="white"
     style={{
-      border: '1px solid rgba(228, 235, 238)',
+      //s border: '1px solid rgba(228, 235, 238)',
       zIndex: 3,
       borderRadius: '10px',
     }}
+    className="card"
   >
     <h3>{title}</h3>
-    <p style={{ margin: 0 }}>{text}</p>
+    <p style={{ margin: 0 }}>{text()}</p>
   </Box>
 )
 
@@ -52,30 +54,49 @@ const EngagementHiway = () => (
       <Box justifyContent="space-around" mt="60px" flexWrap="wrap">
         <Engagement
           title="Démarre dans les meilleures conditions"
-          text="Choix du bon statut juridique. Création complète de ta société.E"
+          text={() => (
+            <span>
+              Choix du bon statut juridique. <br /> Création complète de ta
+              société.
+            </span>
+          )}
         />
         <Engagement
           title="Entoure-toi de spécialistes"
-          text="2 coachs, 1 expert-comptable, 1 banquier, 1 assureur spécialisé en protection sociale, 1 avocat, 1 CE"
+          text={() => (
+            <span>
+              2 coachs <br /> 1 expert-comptable<br /> 1 banquier
+            </span>
+          )}
         />
         <Engagement
           title="Signe le bon projet"
-          text="Coaching pour trouver ta mission. Négociation. Contractualisation"
+          text={() => (
+            <span>
+              Coaching pour trouver ta mission. Négociation. Contractualisation
+            </span>
+          )}
         />
       </Box>
 
       <Box justifyContent="space-around" mt="40px" flexWrap="wrap">
         <Engagement
           title="Gère facilement et sans erreur"
-          text="Gestion administrative simplifiée. Fiscalité maîtrisée. Préparation du bilan"
+          text={() =>
+            'Gestion administrative simplifiée. Fiscalité maîtrisée. Préparation du bilan'
+          }
         />
         <Engagement
           title="Gagne un maximum d’argent"
-          text="Pilotage financier. Optimisation fiscale Maximisation des revenus"
+          text={() =>
+            'Pilotage financier. Optimisation fiscale Maximisation des revenus'
+          }
         />
         <Engagement
           title="Rejoins une communauté"
-          text="Réseau de développeurs freelances connectés et solidaires www.weareheroes.io"
+          text={() =>
+            'Réseau de développeurs freelances connectés et solidaires www.weareheroes.io'
+          }
         />
       </Box>
     </Box>

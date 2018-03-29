@@ -44,7 +44,7 @@ const Members = () => (
     textAlign="center"
   >
     <h1>Ils ont bien fait</h1>
-    <h2>
+    <h2 className="yellow">
       100% des développeurs devenus freelance avec Hiway ont recommandé un ami
     </h2>
     <Box

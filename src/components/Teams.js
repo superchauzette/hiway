@@ -24,7 +24,7 @@ const Teams = () => (
     textAlign="center"
   >
     <h1>Les gardiens de ta réussite</h1>
-    <h2>
+    <h2 className="yellow">
       Des spécialistes convaincus que le freelancing est le meilleur statut
     </h2>
     <Box
@@ -34,11 +34,19 @@ const Teams = () => (
       flexWrap="wrap"
       textAlign="center"
     >
-      <Team name="Vince" photo={vince} metier="Coach" />
-      <Team name="Alex" photo={alex} metier="Coach" />
-      <Team name="Max" photo={alex} metier="Banquier" />
-      <Team name="Clem" photo={clement} metier="Assureur" />
-      <Team name="Fred" photo={alex} metier="Comptable" />
+      <Team name="Vincenzo" photo={vince} metier="Coach gestion et Biness" />
+      <Team
+        name="Alexandre"
+        photo={alex}
+        metier="Coach administratif et financier"
+      />
+      <Team
+        name="Maxime"
+        photo={alex}
+        metier="Conseillier professionnel et parimonianal"
+      />
+      <Team name="Clememt" photo={clement} metier="Agent assureur Axa" />
+      <Team name="Fredédric" photo={alex} metier="Expert Comptable" />
     </Box>
   </Box>
 )
