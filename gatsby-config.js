@@ -1,3 +1,5 @@
+const rootDir = '.'
+
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Default Starter',
@@ -34,6 +36,38 @@ module.exports = {
             type: `image/png`,
           },
         ],
+      },
+    },
+
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        staticFileGlobs: [
+          `${rootDir}/**/*.{js,woff2}`,
+          `${rootDir}/index.html`,
+          `${rootDir}/manifest.json`,
+          `${rootDir}/offline-plugin-app-shell-fallback/index.html`,
+        ],
+        stripPrefix: rootDir,
+        navigateFallback: `/offline-plugin-app-shell-fallback/index.html`,
+        // Only match URLs without extensions.
+        // So example.com/about/ will pass but
+        // example.com/cheeseburger.jpg will not.
+        // We only want the service worker to handle our "clean"
+        // URLs and not any files hosted on the site.
+        navigateFallbackWhitelist: [/^.*(?!\.\w?$)/],
+        cacheId: `gatsby-plugin-offline`,
+        // Do cache bust JS URLs until can figure out how to make Webpack's
+        // URLs truely content-addressed.
+        dontCacheBustUrlsMatching: /(.\w{8}.woff2)/, //|-\w{20}.js)/,
+        runtimeCaching: [
+          {
+            // Add runtime caching of images.
+            urlPattern: /\.(?:png|jpg|jpeg|webp|svg|gif|tiff)$/,
+            handler: `fastest`,
+          },
+        ],
+        skipWaiting: false,
       },
     },
   ],
