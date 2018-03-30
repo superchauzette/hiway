@@ -14,8 +14,8 @@ const Engagement = ({ title, text }) => (
     style={{ zIndex: 3, borderRadius: '10px' }}
     className="card"
   >
-    <h3>{title}</h3>
-    <p style={{ margin: 0 }}>{text()}</p>
+    <h3 style={{ color: 'rgb(248,210,101)' }}>{title}</h3>
+    <Text m={0}>{text()}</Text>
   </Box>
 )
 
