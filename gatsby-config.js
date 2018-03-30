@@ -42,12 +42,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-offline`,
       options: {
-        staticFileGlobs: [
-          `${rootDir}/**/*.{js,woff2}`,
-          `${rootDir}/index.html`,
-          `${rootDir}/manifest.json`,
-          `${rootDir}/offline-plugin-app-shell-fallback/index.html`,
-        ],
+        staticFileGlobs: [`*.{js,woff2}`, `index.html`, `manifest.json`],
         stripPrefix: rootDir,
         navigateFallback: `/offline-plugin-app-shell-fallback/index.html`,
         // Only match URLs without extensions.
