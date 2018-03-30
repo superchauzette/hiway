@@ -10,10 +10,12 @@ import './custom.css'
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
+      htmlAttributes={{ lang: 'fr' }}
       title="Hiway"
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
+        { name: 'theme-color', content: 'rgb(248,210,101)' },
       ]}
       link={[
         {

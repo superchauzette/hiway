@@ -9,10 +9,10 @@ const clement =
 const Team = ({ name, photo, metier }) => (
   <Box flexDirection="column" p="10px" alignItems="center">
     <img src={photo} className="picture" alt="" width="150px" height="150px" />
-    <p style={{ marginTop: '10px' }}>
+    <Box mt="10px" flexDirection="column">
       <h3 className="yellow">{name}</h3>
       <span style={{ width: '200px', display: 'inline-block' }}>{metier}</span>
-    </p>
+    </Box>
   </Box>
 )
 

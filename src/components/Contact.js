@@ -16,6 +16,7 @@ const Contact = () => (
             <input
               type="text"
               name="name"
+              autoComplete="name"
               style={{ width: '100%' }}
               placeholder="Nom Prénom"
             />
@@ -25,6 +26,7 @@ const Contact = () => (
               style={{ width: '100%' }}
               type="text"
               name="phone"
+              autoComplete="phone"
               placeholder="Téléphone"
             />
           </Box>
@@ -33,6 +35,7 @@ const Contact = () => (
               style={{ width: '100%' }}
               type="email"
               name="email"
+              autoComplete="email"
               placeholder="Email"
             />
           </Box>
