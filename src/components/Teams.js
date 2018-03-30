@@ -11,14 +11,7 @@ const Team = ({ name, photo, metier }) => (
     <img src={photo} className="picture" alt="" width="150px" height="150px" />
     <p style={{ marginTop: '10px' }}>
       <h3 className="yellow">{name}</h3>
-      <span
-        style={{
-          width: '200px',
-          display: 'inline-block',
-        }}
-      >
-        {metier}
-      </span>
+      <span style={{ width: '200px', display: 'inline-block' }}>{metier}</span>
     </p>
   </Box>
 )
@@ -35,10 +28,11 @@ const Teams = () => (
     <h2 className="yellow">
       Des spécialistes convaincus que le freelancing est le meilleur statut
     </h2>
+
     <Box
       width="100%"
-      justifyContent="space-around"
       mt="40px"
+      justifyContent="space-around"
       flexWrap="wrap"
       textAlign="center"
     >

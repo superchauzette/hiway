@@ -3,7 +3,7 @@ import { Box, Text } from '../components'
 
 const Engagement = ({ title, text }) => (
   <Box
-    width="280px"
+    width="300px"
     height="235px"
     flexDirection="column"
     justifyContent="center"
@@ -26,7 +26,7 @@ const Line = ({ top, translateX = -15 }) => (
       position: 'absolute',
       transform: `translateX(${translateX}px)`,
     }}
-    width={[0, 0, '100%']}
+    width={[0, 0, '100%']} // pas visible en mobile
     className="dotted-gradient yellow"
   />
 )
@@ -34,18 +34,19 @@ const Line = ({ top, translateX = -15 }) => (
 const EngagementHiway = () => (
   <Box
     bg="white"
-    flexDirection="column"
     p="30px"
+    flexDirection="column"
     alignItems="center"
     textAlign="center"
   >
     <Line top={315} />
     <Line top={590} />
 
-    <h1> L’engagement d’Hiway</h1>
+    <h1>L’engagement d’Hiway</h1>
     <h2 className="yellow">
       Hiway t’accompagne pour devenir freelance et garantit ta réussite
     </h2>
+
     <Box flexDirection="column" textAlign="center" width="90%">
       <Box justifyContent="space-around" mt="60px" flexWrap="wrap">
         <Engagement

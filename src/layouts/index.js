@@ -5,6 +5,7 @@ import { ThemeProvider } from 'styled-components'
 import theme from './theme'
 
 import './index.css'
+import './custom.css'
 
 const TemplateWrapper = ({ children }) => (
   <div>
