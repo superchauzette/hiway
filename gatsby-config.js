@@ -40,7 +40,7 @@ module.exports = {
     },
 
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `gatsby-plugin-offline`,
       options: {
         staticFileGlobs: [
           `${rootDir}/**/*.{js,woff2}`,
