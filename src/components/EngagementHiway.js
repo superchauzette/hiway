@@ -31,6 +31,18 @@ const Line = ({ top, translateX = -15 }) => (
   />
 )
 
+const Road = ({ top }) => (
+  <Box
+    mt={[top]}
+    bg="grey"
+    style={{
+      position: 'absolute',
+      height: '80px',
+    }}
+    width={[0, 0, '100%']} // pas visible en mobile
+  />
+)
+
 const EngagementHiway = () => (
   <Box
     bg="white"
@@ -39,8 +51,10 @@ const EngagementHiway = () => (
     alignItems="center"
     textAlign="center"
   >
+    <Road top={278} />
     <Line top={315} />
-    <Line top={590} />
+    <Road top={560} />
+    <Line top={600} />
 
     <h1>L’engagement d’Hiway</h1>
     <h2 className="yellow">
