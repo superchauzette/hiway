@@ -19,10 +19,11 @@ const Way = () => (
   </Box>
 )
 
-const Title = ({ bg, title, sousTitle }) => (
+const Title = ({ bg, title, title2, sousTitle }) => (
   <Box bg={bg}>
-    <Box flexDirection="column" textAlign="center" p="30px">
+    <Box flexDirection="column" textAlign="center" p="30px" width="100%">
       <h2 style={{ color: 'white' }}>{title}</h2>
+      <h2 style={{ color: 'white' }}>{title2}</h2>
       <p style={{ color: 'white' }}>{sousTitle}</p>
     </Box>
   </Box>
@@ -38,92 +39,42 @@ const CoachingFreelancing = () => (
     <Title
       bg="yellow"
       title="Coaching"
-      sousTitle="Devient un chef d’entreprise autonome en apprenant pendant un an avec des coachs à tes côtés"
+      title2="Apprendre & gérer"
+      sousTitle="Devient un chef d’entreprise autonome en apprenant pendant un an avec
+        des coachs à tes côtés"
     />
     <Box flexDirection="column">
-      <Box bg="gray">
-        <Learn />
-      </Box>
-      <Understand />
+      <Learn />
     </Box>
   </Box>
 )
 
 const Learn = () => (
   <Box flexDirection="column" p={'20px'}>
-    <Box flexDirection="column" textAlign="center">
-      <h3 className="yellow">Apprendre</h3>
-      <Text>
-        Un parcours d’apprentissage pragmatique pour devenir un parfait chef
-        d’entreprise en 1 an :
-      </Text>
-    </Box>
-
     <Box flexDirection="column">
-      <Text textAlign="left" fontWeight="bold">
-        13 ateliers de coaching délivrés par les spécialistes Hiway de la
-        gestion d’entreprise sur les thémes suivants :
+      <Text color="yellow" textAlign="left" fontWeight="bold">
+        PARCOURS
       </Text>
       <ul style={{ textAlign: 'left' }}>
         <li>Se lancer et créer sa société dans les meilleures conditions</li>
         <li> S’entourer de partenaires de confiance</li>
         <li> Trouver sa 1ère mission</li>
-        <li> Gérer son entreprise efficacement</li>
+        <li> Gérer son entreprise efficacement et sans erreur</li>
         <li> Optimiser sa fiscalité et maximiser sa rémunération</li>
         <li>Faire son bilan</li>
       </ul>
     </Box>
 
     <Box flexDirection="column">
-      <Text textAlign="left" fontWeight="bold">
-        Un format centré sur l’humain qui associe le travail à des moments de
-        partage agréables
+      <Text color="yellow" textAlign="left" fontWeight="bold">
+        FORMAT
       </Text>
       <ul style={{ textAlign: 'left' }}>
-        <li>Ateliers individuels et personnalisés</li>
-        <li> Toujours en présentiel</li>
-        <li> Lieux de rencontre sympas et proches de toi</li>
-        <li> Agenda adapté au tien </li>
-        <li> Événements au sein de la Communauté Hiway </li>
-      </ul>
-    </Box>
-  </Box>
-)
-
-const Understand = () => (
-  <Box flexDirection="column" p={'20px'}>
-    <Box flexDirection="column" textAlign="center">
-      <h3 className="yellow">Comprendre</h3>
-      <Text>
-        Un accompagnent pour réussir ton démarrage dans le freelancing et une
-        formation centrée sur les principes essentiels de la gestion d’une
-        entreprise :
-      </Text>
-    </Box>
-    <Box flexDirection="column" textAlign="left">
-      <Text textAlign="left" fontWeight="bold">
-        2 bootcamps d’une journée sur les thèmes suivants :
-      </Text>
-    </Box>
-    <Box flexDirection="column" textAlign="left">
-      <ul>
-        <li>Création de la société</li>
-        <li> Trouver sa 1ère mission</li>
-        <li> Comprendre les principes de gestion et d’optimisation</li>
-      </ul>
-
-      <Text textAlign="left" fontWeight="bold">
-        Toute l’équipe Hiway à ta disposition :
-      </Text>
-      <ul style={{ textAlign: 'left' }}>
-        <li>Bootcamps individuels et personnalisés</li>
-        <li> Support permament sur tous les sujets</li>
-        <li>
-          Présentation des partenaires : expert-comptable, banque, assurance /
-          protection sociale
-        </li>
-        <li> Rencontres à ta demande </li>
-        <li> Événements au sein de la Communauté Hiway </li>
+        <li> Un parcours d’apprentissage en 13 ateliers pendant 1 an</li>
+        <li> 100% en individuel et en présentiel</li>
+        <li> Des rdv où et quand tu veux et dans des cadres agréables</li>
+        <li> Des outils faciles, une méthodologie efficace </li>
+        <li> Un support permanent de spécialistes </li>
       </ul>
     </Box>
   </Box>
@@ -138,44 +89,58 @@ const FreanLanceAsService = () => (
     <Title
       bg="blue"
       title="Freelancing as a Service"
-      sousTitle="Devient un chef d’entreprise libéré en confiant la gestion
-      administrative aux spécialistes Hiway"
+      title2="Comprendre & Déléguer"
+      sousTitle="Une approche révolutionnaire du Freelancing :
+      Devient un chef d’entreprise libéré
+      en confiant la totalité de la gestion administrative de ta société"
     />
     <Box flexDirection="column">
-      <Box bg="gray" pb={[0, '180px', '180px']}>
-        <Manage />
-      </Box>
-      <Delegate />
+      <Manage />
     </Box>
   </Box>
 )
 
 const Manage = () => (
   <Box flexDirection="column" p="20px">
-    <Box flexDirection="column" textAlign="center">
-      <h3 className="blue">Gérer</h3>
-      <Text>
-        Des outils faciles, des méthodologies efficaces et un support permanent
-        de spécialistes pour que tu gères ton entreprise sereinement
-      </Text>
-    </Box>
-    <Box flexDirection="column" textAlign="left">
-      <Text fontWeight="bold">
-        La gestion de mon entreprise sans erreur avec :
-      </Text>
-    </Box>
+    <Text color="blue" textAlign="left" fontWeight="bold">
+      DELEGATION TOTALE
+    </Text>
     <Box flexDirection="column" textAlign="left">
       <ul>
-        <li>Environnement de gestion collaboratif</li>
-        <li> Outil de pilotage financier</li>
-        <li> Édition de facture</li>
-        <li> Calcul automatisé de la rémunération optimale</li>
-        <li> Calcul des provisions fiscales et sociales</li>
-        <li>Tous les templates de documents nécessaires</li>
         <li>
-          Support permament de l’équipe Hiway : tes coachs, ton
-          expert-comptable, ton assureur, ton banquier, ton avocat
+          Envoi de tes factures à tes clients, suivi des règlements et relances
         </li>
+        <li>
+          Réception, traitement et classement de tous les documents de ton
+          entreprise
+        </li>
+        <li> Suivi de tes obligations fiscales et sociales</li>
+        <li> Calcul de ta rémunération optimisée et exécution du virement</li>
+        <li>
+          Gestion des relations avec l’administration, les partenaires, le
+          comptable et les clients
+        </li>
+      </ul>
+    </Box>
+
+    <Text color="blue" textAlign="left" fontWeight="bold">
+      FORMAT
+    </Text>
+    <Box flexDirection="column" textAlign="left">
+      <Text px="20px" textAlign="left" fontWeight="bold">
+        2 Bootcamps personnalisés pour se former sur les sujets indispensables
+        du freelancing :
+      </Text>
+      <ul>
+        <li>#1: Créer sa société et trouver sa 1ère mission</li>
+        <li>
+          #2 : S’initier à la gestion d’entreprise et à l’optimisation
+          financière
+        </li>
+      </ul>
+      <ul>
+        <li> Support permanent sur tous les sujets 24/24 7/7</li>
+        <li>Reportings réguliers et transparents de ton activité</li>
       </ul>
     </Box>
   </Box>
