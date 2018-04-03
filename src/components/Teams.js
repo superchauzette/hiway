@@ -36,7 +36,7 @@ const Teams = () => (
       flexWrap="wrap"
       textAlign="center"
     >
-      <Team name="Vincenzo" photo={vince} metier="Coach gestion et Biness" />
+      <Team name="Vincenzo" photo={vince} metier="Coach gestion et Business" />
       <Team
         name="Alexandre"
         photo={alex}

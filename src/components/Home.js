@@ -18,7 +18,7 @@ const Home = () => (
     position="relative"
   >
     <div>
-      <img src={logoJaune} style={{ maxWidth: '70%' }} />
+      <img src={logoJaune} style={{ maxWidth: '60%' }} />
     </div>
     <h1 style={{ color: 'white', marginTop: '160px', fontWeight: 700 }}>
       Freelancing is cool
