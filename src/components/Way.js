@@ -19,11 +19,18 @@ const Way = () => (
   </Box>
 )
 
-const Title = ({ bg, title, title2, sousTitle }) => (
+const Title = ({ bg, title, title2 = () => null, sousTitle }) => (
   <Box bg={bg}>
-    <Box flexDirection="column" textAlign="center" p="30px" width="100%">
+    <Box
+      flexDirection="column"
+      textAlign="center"
+      p="30px"
+      pb="0px"
+      width="100%"
+    >
       <h2 style={{ color: 'white' }}>{title}</h2>
       <h3 style={{ color: 'white' }}>{sousTitle}</h3>
+      {title2()}
     </Box>
   </Box>
 )
@@ -35,24 +42,26 @@ const CoachingFreelancing = () => (
     flexDirection="column"
     className="card CoachingFreelancing"
   >
-    <Title bg="yellow" title="Coaching" sousTitle="Apprendre & gérer" />
+    <Title
+      bg="yellow"
+      title="Coaching"
+      sousTitle="Apprendre & gérer"
+      title2={() => (
+        <Text color="white" textAlign="center" fontWeight="bold" p={'20px'}>
+          Devient un chef d’entreprise autonome en apprenant pendant un an avec
+          des coachs à tes côtés<br /> <br />
+        </Text>
+      )}
+    />
 
     <Box flexDirection="column">
-      <Text textAlign="center" fontWeight="bold" p={'20px'}>
-        Devient un chef d’entreprise autonome en apprenant pendant un an avec
-        des coachs à tes côtés<br />
-        <br />
-      </Text>
-
       <Box flexDirection="column" bg="gray" p={'20px'}>
         <Text color="yellow" textAlign="center" fontWeight="bold">
           PARCOURS
         </Text>
         <ul style={{ textAlign: 'left' }}>
           <li>Se lancer et créer sa société dans les meilleures conditions</li>
-          <br />
           <li> S’entourer de partenaires de confiance</li>
-          <br />
           <li> Trouver sa 1ère mission</li>
           <li> Gérer son entreprise efficacement et sans erreur</li>
           <li> Optimiser sa fiscalité et maximiser sa rémunération</li>
@@ -89,14 +98,15 @@ const FreanLanceAsService = () => (
       bg="blue"
       title="Freelancing as a Service"
       sousTitle="Comprendre & Déléguer"
+      title2={() => (
+        <Text color="white" textAlign="center" fontWeight="bold" p="20px">
+          Une approche révolutionnaire du Freelancing : <br />Devient un chef
+          d’entreprise libéré en confiant la totalité de la gestion
+          administrative de ta société
+        </Text>
+      )}
     />
     <Box flexDirection="column">
-      <Text textAlign="center" fontWeight="bold" p="20px">
-        Une approche révolutionnaire du Freelancing : <br />Devient un chef
-        d’entreprise libéré en confiant la totalité de la gestion administrative
-        de ta société
-      </Text>
-
       <Box bg="gray" flexDirection="column" textAlign="left" p="20px">
         <Text color="blue" textAlign="center" fontWeight="bold">
           DELEGATION TOTALE
@@ -116,6 +126,7 @@ const FreanLanceAsService = () => (
             Gestion des relations avec l’administration, les partenaires, le
             comptable et les clients
           </li>
+          <br />
         </ul>
       </Box>
 
@@ -123,18 +134,20 @@ const FreanLanceAsService = () => (
         <Text color="blue" textAlign="center" fontWeight="bold">
           FORMAT
         </Text>
-        <Text px="20px" textAlign="center" fontWeight="bold">
-          2 Bootcamps personnalisés pour se former sur les sujets indispensables
-          du freelancing :
-        </Text>
+
         <ul>
-          <li>#1: Créer sa société et trouver sa 1ère mission</li>
           <li>
+            2 Bootcamps personnalisés pour se former sur les sujets
+            indispensables du freelancing :
+          </li>
+          <li style={{ listStyle: 'square', marginLeft: '40px' }}>
+            #1: Créer sa société et trouver sa 1ère mission
+          </li>
+          <li style={{ listStyle: 'square', marginLeft: '40px' }}>
             #2 : S’initier à la gestion d’entreprise et à l’optimisation
             financière
           </li>
-        </ul>
-        <ul>
+
           <li> Support permanent sur tous les sujets 24/24 7/7</li>
           <li>Reportings réguliers et transparents de ton activité</li>
         </ul>

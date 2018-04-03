@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Text } from '../components'
-import kev from '../assets/kev.jpg'
+import user from '../assets/user.png'
 
 const Member = ({ name, metier, src, temoignage }) => (
   <Box
@@ -8,16 +8,10 @@ const Member = ({ name, metier, src, temoignage }) => (
     flexDirection="column"
     mb="20px"
     bg="white"
-    width={['100%', '450px', '450px']}
-    className="card"
+    width={['100%', '300px', '300px']}
   >
-    <Box justifyContent="space-around" style={{ overflow: 'hidden' }}>
-      <img
-        src={src}
-        alt=""
-        height="360px"
-        style={{ transform: 'scale(2.8)' }}
-      />
+    <Box justifyContent="space-around">
+      <img src={user} alt="" height="260px" />
     </Box>
     <Box>
       <Text p="10px" width="100%" m="0">
@@ -25,13 +19,10 @@ const Member = ({ name, metier, src, temoignage }) => (
         <span className="yellow">{metier}</span>
       </Text>
     </Box>
-    <Box className="overlay" height="360px">
-      <blockquote>
-        <Text color="white" pt="10px">
-          &ldquo;{temoignage}&rdquo;
-        </Text>
-      </blockquote>
-    </Box>
+
+    <Text color="black" textAlign="center" pt="10px">
+      &ldquo;{temoignage}&rdquo;
+    </Text>
   </Box>
 )
 
@@ -56,44 +47,69 @@ const Members = () => (
       flexWrap="wrap"
     >
       <Member
-        name="Antoine"
-        metier="Dev Angular & React chez un Leader du E-Commerce"
-        src="https://images.unsplash.com/photo-1515506930109-d83b9248dccf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0cf359ea0952e2e08326dddfca10f94c&auto=format&fit=crop&w=334&q=80%20334w,%20"
-        temoignage="Ayant beaucoup de collègues en freelance, il me paraissait intéressant de changer de statut d'une part pour des raisons financières et d'autre part pour le gain de liberté que ce soit du coté des missions ou du temps travaillé. Mais par où commencer ? Comment créer sa structure ? Quel sont les risques ? Comment gérer ses finances ? Quels impôts payer et quand ? Combien je me rémunère ?
-        A toutes ses questions, Hiway m'a répondu et a même répondu à des questions que je ne me posais pas, telles que l'assurance, la protection sociale, la stratégie financière, l'optimisation fiscale...de façon très pédagogue. Il ont rédigé les statuts juridiques, créé la structure, mis en contact avec un expert comptable et un assureur. Ils m'ont même proposé des missions, donné des outils pour trouver une mission et plus encore ! Bref j'ai pu passer freelance de façon très confortable"
+        name="Florent"
+        metier="Lead Dev Node.js - EFREI 2014"
+        temoignage="Je suis devenu Freelance en toute sérénité grâce à Hiway"
       />
       <Member
         name="Robin"
-        metier="Dev Back Symfony chez La Poste"
-        src="https://images.unsplash.com/photo-1484608856193-968d2be4080e?ixlib=rb-0.3.5&s=9a589419e61e61d38471e345fd3b0026&auto=format&fit=crop&w=934&q=80"
-        temoignage="Ça fait un moment que j'envisageais de devenir freelance, mais n'ayant aucune compétence en la matière je ne pensais pas m'en sortir. La partie administrative, la création ainsi que la manière de gérer l'entreprise au quotidien m'effrayaient.
-        HIWAY m'a permis de passer le cap en me concentrant uniquement sur ma future mission sans avoir à m'inquiéter du reste. Leur suivi est vraiment complet et ils sont toujours là pour répondre à toutes les questions qu'un nouveau freelance peut se poser. Je ne regrette vraiment pas et je les recommande !"
+        metier="Lead Dev PHP Symfony - ETNA 2015"
+        temoignage="Hiway m'a appris à devenir un vrai chef d'entreprise"
       />
       <Member
         name="Charly"
-        metier="Dev PHP chez un grand group Média"
-        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-0.3.5&s=10f2e97699b156850d17285683b6ce81&auto=format&fit=crop&w=2134&q=80"
-        temoignage="Avant de me lancer en freelance, j'étais hésitant et angoissé à l'idée de cette aventure !
-        Trop d'inconnu se dressait sur mon chemin !
-        HIWAY a su m'orienter dans le bon sens et m'enlever tous ce stresse,
-        ils m'ont accompagné depuis la prise de cette décision jusqu'à la maîtrise de tous les tenants et aboutissants de ce statut !
-        Je ne pense pas que je me serais lancé sans eux et, avec le recul je ne regrette absolument pas cette décision,
-        je les recommande même à tous ceux qui m'entourent aujourd'hui !"
+        metier="Dev PHP Symphony - EPITECH 2014"
+        temoignage="Je ne me serais jamais lancé sans eux. Aujourd'hui, je recommande Hiway à tous mes amis"
       />
       <Member
-        name="Alex"
-        metier="Lead Développeur Front-End Web chez un grand groupe média"
-        src="https://images.unsplash.com/photo-1508186225823-0963cf9ab0de?ixlib=rb-0.3.5&s=c8b924490710b66886b7ad9bb1f0bfa5&auto=format&fit=crop&w=934&q=80"
+        name="Alexandre"
+        metier=" Lead Dev Front - Gobelins 2014"
+        temoignage="Hiway m'a conseillé sur le meilleur statut et s'est chargé de toutes les démarches de création de ma société"
       />
       <Member
-        name="Me"
-        metier="Dev Mobile"
-        src="https://images.unsplash.com/photo-1500522144261-ea64433bbe27?ixlib=rb-0.3.5&s=3e7897b8446c9c938ba93eb82431bd13&auto=format&fit=crop&w=1951&q=80"
+        name="Kevin"
+        metier="Kevin - Dev React.js - ISTY 2012"
+        temoignage="Trop d'inconnu sur comment devenir freelance, Hiway m'a éclairé et accompagné sur le chemin de ma réussite"
       />
       <Member
-        name="Me"
-        metier="Dev Mobile"
-        src="https://images.unsplash.com/photo-1506089676908-3592f7389d4d?ixlib=rb-0.3.5&s=1a67353f6ca96d377ff7fe1571da4c88&auto=format&fit=crop&w=1951&q=80"
+        name="Souheil"
+        metier="Lead Dev Java - UPMC 2012"
+        temoignage="J'avais à la fois peur et envie de devenir Freelance. Hiway m'a permis de passer le cap"
+      />
+
+      <Member
+        name="Remi"
+        metier="Dev PHP - EPITECH 2013"
+        temoignage="Des ateliers de coaching clairs, de l'expertise, de la disponibilité/flexibilité et du suivi au top"
+      />
+
+      <Member
+        name="Antoine"
+        metier="Dev React.js - IUT Paris 2012"
+        temoignage="Leur suivi est vraiment complet et ils sont toujours là pour répondre à toutes les questions qu'un nouveau freelance peut se poser"
+      />
+
+      <Member
+        name="Matthieu"
+        metier="Dev React.js - ESIAL 2011"
+        temoignage="Un seul RDV avec Hiway, via une recommandation, m'a décidé à me lancer dans le freelancingp"
+      />
+
+      <Member
+        name="Raphael"
+        metier="Dev React.js - ETNA 2015"
+        temoignage="Hiway, m'a donné toutes les clés pour trouver rapidement ma première mission et ils m'ont également fourni le modèle du contrat"
+      />
+
+      <Member
+        name="Christopher"
+        metier="Lead Dev Mobile - EPITA 2012"
+        temoignage="Avec Hiway, je connais, mois après mois, le montant optimal de ma rémunération"
+      />
+      <Member
+        name="Hedi"
+        metier="Dev IOS - ESPRIT 2012"
+        temoignage="J'avais jamais entendu parlé d'optimisation financière, maintenant je l'applique au quotidien"
       />
     </Box>
   </Box>

@@ -104,8 +104,15 @@ button[type='submit'] {
 
 .CoachingFreelancing li {
   list-style: square inside url('../assets/Arrow.png');
+  padding-bottom: 6px;
 }
 
 .FreanLanceAsService li {
   list-style: square inside url('../assets/ArrowBlue.png');
+  padding-bottom: 6px;
+}
+
+.logo {
+  width: 700px;
+  max-width: 80%;
 }

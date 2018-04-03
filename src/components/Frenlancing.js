@@ -21,7 +21,7 @@ const Point = ({ title, src, text }) => (
   <Box width="200px" flexDirection="column" mx="30px">
     <Svg src={src} />
     <H3>{title}</H3>
-    <p>{text}</p>
+    <Text px={['8px']}>{text}</Text>
   </Box>
 )
 

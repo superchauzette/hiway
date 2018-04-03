@@ -78,7 +78,8 @@ const EngagementHiway = () => (
             <span>
               2 coachs <br />
               1 expert-comptable<br />
-              1 banquier
+              1 banquier<br />
+              1 assureur
             </span>
           )}
         />
@@ -119,7 +120,8 @@ const EngagementHiway = () => (
           title="Rejoins une communauté"
           text={() => (
             <span>
-              Réseau de développeurs freelances connectés et solidaires
+              Réseau de développeurs <br />freelances connectés <br />et
+              solidaires
             </span>
           )}
         />
