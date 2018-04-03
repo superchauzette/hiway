@@ -11,7 +11,7 @@ const Member = ({ name, metier, src, temoignage }) => (
     width={['100%', '300px', '300px']}
   >
     <Box justifyContent="space-around">
-      <img src={user} alt="" height="260px" />
+      <img src={user} alt="" height="150px" />
     </Box>
     <Box>
       <Text p="10px" width="100%" m="0">
