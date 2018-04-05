@@ -37,7 +37,7 @@ const Title = ({ bg, title, title2 = () => null, sousTitle }) => (
 
 const CoachingFreelancing = () => (
   <Box
-    width={['100%', '45%', '45%']}
+    width={['100%', '46%', '46%']}
     mb={['30px', 0, 0]}
     flexDirection="column"
     className="card CoachingFreelancing"
@@ -45,7 +45,7 @@ const CoachingFreelancing = () => (
     <Title
       bg="yellow"
       title="Coaching"
-      sousTitle="Apprendre & gérer"
+      sousTitle="Apprendre & Gérer"
       title2={() => (
         <Text color="white" textAlign="center" fontWeight="bold" p={'20px'}>
           Devient un chef d’entreprise autonome en apprenant pendant un an avec
@@ -90,7 +90,7 @@ const CoachingFreelancing = () => (
 
 const FreanLanceAsService = () => (
   <Box
-    width={['100%', '45%', '45%']}
+    width={['100%', '46%', '46%']}
     flexDirection="column"
     className="card FreanLanceAsService"
   >
@@ -112,10 +112,7 @@ const FreanLanceAsService = () => (
           DELEGATION TOTALE
         </Text>
         <ul>
-          <li>
-            Envoi de tes factures à tes clients, suivi des règlements et
-            relances
-          </li>
+          <li>Envoi de tes factures, suivi des règlements et relances</li>
           <li>
             Réception, traitement et classement de tous les documents de ton
             entreprise
@@ -124,9 +121,9 @@ const FreanLanceAsService = () => (
           <li> Calcul de ta rémunération optimisée et exécution du virement</li>
           <li>
             Gestion des relations avec l’administration, les partenaires, le
-            comptable et les clients
+            comptable
           </li>
-          <br />
+          <li style={{ opacity: 0 }} />
         </ul>
       </Box>
 

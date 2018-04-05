@@ -1,23 +1,39 @@
 import React from 'react'
 import { Box, Text } from '../components'
 import user from '../assets/user.png'
+import Alexandre from '../assets/Alexandre.jpeg'
+import Antoine from '../assets/Antoine.jpeg'
+import Charly from '../assets/Charly.jpeg'
+import Christopher from '../assets/Christopher.jpeg'
+import Hedi from '../assets/Hedi.jpeg'
+import Kevin from '../assets/Kevin.jpeg'
+import Matthieu from '../assets/Matthieu.jpeg'
+import Raphael from '../assets/Raphael.jpeg'
+import Rémi from '../assets/Rémi.jpeg'
+import Robin from '../assets/Robin.jpeg'
+import Souheil from '../assets/SOUHEIL.jpeg'
 
-const Member = ({ name, metier, src, temoignage }) => (
+const Member = ({ name, metier, formation, src, temoignage }) => (
   <Box
     position="relative"
     flexDirection="column"
     mb="20px"
     bg="white"
-    width={['100%', '300px', '300px']}
+    width={['100%', '300px', '320px']}
   >
     <Box justifyContent="space-around">
-      <img src={user} alt="" height="150px" />
+      <img src={src} alt={name} height="150px" />
     </Box>
     <Box>
-      <Text p="10px" width="100%" m="0">
-        {name} <br />
-        <span className="yellow">{metier}</span>
-      </Text>
+      <Box flexDirection="column" p="10px" width="100%" m="0">
+        <Text m={0}>{name}</Text>
+        <Text m={0} color="yellow">
+          {metier}
+        </Text>
+        <Text m={0} color="yellow">
+          {formation}
+        </Text>
+      </Box>
     </Box>
 
     <Text color="black" textAlign="center" pt="10px">
@@ -48,67 +64,91 @@ const Members = () => (
     >
       <Member
         name="Florent"
-        metier="Lead Dev Node.js - EFREI 2014"
+        src={user}
+        metier="Lead Dev Node.js"
+        formation="EFREI 2014"
         temoignage="Je suis devenu Freelance en toute sérénité grâce à Hiway"
       />
       <Member
         name="Robin"
-        metier="Lead Dev PHP Symfony - ETNA 2015"
+        src={Robin}
+        metier="Lead Dev PHP Symfony"
+        formation="ETNA 2015"
         temoignage="Hiway m'a appris à devenir un vrai chef d'entreprise"
       />
       <Member
         name="Charly"
-        metier="Dev PHP Symphony - EPITECH 2014"
+        src={Charly}
+        metier="Dev PHP Symphony"
+        formation="EPITECH 2014"
         temoignage="Je ne me serais jamais lancé sans eux. Aujourd'hui, je recommande Hiway à tous mes amis"
       />
       <Member
         name="Alexandre"
-        metier=" Lead Dev Front - Gobelins 2014"
+        src={Alexandre}
+        metier=" Lead Dev Front"
+        formation="Gobelins 2014"
         temoignage="Hiway m'a conseillé sur le meilleur statut et s'est chargé de toutes les démarches de création de ma société"
       />
       <Member
         name="Kevin"
-        metier="Kevin - Dev React.js - ISTY 2012"
+        src={Kevin}
+        metier="Kevin - Dev React.js"
+        formation="ISTY 2012"
         temoignage="Trop d'inconnu sur comment devenir freelance, Hiway m'a éclairé et accompagné sur le chemin de ma réussite"
       />
       <Member
         name="Souheil"
-        metier="Lead Dev Java - UPMC 2012"
+        src={Souheil}
+        metier="Lead Dev Java"
+        formation="UPMC 2012"
         temoignage="J'avais à la fois peur et envie de devenir Freelance. Hiway m'a permis de passer le cap"
       />
 
       <Member
         name="Remi"
-        metier="Dev PHP - EPITECH 2013"
+        src={Rémi}
+        metier="Dev PHP"
+        formation="EPITECH 2013"
         temoignage="Des ateliers de coaching clairs, de l'expertise, de la disponibilité/flexibilité et du suivi au top"
       />
 
       <Member
         name="Antoine"
-        metier="Dev React.js - IUT Paris 2012"
+        src={Antoine}
+        metier="Dev React.js"
+        formation="IUT Paris 2012"
         temoignage="Leur suivi est vraiment complet et ils sont toujours là pour répondre à toutes les questions qu'un nouveau freelance peut se poser"
       />
 
       <Member
         name="Matthieu"
-        metier="Dev React.js - ESIAL 2011"
+        src={Matthieu}
+        metier="Dev React.js"
+        formation="ESIAL 2011"
         temoignage="Un seul RDV avec Hiway, via une recommandation, m'a décidé à me lancer dans le freelancingp"
       />
 
       <Member
-        name="Raphael"
-        metier="Dev React.js - ETNA 2015"
+        name="Raphaël"
+        src={Raphael}
+        metier="Dev React.js"
+        formation="ETNA 2015"
         temoignage="Hiway, m'a donné toutes les clés pour trouver rapidement ma première mission et ils m'ont également fourni le modèle du contrat"
       />
 
       <Member
         name="Christopher"
-        metier="Lead Dev Mobile - EPITA 2012"
+        src={Christopher}
+        metier="Lead Dev Mobile"
+        formation="EEPITA 2012"
         temoignage="Avec Hiway, je connais, mois après mois, le montant optimal de ma rémunération"
       />
       <Member
         name="Hedi"
-        metier="Dev IOS - ESPRIT 2012"
+        src={Hedi}
+        metier="Dev IOS"
+        formation="ESPRIT 2012"
         temoignage="J'avais jamais entendu parlé d'optimisation financière, maintenant je l'applique au quotidien"
       />
     </Box>
