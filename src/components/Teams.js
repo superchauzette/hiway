@@ -9,7 +9,13 @@ import user from '../assets/user.png'
 
 const Team = ({ name, photo, children }) => (
   <Box flexDirection="column" p="10px" alignItems="center">
-    <img src={photo} className="picture" alt="" width="150px" height="150px" />
+    <img
+      src={photo}
+      className="picture"
+      alt={name}
+      width="150px"
+      height="150px"
+    />
     <Box mt="10px" flexDirection="column">
       <h3 className="yellow">{name}</h3>
       <Text width="200px">{children}</Text>

@@ -22,7 +22,7 @@ const Member = ({ name, metier, formation, src, temoignage }) => (
     width={['100%', '300px', '320px']}
   >
     <Box justifyContent="space-around">
-      <img src={src} alt={name} height="150px" />
+      <img src={src} alt={name} height="150px" className="picture" />
     </Box>
     <Box>
       <Box flexDirection="column" p="10px" width="100%" m="0">
