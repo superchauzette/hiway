@@ -12,6 +12,7 @@ import Raphael from '../assets/Raphael.jpeg'
 import Rémi from '../assets/Rémi.jpeg'
 import Robin from '../assets/Robin.jpeg'
 import Souheil from '../assets/SOUHEIL.jpeg'
+import ClementDev from '../assets/ClementDev.jpeg'
 
 const Member = ({ name, metier, formation, src, temoignage }) => (
   <Box
@@ -63,10 +64,10 @@ const Members = () => (
       flexWrap="wrap"
     >
       <Member
-        name="Florent"
-        src={user}
-        metier="Lead Dev Node.js"
-        formation="EFREI 2014"
+        name="Clément"
+        src={ClementDev}
+        metier="Dev IOS"
+        formation="ESGI 2015"
         temoignage="Je suis devenu Freelance en toute sérénité grâce à Hiway"
       />
       <Member

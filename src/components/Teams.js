@@ -44,15 +44,15 @@ const Teams = () => (
       textAlign="center"
     >
       <Team name="Vincenzo" photo={vince}>
-        Coach gestion <br />et financier
+        Coach administratif <br />et financier
       </Team>
       <Team name="Alexandre" photo={alex}>
-        Coach administratif <br />et business
+        Coach gestion <br />et business
       </Team>
       <Team name="Maxime" photo={maxime}>
         Conseiller professionnel et patrimonial <br />Crédit du Nord
       </Team>
-      <Team name="Clémemt" photo={clement}>
+      <Team name="Clément" photo={clement}>
         Agent assureur <br /> Axa
       </Team>
       <Team name="Fredédric" photo={user}>

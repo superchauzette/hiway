@@ -28,7 +28,7 @@ const Title = ({ bg, title, title2 = () => null, sousTitle }) => (
       pb="0px"
       width="100%"
     >
-      <h2 style={{ color: 'white' }}>{title}</h2>
+      <h2 style={{ color: 'white', textTransform: 'uppercase' }}>{title}</h2>
       <h3 style={{ color: 'white' }}>{sousTitle}</h3>
       {title2()}
     </Box>
