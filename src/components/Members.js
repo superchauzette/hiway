@@ -11,7 +11,7 @@ import Matthieu from '../assets/Matthieu.jpeg'
 import Raphael from '../assets/Raphael.jpeg'
 import Rémi from '../assets/Rémi.jpeg'
 import Robin from '../assets/Robin.jpeg'
-import Souheil from '../assets/SOUHEIL.jpeg'
+import Souheil from '../assets/Souheil.png'
 import ClementDev from '../assets/ClementDev.jpeg'
 
 const Member = ({ name, metier, formation, src, temoignage }) => (
@@ -68,7 +68,7 @@ const Members = () => (
         src={ClementDev}
         metier="Dev IOS"
         formation="ESGI 2015"
-        temoignage="Je suis devenu Freelance en toute sérénité grâce à Hiway"
+        temoignage="J'étais pas rassuré mais j'avais envie de devenir Freelance. Hiway m'a permis de passer le cap"
       />
       <Member
         name="Robin"
@@ -103,7 +103,7 @@ const Members = () => (
         src={Souheil}
         metier="Lead Dev Java"
         formation="UPMC 2012"
-        temoignage="J'avais à la fois peur et envie de devenir Freelance. Hiway m'a permis de passer le cap"
+        temoignage="Je suis devenu Freelance en toute sérénité grâce à Hiway"
       />
 
       <Member
