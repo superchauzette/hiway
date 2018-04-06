@@ -11,7 +11,7 @@ import Matthieu from '../assets/Matthieu.jpeg'
 import Raphael from '../assets/Raphael.jpeg'
 import Rémi from '../assets/Rémi.jpeg'
 import Robin from '../assets/Robin.jpeg'
-import Souheil from '../assets/Souheil.png'
+import Souheil from '../assets/souheil.png'
 import ClementDev from '../assets/ClementDev.jpeg'
 
 const Member = ({ name, metier, formation, src, temoignage }) => (
