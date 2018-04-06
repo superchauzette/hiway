@@ -62,6 +62,7 @@ const Members = () => (
       justifyContent="space-around"
       mt="40px"
       flexWrap="wrap"
+      style={{ maxWidth: '1400px' }}
     >
       <Member
         name="Clément"
