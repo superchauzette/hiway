@@ -12,7 +12,7 @@ import Raphael from '../assets/Raphael.jpeg'
 import Rémi from '../assets/Rémi.jpeg'
 import Robin from '../assets/Robin.jpeg'
 import Souheil from '../assets/souheil.png'
-import ClementDev from '../assets/ClementDev.jpeg'
+import Ghislain from '../assets/Ghislain.jpeg'
 
 const Member = ({ name, metier, formation, src, temoignage }) => (
   <Box
@@ -65,8 +65,8 @@ const Members = () => (
       style={{ maxWidth: '1400px' }}
     >
       <Member
-        name="Clément"
-        src={ClementDev}
+        name="Ghislain"
+        src={Ghislain}
         metier="Dev IOS"
         formation="ESGI 2015"
         temoignage="J'étais pas rassuré mais j'avais envie de devenir Freelance. Hiway m'a permis de passer le cap"
@@ -128,7 +128,7 @@ const Members = () => (
         src={Matthieu}
         metier="Dev React.js"
         formation="ESIAL 2011"
-        temoignage="Un seul RDV avec Hiway, via une recommandation, m'a décidé à me lancer dans le freelancingp"
+        temoignage="Un seul RDV avec Hiway, via une recommandation, m'a décidé à me lancer dans le freelancing"
       />
 
       <Member
