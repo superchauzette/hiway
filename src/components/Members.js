@@ -67,8 +67,8 @@ const Members = () => (
       <Member
         name="Ghislain"
         src={Ghislain}
-        metier="Dev IOS"
-        formation="ESGI 2015"
+        metier="Dev Node.js / GO"
+        formation="EPITECH 2015 "
         temoignage="J'étais pas rassuré mais j'avais envie de devenir Freelance. Hiway m'a permis de passer le cap"
       />
       <Member
