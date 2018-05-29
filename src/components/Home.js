@@ -9,8 +9,6 @@ const Home = () => (
   <Box
     height="100vh"
     width="100%"
-    py="50px"
-    px="30px"
     color="rgb(254, 209, 54)"
     flexDirection="column"
     justifyContent="center"
@@ -18,15 +16,17 @@ const Home = () => (
     textAlign="center"
     position="relative"
   >
-    <div style={{ marginTop: '-40px' }}>
-      <img src={logoJaune} className="logo" />
-    </div>
-    <h1 style={{ color: 'white', marginTop: '240px', fontWeight: 700 }}>
-      Freelancing is cool
-    </h1>
-    <h2 style={{ color: 'white', fontSize: '2rem' }}>
-      Solutions pour devenir freelance
-    </h2>
+   <Box flexDirection="column">
+      <div>
+        <img src={logoJaune} className="logo" />
+      </div>
+      <h1 style={{ color: 'white', marginTop: '240px', fontWeight: 700 }}>
+        Freelancing is cool
+      </h1>
+      <h2 style={{ color: 'white', fontSize: '2rem' }}>
+        Solutions pour devenir freelance
+      </h2>
+    </Box>
   </Box>
 )
 
