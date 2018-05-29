@@ -3,7 +3,7 @@ import { Box, Text, Contact } from './index'
 import bgheader from '../assets/road.jpg'
 import logo from '../assets/hiway.png'
 import logoJaune from '../assets/LOGO-HIWAY-2018-Y.png'
-import logoGris from '../assets/LOGO_HIWAY_GRIS.png'
+// import logoGris from '../assets/LOGO-HIWAY-2018-G.png'
 
 const Home = () => (
   <Box
