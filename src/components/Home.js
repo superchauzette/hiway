@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, Text, Contact } from './index'
 import bgheader from '../assets/road.jpg'
 import logo from '../assets/hiway.png'
-import logoJaune from '../assets/LOGO_HIWAY_JAUNE.png'
+import logoJaune from '../assets/LOGO-HIWAY-2018-Y.png'
 import logoGris from '../assets/LOGO_HIWAY_GRIS.png'
 
 const Home = () => (
@@ -14,7 +14,7 @@ const Home = () => (
     color="rgb(254, 209, 54)"
     flexDirection="column"
     justifyContent="center"
-    backgroundImage={bgheader}
+    backgroundImage='http://res.cloudinary.com/kevin-even-io/image/upload/ar_4:3,c_fill/c_scale,w_auto,dpr_auto/road.png'
     textAlign="center"
     position="relative"
   >
