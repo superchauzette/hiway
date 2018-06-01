@@ -9,11 +9,13 @@ import {
   Teams,
   Contact,
   Way,
+  Video
 } from '../components'
 
 const IndexPage = () => (
   <Box flexDirection="column">
     <Home />
+    <Video />
     <Frenlancing />
     <Teams />
     <EngagementHiway />
