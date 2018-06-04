@@ -1,3 +1,5 @@
+import { Component } from 'react';
+
 export { default as Box } from './Box'
 export { default as Text } from './Text'
 export { default as Home } from './Home'
@@ -9,3 +11,5 @@ export { default as Contact } from './Contact'
 export { default as Way } from './Way'
 export { default as withIntersectionObserver } from './WithIntersectionObserver'
 export { default as Video } from './Video'
+export { default as Formation } from './Formation'
+export { default as ModesGestion } from './ModesGestion'

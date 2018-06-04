@@ -53,8 +53,15 @@ const Members = () => (
   >
     <h1>Ils ont bien fait</h1>
     <h2 className="yellow">
-      100% des développeurs devenus freelance avec Hiway ont recommandé un ami
+      La Notre communauté est composée de 40 freelances, lead dev & développeurs web,
+      mobile, chefs de projets, Scrum Master, DevOps.
     </h2>
+    <Box px={150}>
+      <h3 className="gray">
+        Ensemble, nous avons créé CLUSTER, la 1ère communauté collaborative et solidaire de
+        développeurs et experts de la Tech freelances :  <a href="www. cluster-freelance.io">www. cluster-freelance.io</a>
+      </h3>
+    </Box >
     <Box
       flexDirection="flex"
       textAlign="center"
@@ -154,7 +161,7 @@ const Members = () => (
         temoignage="J'avais jamais entendu parlé d'optimisation financière, maintenant je l'applique au quotidien"
       />
     </Box>
-  </Box>
+  </Box >
 )
 
 export default Members

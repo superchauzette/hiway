@@ -8,7 +8,7 @@ class Video extends React.Component {
     return (
       <Box
         flexDirection="column"
-        bg="gray"
+        bg="white"
         width="100%"
         justifyContent="center"
         alignItems="center"
@@ -19,7 +19,7 @@ class Video extends React.Component {
           Les atouts du Freelancing et l'accompagnement Hiway pour se lancer et réussir dans le Freelancing
         </h2>
       </Box>
-      <Box justifyContent="center" w={['100%', '640', 1000]} h={[200, '390', '390px']} style={{ overflow: 'auto' }}>
+      <Box justifyContent="center" width={['100%', '640', 1000]} height={[200, '390', '390px']}>
         <YouTube
           videoId="JNaFs7svUbI"
           onReady={this._onReady}
