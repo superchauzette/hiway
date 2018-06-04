@@ -52,7 +52,7 @@ const Members = () => (
   >
     <h1>Ils ont bien fait</h1>
     <h2 className="yellow">
-      La Notre communauté est composée de 40 freelances, lead dev & développeurs web,
+      Notre communauté est composée de 40 freelances, lead dev & développeurs web,
       mobile, chefs de projets, Scrum Master, DevOps.
     </h2>
     <Box px={150}>

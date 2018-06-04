@@ -28,10 +28,10 @@ const IndexPage = () => (
     <Formation />
 
     <Box width="100%" py="40px" flexWrap="wrap">
-      <Box width={["100%", "50%"]}>
+      <Box width={["100%", "50%"]} >
         <Tools />
       </Box>
-      <Box width={["100%", "50%"]}>
+      <Box width={["100%", "50%"]} >
         <Support />
       </Box>
     </Box>

@@ -16,7 +16,7 @@ const Tool = ({ src, children }) => (
 )
 
 const Tools = () => (
-  <Box bg="white" width="100%" alignItems="center" flexDirection="column">
+  <Box  width="100%" alignItems="center" flexDirection="column">
     <h2 style={{ textAlign: 'center' }}> Des outils et une méthodologie <br /> pour gérer efficacement </h2>
     <Box flexDirection="column" width="100%" >
       <Box justifyContent="space-around" width="100%">

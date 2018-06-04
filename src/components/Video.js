@@ -14,23 +14,23 @@ class Video extends React.Component {
         alignItems="center"
         py={40}
       >
-      <Box w={['100%', '60%', '60%']} textAlign="center">
-        <h2 className="yellow">
-          Les atouts du Freelancing et l'accompagnement Hiway pour se lancer et réussir dans le Freelancing
+        <Box w={['100%', '60%', '60%']} textAlign="center">
+          <h2 className="yellow">
+            Les atouts du Freelancing et l'accompagnement Hiway pour se lancer et réussir dans le Freelancing
         </h2>
-      </Box>
-      <Box justifyContent="center" width={['100%', '640', 1000]} height={[200, '390', '390px']}>
-        <YouTube
-          videoId="JNaFs7svUbI"
-          onReady={this._onReady}
-          opts={{
-
-            playerVars: {
-              autoplay: 1
-            }
-          }}
-        />
-      </Box>
+        </Box>
+        <Box justifyContent="center">
+          <YouTube
+            className="youtube-video"
+            videoId="JNaFs7svUbI"
+            onReady={this._onReady}
+            opts={{
+              playerVars: {
+                autoplay: 1
+              }
+            }}
+          />
+        </Box>
       </Box >
     )
   }

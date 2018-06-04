@@ -19,7 +19,7 @@ const Item = ({ src, subtitle, tab, styleImg }) => (
 )
 
 const Support = () => (
-  <Box bg="white" width="100%" alignItems="center" flexDirection="column">
+  <Box  width="100%" alignItems="center" flexDirection="column">
     <h2 style={{ textAlign: 'center', marginBottom: '60px' }}> Un support permanent  </h2>
 
     <Box flexDirection="column" width="100%" >
