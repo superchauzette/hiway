@@ -38,7 +38,7 @@ const Partenaires = () => (
         <Partenaire
           src={Axa}
           subtitle="Assurance & Protection sociale"
-          styleImg={{ width: '90px', height: '90px', mt: '30px', mb: '20px' }}
+          styleImg={{ width: '90px', height: '90px', mt: '30px' }}
           tab={[
             'Mise en place de la protection sociale',
             '(Mutuelle, Prévoyance, Retraite)',
