@@ -11,22 +11,38 @@ import {
   Way,
   Video,
   Formation,
-  ModesGestion
+  ModesGestion,
+  Tools,
+  Support,
+  Partenaires
 } from '../components'
 
 const IndexPage = () => (
   <Box flexDirection="column">
     <Home />
     <Video />
-    <Formation />
-    <ModesGestion />
     <Frenlancing />
     <Teams />
     <EngagementHiway />
-    <Way />
+    {/* <Way /> */}
+    <Formation />
+
+    <Box width="100%" py="40px" flexWrap="wrap">
+      <Box width={["100%", "50%"]}>
+        <Tools />
+      </Box>
+      <Box width={["100%", "50%"]}>
+        <Support />
+      </Box>
+    </Box>
+    <Box width="100%">
+      <Partenaires />
+    </Box>
+    <ModesGestion />
+
     <Members />
     <Contact />
-  </Box>
+  </Box >
 )
 
 export default IndexPage

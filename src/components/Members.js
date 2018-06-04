@@ -19,7 +19,6 @@ const Member = ({ name, metier, formation, src, temoignage }) => (
     position="relative"
     flexDirection="column"
     mb="20px"
-    bg="white"
     width={['100%', '300px', '320px']}
   >
     <Box justifyContent="space-around">
@@ -59,7 +58,7 @@ const Members = () => (
     <Box px={150}>
       <h3 className="gray">
         Ensemble, nous avons créé CLUSTER, la 1ère communauté collaborative et solidaire de
-        développeurs et experts de la Tech freelances :  <a href="www. cluster-freelance.io">www. cluster-freelance.io</a>
+        développeurs et experts de la Tech freelances :  <a className="yellow" href="www. cluster-freelance.io">www. cluster-freelance.io</a>
       </h3>
     </Box >
     <Box
