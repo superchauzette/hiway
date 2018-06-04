@@ -10,7 +10,7 @@ const Formation = () => (
 
     <Box justifyContent="space-around" width="100%" flexWrap="wrap">
 
-      <Box flexDirection="column" width="550px">
+      <Box flexDirection="column" width={["100%", "50%", "50%"]} style={{ borderRight: '0.5px solid #2724241f' }}>
         <Box justifyContent="center" mb="20px">
           <Box width="100px" >
             <img src={coffee} width="100%" height="100%" />
@@ -29,14 +29,14 @@ const Formation = () => (
         </Box>
       </Box>
 
-      <Box flexDirection="column" width="550px">
+      <Box flexDirection="column" width={["100%", "50%", "50%"]} alignItems="center">
         <Box justifyContent="center" mb="20px">
           <Box width="100px" >
             <img src={rocket} width="100%" height="100%" />
           </Box>
         </Box>
         <h2 style={{ textAlign: 'center' }} className="yellow">Parcours</h2>
-        <Box justifyContent="center">
+        <Box justifyContent="center" width="75%">
           <ul className="FreanLanceAsService">
             <li >Se lancer, choisir le statut le plus pertinent et créer sa société</li>
             <li >Mettre en place une protection sociale sur mesure</li>

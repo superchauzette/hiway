@@ -4,7 +4,7 @@ import { Box, Text } from '../components'
 const Row = ({ text1, text2, text3 }) => (
   <Box flexDirection="column" width="100%" height={["50px", "45px", "45px"]}>
     <Box>
-      <Text width={["51%", "50%", "50%"]} pl={["5px", 0, "80px"]}>{text1}</Text>
+      <Text width={["51%", "50%", "50%"]} pl={["5px", 0, "80px"]} color="lavender">{text1}</Text>
       <Text width={["24%", "25%", "25%"]}>{text2}</Text>
       <Text width="25%">{text3}</Text>
     </Box>
@@ -12,7 +12,7 @@ const Row = ({ text1, text2, text3 }) => (
 )
 
 const ModesGestion = () => (
-  <Box bg="white" width="100%" py={40} alignItems="center" flexDirection="column">
+  <Box bg="silver" width="100%" py={40} alignItems="center" flexDirection="column">
 
     <h1 style={{ textAlign: 'center' }}> Choisis entre 2 modes de gestion </h1>
 
@@ -22,8 +22,9 @@ const ModesGestion = () => (
       <Box flexDirection="column" alignItems="flex-end" mr={40} textAlign="center">
         <Box flexDirection="column" width="60%">
           <Box>
-            <Text width="44%" fontWeight="900">Gestion déléguée à Hiway</Text>
-            <Text width="50%" fontWeight="900"> Gestion déléguée à Hiway</Text>
+            <Text width="44%" fontWeight="900" color="yellow" fontSize="1.2rem"
+            >Gestion déléguée à Hiway</Text>
+            <Text width="50%" fontWeight="900" color="yellow" fontSize="1.2rem"> Gestion déléguée à Hiway</Text>
           </Box>
         </Box>
 
