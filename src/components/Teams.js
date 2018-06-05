@@ -5,11 +5,12 @@ import vince from '../assets/vince.jpg'
 import alex from '../assets/alex.jpg'
 import maxime from '../assets/maxime.png'
 import clement from '../assets/clement.jpg'
-import user from '../assets/user.png'
+import experts_comptables from '../assets/experts_comptables.jpg'
 
-const Team = ({ name, photo, children }) => (
+const Team = ({ name, photo, styleImg, children }) => (
   <Box flexDirection="column" p="10px" alignItems="center">
     <img
+      {...styleImg}
       src={photo}
       className="picture"
       alt={name}
@@ -31,7 +32,7 @@ const Teams = () => (
     alignItems="center"
     textAlign="center"
   >
-    <h1>Les gardiens de ta réussite</h1>
+    <h1>Une équipe à ton service</h1>
     <h2 className="yellow">
       Des spécialistes convaincus que le freelancing est le meilleur statut
     </h2>
@@ -55,7 +56,7 @@ const Teams = () => (
       <Team name="Clément" photo={clement}>
         Agent assureur <br /> Axa
       </Team>
-      <Team name="Fredédric" photo={user}>
+      <Team name="Fredédric" photo={experts_comptables}>
         Expert-comptable
       </Team>
     </Box>

@@ -56,7 +56,7 @@ const EngagementHiway = () => (
     {/* <Road top={560} /> */}
     <Line top={600} />
 
-    <h1 style={{ color: 'white' }}>L’engagement d’Hiway</h1>
+    <h1 style={{ color: 'white' }}>L’engagement d’hiway</h1>
     <h2 className="yellow">
       Hiway t’accompagne pour devenir freelance et garantit ta réussite
     </h2>

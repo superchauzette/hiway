@@ -7,7 +7,7 @@ import speaker from '../assets/speaker.png'
 
 const Item = ({ src, subtitle, tab, styleImg }) => (
   <Box flexDirection="column" alignItems="center" width="250px">
-    <Box width="120px" {...styleImg}>
+    <Box width="250px" {...styleImg}>
       <img src={src} width="100%" height="100%" />
     </Box>
     <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{subtitle}</p>
@@ -20,11 +20,11 @@ const Item = ({ src, subtitle, tab, styleImg }) => (
 
 const Support = () => (
   <Box  width="100%" alignItems="center" flexDirection="column">
-    <h2 style={{ textAlign: 'center', marginBottom: '60px' }}> Un support permanent  </h2>
+
 
     <Box flexDirection="column" width="100%" >
       <Box justifyContent="space-between" width="100%">
-        <Item
+        {/* <Item
           src={pointInterogation}
           subtitle="Support 360°"
           tab={[
@@ -34,9 +34,9 @@ const Support = () => (
             'Vie de Freelance',
             'Traitement des imprévus'
           ]}
-        />
+        /> */}
 
-        <Item
+        {/* <Item
           src={conversation}
           styleImg={{ width: '110px', height: '80px' }}
           subtitle="24/24 – 7/7"
@@ -47,13 +47,12 @@ const Support = () => (
             'Mail',
             'Slack'
           ]}
-        />
+        /> */}
 
         <Item
           src={speaker}
-          subtitle="Le bon interlocuteur"
+          subtitle="24/24 – 7/7"
           tab={[
-            '',
             '',
             'Tes coachs',
             'Tes partenaires',

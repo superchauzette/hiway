@@ -14,9 +14,9 @@ class Video extends React.Component {
         alignItems="center"
         py={40}
       >
-        <Box w={['100%', '60%', '60%']} textAlign="center">
+        <Box w={['100%', '60%', '60%']} justifyContent="center" width="100%">
           <h2 className="yellow">
-            Les atouts du Freelancing et l'accompagnement Hiway pour se lancer et réussir dans le Freelancing
+            1'30 pour tout savoir
         </h2>
         </Box>
         <Box justifyContent="center">

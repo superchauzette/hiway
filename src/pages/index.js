@@ -22,24 +22,25 @@ const IndexPage = () => (
     <Home />
     <Video />
     <Frenlancing />
-    <Teams />
+
     <EngagementHiway />
     {/* <Way /> */}
     <Formation />
 
+    <h1 style={{ textAlign: 'center', marginTop: '20px', }}> Des outils et un support permanent <br />pour gérer sereinement </h1>
+
     <Box width="100%" py="40px" flexWrap="wrap">
-      <Box width={["100%", "50%"]} style={{ borderRight: '0.5px solid #2724241f' }}>
-        <Tools />
-      </Box>
-      <Box width={["100%", "50%"]} >
-        <Support />
-      </Box>
+
+
+      <Tools />
+
+
     </Box>
     <Box width="100%">
       <Partenaires />
     </Box>
     <ModesGestion />
-
+    {/* <Teams /> */}
     <Members />
     <Contact />
   </Box >
