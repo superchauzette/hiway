@@ -3,7 +3,7 @@ import { Box, Text, Contact } from './index'
 import bgheader from '../assets/road.jpg'
 import logo from '../assets/hiway.png'
 import logoJaune from '../assets/LOGO-HIWAY-2018-Y.png'
-import Linkedin from '../assets/Linkedin.svg'
+import Linkedin from '../assets/linkedin.svg'
 import Twitter from '../assets/twitter.svg'
 
 const Home = () => (
