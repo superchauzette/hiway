@@ -15,9 +15,21 @@ const Home = () => (
     justifyContent="center"
     backgroundImage='http://res.cloudinary.com/kevin-even-io/image/upload/ar_4:3,c_fill/c_scale,w_auto,dpr_auto/road.png'
     textAlign="center"
-    position="relative"
   >
-    <Box flexDirection="column" width="100%">
+    <Box flexDirection="column" width="100%" alignItems="center">
+
+      <div>
+        <img src={logoJaune} className="title" width="700px" />
+      </div>
+
+      <h1 style={{ color: 'white', marginTop: '240px', fontWeight: 700 }} className="secondTitle">
+        Freelancing is cool
+      </h1>
+
+      <h2 style={{ color: 'white', fontSize: '2rem' }} className="thirdTitle">
+        Solutions pour devenir freelance
+      </h2>
+
       <Box position="absolute" className="social-container slideUp">
         <Box flexDirection="column">
           <Text mb="5px" color="white">suivez-nous</Text>
@@ -34,15 +46,6 @@ const Home = () => (
         </Box>
       </Box>
 
-      <div>
-        <img src={logoJaune} className="title logo" />
-      </div>
-      <h1 style={{ color: 'white', marginTop: '240px', fontWeight: 700 }} className="secondTitle">
-        Freelancing is cool
-      </h1>
-      <h2 style={{ color: 'white', fontSize: '2rem' }} className="thirdTitle">
-        Solutions pour devenir freelance
-      </h2>
     </Box>
   </Box>
 )
