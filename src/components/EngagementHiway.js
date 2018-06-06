@@ -45,7 +45,7 @@ const Road = ({ top }) => (
 
 const EngagementHiway = () => (
   <Box
-    backgroundImage='http://res.cloudinary.com/kevin-even-io/image/upload/ar_4:3,c_fill/c_scale,w_auto,dpr_auto/freelance.jpg'
+    backgroundImage="http://res.cloudinary.com/kevin-even-io/image/upload/ar_4:3,c_fill/c_scale,w_auto,dpr_auto/freelance.jpg"
     style={{
       backgroundAttachment: 'fixed',
       backgroundPosition: 'center',

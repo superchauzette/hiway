@@ -1,6 +1,5 @@
 import React from 'react'
 import { Box, Text } from '../components'
-import bgheader from '../assets/bg-header.jpg'
 import vince from '../assets/vince.jpg'
 import alex from '../assets/alex.jpg'
 import maxime from '../assets/maxime.png'

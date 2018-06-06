@@ -1,7 +1,5 @@
 import React from 'react'
 import { Box } from '../components'
-import pointInterogation from '../assets/point-interogation.png'
-import conversation from '../assets/conversation.png'
 import speaker from '../assets/speaker.png'
 
 
@@ -15,40 +13,12 @@ const Item = ({ src, subtitle, tab, styleImg }) => (
       {tab.map(i => <li>{i}</li>)}
     </ul>
   </Box>
-
 )
 
 const Support = () => (
-  <Box  width="100%" alignItems="center" flexDirection="column">
-
-
+  <Box width="100%" alignItems="center" flexDirection="column">
     <Box flexDirection="column" width="100%" >
       <Box justifyContent="space-between" width="100%">
-        {/* <Item
-          src={pointInterogation}
-          subtitle="Support 360°"
-          tab={[
-            'Gestion',
-            'Business',
-            'Perspectives',
-            'Vie de Freelance',
-            'Traitement des imprévus'
-          ]}
-        /> */}
-
-        {/* <Item
-          src={conversation}
-          styleImg={{ width: '110px', height: '80px' }}
-          subtitle="24/24 – 7/7"
-          tab={[
-            'Rdv',
-            'Call',
-            'SmS',
-            'Mail',
-            'Slack'
-          ]}
-        /> */}
-
         <Item
           src={speaker}
           subtitle="24/24 – 7/7"
@@ -59,10 +29,7 @@ const Support = () => (
             'La Communauté'
           ]}
         />
-
-
       </Box>
-
     </Box>
   </Box>
 )

@@ -1,6 +1,5 @@
 import React from 'react'
 import { Box, Text } from '../components'
-import user from '../assets/user.png'
 import Alexandre from '../assets/Alexandre.jpeg'
 import Antoine from '../assets/Antoine.jpeg'
 import Charly from '../assets/Charly.jpeg'
