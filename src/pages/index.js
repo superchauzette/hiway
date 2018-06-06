@@ -14,7 +14,7 @@ import {
 } from '../components'
 
 const IndexPage = () => (
-  <Box flexDirection="column">
+  <Box flexDirection="column" width="100%">
     <Home />
     <Video />
     <Frenlancing />
