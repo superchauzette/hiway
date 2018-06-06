@@ -18,13 +18,13 @@ const Formation = () => (
         </Box>
         <h2 style={{ textAlign: 'center' }} className="yellow">Format</h2>
         <Box justifyContent="center">
-          <ul className="FreanLanceAsService">
-            <li > Un parcours d’apprentissage en 13 ateliers </li>
-            <li >100% individualisé</li>
-            <li >100% en présentiel</li>
-            <li >Des rdv où tu veux</li>
-            <li >Un agenda adapté à tes disponibilités</li>
-            <li >Dans des cadres de travail agréables</li>
+          <ul className="square">
+            <li> Un parcours d’apprentissage en 13 ateliers </li>
+            <li>100% individualisé</li>
+            <li>100% en présentiel</li>
+            <li>Des rdv où tu veux</li>
+            <li>Un agenda adapté à tes disponibilités</li>
+            <li>Dans des cadres de travail agréables</li>
           </ul>
         </Box>
       </Box>
@@ -37,14 +37,14 @@ const Formation = () => (
         </Box>
         <h2 style={{ textAlign: 'center' }} className="yellow">Parcours</h2>
         <Box justifyContent="center" width="75%">
-          <ul className="FreanLanceAsService">
-            <li >Se lancer, choisir le statut le plus pertinent et créer sa société</li>
-            <li >Mettre en place une protection sociale sur mesure</li>
-            <li >Trouver sa mission rapidement et contractualiser dans les meilleures conditions</li>
-            <li >Gérer son entreprise efficacement et sans erreur</li>
-            <li >Optimiser sa fiscalité et maximiser sa rémunération</li>
-            <li >Faire son bilan comptable</li>
-            <li >Préparer l’avenir et construire son patrimoine</li>
+          <ul className="square">
+            <li>Se lancer, choisir le statut le plus pertinent et créer sa société</li>
+            <li>Mettre en place une protection sociale sur mesure</li>
+            <li>Trouver sa mission rapidement et contractualiser dans les meilleures conditions</li>
+            <li>Gérer son entreprise efficacement et sans erreur</li>
+            <li>Optimiser sa fiscalité et maximiser sa rémunération</li>
+            <li>Faire son bilan comptable</li>
+            <li>Préparer l’avenir et construire son patrimoine</li>
           </ul>
         </Box>
       </Box>

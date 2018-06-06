@@ -52,13 +52,11 @@ const Members = () => (
   >
     <h1>Ils ont bien fait</h1>
     <h2 className="yellow">
-      Notre communauté est composée de 40 freelances, lead dev & développeurs web,
-      mobile, chefs de projets, Scrum Master, DevOps.
+      Une communauté de 40 freelances
     </h2>
     <Box px={150}>
       <h3 className="gray">
-        Ensemble, nous avons créé CLUSTER, la 1ère communauté collaborative et solidaire de
-        développeurs et experts de la Tech freelances :  <a className="yellow" href="www. cluster-freelance.io">www. cluster-freelance.io</a>
+      Ensemble, nous avons créé CLUSTER, la 1ère communauté collaborative et solidaire de développeurs et experts de la Tech freelances : <a className="yellow" href="www. cluster-freelance.io">www. cluster-freelance.io</a>
       </h3>
     </Box >
     <Box

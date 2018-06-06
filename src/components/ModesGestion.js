@@ -48,10 +48,10 @@ const ModesGestion = () => (
         <Box flexDirection="column" width={["100%", "100%", "60%"]} mr={["0px", "50px", "50px"]}>
           <Box>
             <Text px={[0, "20px", "20px"]}>
-              Deviens un chef d’entreprise libéré en confiant la totalité de la gestion de ta société à Hiway
+              Fais ton CRA et Hiway s’occupe de tout le reste. <br />Tous les mois, tu reçois des dashboards de ta situation avec le montant de ta rémunération optimisée
             </Text>
             <Text px={[0, "20px", "20px"]}>
-              Deviens un chef d’entreprise autonome en apprenant à gérer avec des coachs à tes côtés
+              Gère ton entreprise en autonomie avec le coaching et le support permanent d’Hiway
             </Text>
           </Box>
         </Box>

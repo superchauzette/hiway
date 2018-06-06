@@ -45,17 +45,18 @@ const Road = ({ top }) => (
 
 const EngagementHiway = () => (
   <Box
-    bg="grey"
+    backgroundImage='http://res.cloudinary.com/kevin-even-io/image/upload/ar_4:3,c_fill/c_scale,w_auto,dpr_auto/freelance.jpg'
+    style={{
+      backgroundAttachment: 'fixed',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover'
+    }}
     p="30px"
     flexDirection="column"
     alignItems="center"
     textAlign="center"
   >
-    {/* <Road top={278} /> */}
-    <Line top={315} />
-    {/* <Road top={560} /> */}
-    <Line top={600} />
-
     <h1 style={{ color: 'white' }}>L’engagement d’hiway</h1>
     <h2 className="yellow">
       Hiway t’accompagne pour devenir freelance et garantit ta réussite
