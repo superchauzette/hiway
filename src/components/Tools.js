@@ -27,7 +27,7 @@ const Item = ({ src, children, styleImg }) => (
 const Tools = () => (
   <Box width="100%" alignItems="center" py="40px" flexDirection="column" bg="white">
 
-    <h1 style={{ textAlign: 'center', marginTop: '20px', }}>
+    <h1 style={{ textAlign: 'center' }}>
       Des outils et un support permanent <br />pour gérer sereinement
     </h1>
 
