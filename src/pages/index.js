@@ -1,19 +1,14 @@
 import React from 'react'
 import {
-  Box,
-  Text,
   Home,
   Frenlancing,
   EngagementHiway,
   Members,
-  Teams,
   Contact,
-  Way,
   Video,
   Formation,
   ModesGestion,
   Tools,
-  Support,
   Partenaires
 } from '../components'
 
