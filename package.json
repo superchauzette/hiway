@@ -6,7 +6,7 @@
   "dependencies": {
     "@researchgate/react-intersection-observer": "^0.6.0",
     "cloudinary-react": "^1.0.6",
-    "gatsby": "^1.9.238",
+    "gatsby": "^1.9.270",
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-google-analytics": "^1.0.31",
     "gatsby-plugin-manifest": "^1.0.15",
