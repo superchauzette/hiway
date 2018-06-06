@@ -39,7 +39,7 @@ const Team = ({ name, photo, children }) => (
 const Partenaires = () => (
   <Box bg="gray" width="100%" py="40px" alignItems="center" flexDirection="column">
     <h1 style={{ textAlign: 'center' }}>Une équipe à ton service</h1>
-    <h2 className="yellow">
+    <h2 className="yellow" style={{ textAlign: 'center' }}>
       Des spécialistes convaincus que le freelancing est le meilleur statut
     </h2>
 
@@ -53,7 +53,7 @@ const Partenaires = () => (
     </Box>
 
     <Box flexDirection="column" width="100%" >
-      <Box justifyContent="space-around" width="100%">
+      <Box justifyContent="space-around" width="100%" flexWrap="wrap">
         <Partenaire
           src={Banque}
           subtitle="Banque"

@@ -32,7 +32,7 @@ const Tools = () => (
     </h1>
 
     <Box flexDirection="column" width="100%" >
-      <Box justifyContent="space-around" width="100%">
+      <Box justifyContent="space-around" width="100%" flexWrap="wrap">
         <Tool src={nuage}>
           <p style={{ textAlign: 'center' }}>Application web de gestion<br /> et de comptabilité  </p>
         </Tool>

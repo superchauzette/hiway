@@ -9,16 +9,16 @@ const TextImg = ({ text }) =>
 
 
 const Row = ({ text1, text2, text3, text4, text5 }) => (
-  <Box flexDirection="column" width="100%" height={["50px", "45px", "45px"]}>
+  <Box flexDirection="column" width="100%" height={["", "45px", "45px"]}>
     <Box>
-      <Text width={["51%", "50%", "40%"]} pl={["5px", 0, "80px"]} fontWeight="bold">{text1}</Text>
-      <Box width="14%">
+      <Text width={["51%", "50%", "45%"]} pl={["5px", 0, "80px"]} fontWeight="bold">{text1}</Text>
+      <Box width="12%">
         <TextImg text={text2} />
       </Box>
       <Box width="19%">
         <TextImg text={text3} />
       </Box>
-      <Box width="12%">
+      <Box width="10%">
         <TextImg text={text4} />
       </Box>
       <Box width="12%">
@@ -37,7 +37,7 @@ const ModesGestion = () => (
     <Box width="100%" flexDirection="column">
 
       <Box flexDirection="column" alignItems="flex-end" mr={40} textAlign="center">
-        <Box flexDirection="column" width="60%">
+        <Box flexDirection="column" width={["90%", "100%", "60%"]}>
           <Box>
             <Text width="44%" fontWeight="900" color="yellow" fontSize="1.2rem"
             >Gestion déléguée à hiway</Text>
@@ -59,13 +59,13 @@ const ModesGestion = () => (
 
     </Box>
 
-    <Box flexDirection="column" width="100%" height={["50px", "45px", "45px"]}>
+    <Box flexDirection="column" width="100%" height={["50px", "", ""]}>
       <Box>
-        <Text width={["51%", "50%", "40%"]} pl={["5px", 0, "80px"]} color="lavender"></Text>
-        <Text width={["12%", "25%", "14%"]} fontWeight="bold">hiway</Text>
-        <Text width="19%" fontWeight="bold">Freelance</Text>
-        <Text width={["12%", "25%", "12%"]} fontWeight="bold">Freelance</Text>
-        <Text width="12%" fontWeight="bold">hiway</Text>
+        <Text width={["51%", "50%", "45%"]} pl={["5px", 0, "80px"]} color="lavender"></Text>
+        <Text width={["8%", "25%", "12%"]} fontWeight="bold" style={{overflowX: 'hidden'}}>hiway</Text>
+        <Text width={["12%", "25%", "19%"]}  fontWeight="bold" style={{overflowX: 'hidden'}}>Freelance</Text>
+        <Text width={["12%", "25%", "10%"]} fontWeight="bold" style={{overflowX: 'hidden'}}>Freelance</Text>
+        <Text width="12%" fontWeight="bold" style={{overflowX: 'hidden'}}>hiway</Text>
       </Box>
     </Box>
 
