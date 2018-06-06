@@ -17,8 +17,8 @@ const Home = () => (
     textAlign="center"
     position="relative"
   >
-    <Box flexDirection="column">
-      <Box position="absolute"  className="social-container slideUp">
+    <Box flexDirection="column" width="100%">
+      <Box position="absolute" className="social-container slideUp">
         <Box flexDirection="column">
           <Text mb="5px" color="white">suivez-nous</Text>
           <Box justifyContent="space-around" alignItems="center">
