@@ -118,13 +118,6 @@ button[type='submit'] {
   height: 390px;
 }
 
-@media only screen and (max-width: 480px) {
-  .youtube-video {
-    width: 100%;
-    height: 290px;
-  }
-}
-
 .square li {
   color: #3c3c3c;
   list-style: none;
@@ -150,7 +143,7 @@ button[type='submit'] {
 
 .social-container {
   right: 30px;
-  bottom: 30px;
+  top: 90%;
   animation-duration: 1s;
   animation-name: slideUp;
 }
@@ -167,7 +160,6 @@ button[type='submit'] {
   animation-duration: 1s;
   animation-name: slideUp;
 }
-
 
 .thirdTitle {
   animation-duration: 1.1s;
@@ -193,5 +185,16 @@ button[type='submit'] {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .youtube-video {
+    width: 100%;
+    height: 290px;
+  }
+  .social-container {
+    right: 10px;
+    top: 0px;
   }
 }

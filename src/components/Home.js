@@ -10,8 +10,9 @@ const Home = () => (
     width="100%"
     color="rgb(254, 209, 54)"
     backgroundImage='http://res.cloudinary.com/kevin-even-io/image/upload/ar_4:3,c_fill/c_scale,w_auto,dpr_auto/road.png'
+    textAlign="center"
   >
-    <Box flexDirection="column" width="100%" alignItems="center">
+    <Box flexDirection="column" width="100%"  height="100vh" alignItems="center">
 
       <img src={logoJaune} className="title" width="700px" />
 
