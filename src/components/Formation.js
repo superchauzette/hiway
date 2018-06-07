@@ -40,7 +40,8 @@ const Formation = () => (
           <ul className="square">
             <li>Se lancer, choisir le statut le plus pertinent et créer sa société</li>
             <li>Mettre en place une protection sociale sur mesure</li>
-            <li>Trouver sa mission rapidement et contractualiser dans les meilleures conditions</li>
+            <li>Trouver sa mission rapidement </li>
+            <li>Contractualiser dans les meilleures conditions</li>
             <li>Gérer son entreprise efficacement et sans erreur</li>
             <li>Optimiser sa fiscalité et maximiser sa rémunération</li>
             <li>Faire son bilan comptable</li>

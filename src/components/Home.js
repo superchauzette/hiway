@@ -9,18 +9,13 @@ const Home = () => (
     height="100vh"
     width="100%"
     color="rgb(254, 209, 54)"
-    flexDirection="column"
-    justifyContent="center"
     backgroundImage='http://res.cloudinary.com/kevin-even-io/image/upload/ar_4:3,c_fill/c_scale,w_auto,dpr_auto/road.png'
-    textAlign="center"
   >
     <Box flexDirection="column" width="100%" alignItems="center">
 
-      <div>
-        <img src={logoJaune} className="title" width="700px" />
-      </div>
+      <img src={logoJaune} className="title" width="700px" />
 
-      <h1 style={{ color: 'white', marginTop: '240px', fontWeight: 700 }} className="secondTitle">
+      <h1 style={{ color: 'white', marginTop: '260px', fontWeight: 700 }} className="secondTitle">
         Freelancing is cool
       </h1>
 

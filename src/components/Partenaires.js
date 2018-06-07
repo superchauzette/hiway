@@ -20,7 +20,7 @@ const Partenaire = ({ src, subtitle, tab, styleImg }) => (
 
 
 const Team = ({ name, photo, children }) => (
-  <Box flexDirection="column" p="10px" alignItems="center">
+  <Box flexDirection="column" p={[0, 0, "10px"]} alignItems="center">
     <img
       src={photo}
       className="picture"
@@ -43,7 +43,7 @@ const Partenaires = () => (
       Des spécialistes convaincus que le freelancing est le meilleur statut
     </h2>
 
-    <Box justifyContent="space-around" width="80%">
+    <Box justifyContent="space-around" width={["100%", "80%", "80%"]} flexWrap="wrap">
       <Team name="Vincenzo" photo={vince}>
         Coach administratif <br />et financier
       </Team>

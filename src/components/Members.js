@@ -49,14 +49,13 @@ const Members = () => (
     alignItems="center"
     textAlign="center"
   >
-    <h1>Ils ont bien fait</h1>
-    <h2 className="yellow">
+    <h1>
       Une communauté de 40 freelances
-    </h2>
+    </h1>
     <Box px={150}>
-      <h3 className="gray">
+      <h2 className="gray">
       Ensemble, nous avons créé CLUSTER, la 1ère communauté collaborative et solidaire de développeurs et experts de la Tech freelances : <a className="yellow" href="www. cluster-freelance.io">www. cluster-freelance.io</a>
-      </h3>
+      </h2>
     </Box >
     <Box
       flexDirection="flex"
