@@ -23,7 +23,7 @@ const IndexPage = () => (
     <ModesGestion />
     <Tools />
     <Partenaires />
-    {/* <Members /> */}
+    <Members />
     <Contact />
   </Box >
 )
