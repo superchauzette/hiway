@@ -12,15 +12,15 @@ const Home = () => (
     backgroundImage='http://res.cloudinary.com/kevin-even-io/image/upload/ar_4:3,c_fill/c_scale,w_auto,dpr_auto/road.png'
     textAlign="center"
   >
-    <Box flexDirection="column" width="100%"  height="100vh" alignItems="center">
+    <Box flexDirection="column" width="100%" height="100vh" alignItems="center">
 
       <img src={logoJaune} className="title" width="700px" />
 
-      <h1 style={{ color: 'white', marginTop: '260px', fontWeight: 700 }} className="secondTitle">
+      <h1 style={{ color: 'white', textAlign: 'center', fontWeight: 700 }} className="secondTitle">
         Freelancing is cool
       </h1>
 
-      <h2 style={{ color: 'white', fontSize: '2rem' }} className="thirdTitle">
+      <h2 style={{ color: 'white', textAlign: 'center', marginBottom: '200px', fontSize: '2rem' }} className="thirdTitle">
         Solutions pour devenir freelance
       </h2>
 
