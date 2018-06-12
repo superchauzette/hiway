@@ -36,7 +36,7 @@ const Formation = () => (
           </Box>
         </Box>
         <h2 style={{ textAlign: 'center' }} className="yellow">Parcours</h2>
-        <Box justifyContent="center" width={["90%", "76%", "76%"]}>
+        <Box justifyContent="center" width={["97%", "76%", "76%"]}>
           <ul className="square">
             <li>Se lancer, choisir le statut le plus pertinent et créer sa société</li>
             <li>Mettre en place une protection sociale sur mesure</li>
