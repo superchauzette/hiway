@@ -17,9 +17,11 @@ import {
 const backgroundImage = props =>
   props.backgroundImage
     ? {
-        backgroundImage: `url(${props.backgroundImage})`,
+        backgroundImage: `url(${props.backgroundImage}) `,
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: 'center center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed'
       }
     : null
 
