@@ -19,7 +19,7 @@ const Formation = () => (
       <Box flexDirection="column" width={['100%', '50%', '50%']}>
         <Box justifyContent="center" mb="20px">
           <Box width="100px">
-            <img src={coffee} width="100%" height="100%" />
+            <img src={coffee} width="100px" height="100%" />
           </Box>
         </Box>
         <Heading2 textAlign="center" color="yellow">
@@ -44,7 +44,7 @@ const Formation = () => (
       >
         <Box justifyContent="center" mb="20px">
           <Box width="100px">
-            <img src={rocket} width="100%" height="100%" />
+            <img src={rocket} width="100px" height="100%" />
           </Box>
         </Box>
         <Heading2 textAlign="center" color="yellow">

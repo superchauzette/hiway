@@ -8,7 +8,11 @@ import speaker from '../assets/speaker.png'
 const Tool = ({ src, styleImg, children }) => (
   <Box flexDirection="column" alignItems="center" width="250px">
     <Box width="100px" {...styleImg}>
-      <img src={src} width="100%" height="100%" />
+      <img
+        src={src}
+        width={(styleImg && styleImg.width) || '100px'}
+        height="100%"
+      />
     </Box>
     {children}
   </Box>
@@ -17,7 +21,7 @@ const Tool = ({ src, styleImg, children }) => (
 const Item = ({ src, children, styleImg }) => (
   <Box flexDirection="column" alignItems="center" width="250px">
     <Box width="150px" {...styleImg}>
-      <img src={src} width="100%" height="100%" />
+      <img src={src} width="150px" height="100%" />
     </Box>
     {children}
   </Box>
