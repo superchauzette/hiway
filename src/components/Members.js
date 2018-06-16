@@ -1,17 +1,21 @@
 import React from 'react'
-import { Box, Text } from '../components'
-import Alexandre from '../assets/Alexandre.jpeg'
-import Antoine from '../assets/Antoine.jpeg'
-import Charly from '../assets/Charly.jpeg'
-import Christopher from '../assets/Christopher.jpeg'
-import Hedi from '../assets/Hedi.jpeg'
-import Kevin from '../assets/Kevin.jpeg'
-import Matthieu from '../assets/Matthieu.jpeg'
-import Raphael from '../assets/Raphael.jpeg'
-import Rémi from '../assets/Rémi.jpeg'
-import Robin from '../assets/Robin.jpeg'
-import Souheil from '../assets/souheil.png'
-import Ghislain from '../assets/Ghislain.jpeg'
+import { Box, Text, Heading1, Heading2 } from '../components'
+
+const srcImg = name =>
+  `http://res.cloudinary.com/kevin-even-io/image/upload/c_scale,w_auto,dpr_auto/hiway/${name}.jpg`
+
+const Ghislain = srcImg('Ghislain')
+const Robin = srcImg('Robin')
+const Hedi = srcImg('Hedi')
+const Kevin = srcImg('Kevin')
+const Christopher = srcImg('Christopher')
+const Matthieu = srcImg('Matthieu')
+const Alexandre = srcImg('Alexandre')
+const Antoine = srcImg('Antoine')
+const Charly = srcImg('Charly')
+const Raphael = srcImg('Raphael')
+const Rémi = srcImg('Rémi')
+const Souheil = srcImg('Souheil')
 
 const Member = ({ name, metier, formation, src, temoignage }) => (
   <Box
@@ -34,7 +38,6 @@ const Member = ({ name, metier, formation, src, temoignage }) => (
         </Text>
       </Box>
     </Box>
-
     <Text color="black" textAlign="center" pt="10px">
       &ldquo;{temoignage}&rdquo;
     </Text>
@@ -49,14 +52,20 @@ const Members = () => (
     alignItems="center"
     textAlign="center"
   >
-    <h1>
-      Une communauté de 40 freelances
-    </h1>
-    <Box px={[10,"150", "150"]}>
-      <h2 className="yellow">
-      Ensemble, nous avons créé CLUSTER, la 1ère communauté collaborative et solidaire de développeurs et experts de la Tech freelances : <a style={{color: '#da2b2b'}} href="www. cluster-freelance.io">www. cluster-freelance.io</a>
-      </h2>
-    </Box >
+    <Heading1>Une communauté de 40 freelances</Heading1>
+    <Box px={[0, 150, 150]}>
+      <Heading2 color="yellow">
+        Ensemble, nous avons créé CLUSTER, la 1ère communauté collaborative et
+        solidaire de développeurs et experts de la Tech freelances :{' '}
+        <a
+          className="red"
+          href="http://www.cluster-freelance.io"
+          style={{ whiteSpace: 'nowrap' }}
+        >
+          www.cluster-freelance.io
+        </a>
+      </Heading2>
+    </Box>
     <Box
       flexDirection="flex"
       textAlign="center"
@@ -108,7 +117,6 @@ const Members = () => (
         formation="UPMC 2012"
         temoignage="Je suis devenu Freelance en toute sérénité grâce à Hiway"
       />
-
       <Member
         name="Remi"
         src={Rémi}
@@ -116,7 +124,6 @@ const Members = () => (
         formation="EPITECH 2013"
         temoignage="Des ateliers de coaching clairs, de l'expertise, de la disponibilité/flexibilité et du suivi au top"
       />
-
       <Member
         name="Antoine"
         src={Antoine}
@@ -124,7 +131,6 @@ const Members = () => (
         formation="IUT Paris 2012"
         temoignage="Leur suivi est vraiment complet et ils sont toujours là pour répondre à toutes les questions qu'un nouveau freelance peut se poser"
       />
-
       <Member
         name="Matthieu"
         src={Matthieu}
@@ -132,7 +138,6 @@ const Members = () => (
         formation="ESIAL 2011"
         temoignage="Un seul RDV avec Hiway, via une recommandation, m'a décidé à me lancer dans le freelancing"
       />
-
       <Member
         name="Raphaël"
         src={Raphael}
@@ -140,7 +145,6 @@ const Members = () => (
         formation="ETNA 2015"
         temoignage="Hiway, m'a donné toutes les clés pour trouver rapidement ma première mission et ils m'ont également fourni le modèle du contrat"
       />
-
       <Member
         name="Christopher"
         src={Christopher}
@@ -156,7 +160,7 @@ const Members = () => (
         temoignage="J'avais jamais entendu parlé d'optimisation financière, maintenant je l'applique au quotidien"
       />
     </Box>
-  </Box >
+  </Box>
 )
 
 export default Members

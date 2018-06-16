@@ -13,7 +13,7 @@ const Partenaire = ({ src, subtitle, tab, styleImg }) => (
     </Box>
     <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{subtitle}</p>
     <ul style={{ listStyle: 'none', textAlign: 'center', marginLeft: 0 }}>
-      {tab.map(i => <li>{i}</li>)}
+      {tab.map(i => <li key={i}>{i}</li>)}
     </ul>
   </Box>
 )

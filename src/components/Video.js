@@ -1,6 +1,6 @@
 import React from 'react'
-import YouTube from 'react-youtube';
-import { Box, Text } from './index'
+import YouTube from 'react-youtube'
+import { Box, Text, Heading2 } from './index'
 
 class Video extends React.Component {
   _onReady = event => event.target.playVideo()
@@ -15,23 +15,17 @@ class Video extends React.Component {
         py={40}
       >
         <Box w={['100%', '60%', '60%']} justifyContent="center" width="100%">
-          <h2 className="yellow">
-            1'30 pour tout savoir
-        </h2>
+          <Heading2 color="yellow">1'30 pour tout savoir</Heading2>
         </Box>
         <Box justifyContent="center">
           <YouTube
             className="youtube-video"
             videoId="JNaFs7svUbI"
             onReady={this._onReady}
-            opts={{
-              playerVars: {
-                autoplay: 1
-              }
-            }}
+            opts={{ playerVars: { autoplay: 1 } }}
           />
         </Box>
-      </Box >
+      </Box>
     )
   }
 }

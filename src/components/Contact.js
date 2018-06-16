@@ -1,10 +1,10 @@
 import React from 'react'
-import { Box, Text } from '../components'
+import { Box, Text, Heading1 } from '../components'
 
 const Contact = () => (
   <Box bg="gray" width="100%" justifyContent="center">
     <Box bg="transparent" flexDirection="column" p="30px" width="500px">
-      <h1> Be Freelance </h1>
+      <Heading1>Be Freelance</Heading1>
       <form
         name="contact"
         method="POST"

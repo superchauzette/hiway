@@ -1,15 +1,18 @@
 import React from 'react'
-import { Box, Text } from '../components'
-import vince from '../assets/vince.jpg'
-import alex from '../assets/alex.jpg'
-import maxime from '../assets/maxime.png'
-import clement from '../assets/clement.jpg'
-import experts_comptables from '../assets/experts_comptables.jpg'
+import { Box, Text, Heading1, Heading2 } from '../components'
 
-const Team = ({ name, photo, styleImg, children }) => (
+const srcImg = (name, extention = 'jpg') =>
+  `http://res.cloudinary.com/kevin-even-io/image/upload/c_scale,w_auto,dpr_auto/hiway/${name}.${extention}`
+const vince = srcImg('vince')
+const alex = srcImg('alex')
+const maxime = srcImg('maxime', 'png')
+const clement = srcImg('clement')
+const experts_comptables = srcImg('experts_comptables')
+
+const Team = ({ name, photo, children, props }) => (
   <Box flexDirection="column" p="10px" alignItems="center">
     <img
-      {...styleImg}
+      {...props}
       src={photo}
       className="picture"
       alt={name}
@@ -31,10 +34,10 @@ const Teams = () => (
     alignItems="center"
     textAlign="center"
   >
-    <h1>Une équipe à ton service</h1>
-    <h2 className="yellow">
+    <Heading1>Une équipe à ton service</Heading1>
+    <Heading2 color="yellow" px="10px">
       Des spécialistes convaincus que le freelancing est le meilleur statut
-    </h2>
+    </Heading2>
 
     <Box
       width="100%"
@@ -42,6 +45,7 @@ const Teams = () => (
       justifyContent="space-around"
       flexWrap="wrap"
       textAlign="center"
+      px="5px"
     >
       <Team name="Vincenzo" photo={vince}>
         Coach administratif <br />et financier
