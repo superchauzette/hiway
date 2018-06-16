@@ -48,7 +48,7 @@ const Members = () => (
   <Box
     bg="white"
     flexDirection="column"
-    p="30px"
+    p={['5px', '30px', '30px']}
     alignItems="center"
     textAlign="center"
   >
