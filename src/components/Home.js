@@ -20,10 +20,10 @@ const Home = () => (
   <Box
     height="100vh"
     width="100%"
-    color="rgb(254, 209, 54)"
     backgroundImage="http://res.cloudinary.com/kevin-even-io/image/upload/q_auto/f_auto/c_scale,w_auto,dpr_auto/road.png"
     textAlign="center"
     flexDirection="column"
+    className="home-container"
   >
     <img
       src={logoJaune}
