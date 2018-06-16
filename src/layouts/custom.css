@@ -158,6 +158,9 @@ ul {
 }
 
 .social-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
   right: 30px;
   top: 90%;
   animation-duration: 1s;
@@ -165,6 +168,7 @@ ul {
 }
 
 .title {
+  width: 700px;
   margin: 0 auto;
   margin-top: 50px;
   max-width: 80%;
