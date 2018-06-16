@@ -1,9 +1,12 @@
 import React from 'react'
 import { Box, Heading1 } from '../components'
-import nuage from '../assets/nuage.png'
-import cash from '../assets/cash.png'
-import documents from '../assets/document.png'
-import speaker from '../assets/speaker.png'
+
+const srcImg = name =>
+  `http://res.cloudinary.com/kevin-even-io/image/upload/c_scale,w_auto,dpr_auto/hiway/${name}.png`
+const nuage = srcImg('nuage')
+const cash = srcImg('cash')
+const documents = srcImg('document')
+const speaker = srcImg('speaker')
 
 const Tool = ({ src, styleImg, children }) => (
   <Box flexDirection="column" alignItems="center" width="250px">

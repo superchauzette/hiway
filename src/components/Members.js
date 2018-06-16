@@ -1,17 +1,21 @@
 import React from 'react'
 import { Box, Text, Heading1, Heading2 } from '../components'
-import Alexandre from '../assets/Alexandre.jpeg'
-import Antoine from '../assets/Antoine.jpeg'
-import Charly from '../assets/Charly.jpeg'
-import Christopher from '../assets/Christopher.jpeg'
-import Hedi from '../assets/Hedi.jpeg'
-import Kevin from '../assets/Kevin.jpeg'
-import Matthieu from '../assets/Matthieu.jpeg'
-import Raphael from '../assets/Raphael.jpeg'
-import Rémi from '../assets/Rémi.jpeg'
-import Robin from '../assets/Robin.jpeg'
-import Souheil from '../assets/souheil.png'
-import Ghislain from '../assets/Ghislain.jpeg'
+
+const srcImg = name =>
+  `http://res.cloudinary.com/kevin-even-io/image/upload/c_scale,w_auto,dpr_auto/hiway/${name}.jpg`
+
+const Ghislain = srcImg('Ghislain')
+const Robin = srcImg('Robin')
+const Hedi = srcImg('Hedi')
+const Kevin = srcImg('Kevin')
+const Christopher = srcImg('Christopher')
+const Matthieu = srcImg('Matthieu')
+const Alexandre = srcImg('Alexandre')
+const Antoine = srcImg('Antoine')
+const Charly = srcImg('Charly')
+const Raphael = srcImg('Raphael')
+const Rémi = srcImg('Rémi')
+const Souheil = srcImg('Souheil')
 
 const Member = ({ name, metier, formation, src, temoignage }) => (
   <Box

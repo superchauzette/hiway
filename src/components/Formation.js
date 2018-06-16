@@ -1,7 +1,10 @@
 import React from 'react'
 import { Box, Heading1, Heading2 } from '../components'
-import rocket from '../assets/rocket.png'
-import coffee from '../assets/coffee.png'
+
+const srcImg = name =>
+  `http://res.cloudinary.com/kevin-even-io/image/upload/c_scale,w_auto,dpr_auto/hiway/${name}.png`
+const coffee = srcImg('coffee')
+const rocket = srcImg('rocket')
 
 const Formation = () => (
   <Box
@@ -50,7 +53,11 @@ const Formation = () => (
         <Heading2 textAlign="center" color="yellow">
           Parcours
         </Heading2>
-        <Box justifyContent="center" width={['100%', '76%', '76%']} px={['5px', 0, 0]}>
+        <Box
+          justifyContent="center"
+          width={['100%', '76%', '76%']}
+          px={['5px', 0, 0]}
+        >
           <ul className="square">
             <li>
               Se lancer, choisir le statut le plus pertinent et créer sa société

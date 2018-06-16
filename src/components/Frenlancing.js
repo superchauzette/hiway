@@ -1,11 +1,13 @@
 import React from 'react'
-import styled from 'styled-components'
 import { Box, Text, Heading1, Heading2, Heading3 } from '../components'
-import freedom from '../assets/freedom.svg'
-import coins from '../assets/coins.svg'
-import happy from '../assets/happiness.svg'
-import skills from '../assets/skills.svg'
-import missions from '../assets/handshake.svg'
+
+const srcImg = (name, extention = 'svg') =>
+  `http://res.cloudinary.com/kevin-even-io/image/upload/c_scale,w_auto,dpr_auto/hiway/${name}.${extention}`
+const freedom = srcImg('freedom')
+const coins = srcImg('coins')
+const happy = srcImg('happiness')
+const skills = srcImg('skills')
+const missions = srcImg('handshake')
 
 const Svg = ({ src }) => (
   <Box height="100px" mb={'20px'} justifyContent="center">

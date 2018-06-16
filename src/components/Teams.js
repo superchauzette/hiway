@@ -1,12 +1,15 @@
 import React from 'react'
 import { Box, Text, Heading1, Heading2 } from '../components'
-import vince from '../assets/vince.jpg'
-import alex from '../assets/alex.jpg'
-import maxime from '../assets/maxime.png'
-import clement from '../assets/clement.jpg'
-import experts_comptables from '../assets/experts_comptables.jpg'
 
-const Team = ({ name, photo,  children, props }) => (
+const srcImg = (name, extention = 'jpg') =>
+  `http://res.cloudinary.com/kevin-even-io/image/upload/c_scale,w_auto,dpr_auto/hiway/${name}.${extention}`
+const vince = srcImg('vince')
+const alex = srcImg('alex')
+const maxime = srcImg('maxime', 'png')
+const clement = srcImg('clement')
+const experts_comptables = srcImg('experts_comptables')
+
+const Team = ({ name, photo, children, props }) => (
   <Box flexDirection="column" p="10px" alignItems="center">
     <img
       {...props}
