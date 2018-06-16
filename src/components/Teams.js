@@ -32,7 +32,7 @@ const Teams = () => (
     textAlign="center"
   >
     <Heading1>Une équipe à ton service</Heading1>
-    <Heading2 color="yellow">
+    <Heading2 color="yellow" px="10px">
       Des spécialistes convaincus que le freelancing est le meilleur statut
     </Heading2>
 
@@ -42,6 +42,7 @@ const Teams = () => (
       justifyContent="space-around"
       flexWrap="wrap"
       textAlign="center"
+      px="5px"
     >
       <Team name="Vincenzo" photo={vince}>
         Coach administratif <br />et financier

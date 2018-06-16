@@ -31,11 +31,10 @@ const Row = ({ text1, text2, text3, text4, text5 }) => (
 const ModesGestion = () => (
   <Box bg="silver" width="100%" py={40} alignItems="center" flexDirection="column">
 
-    <Heading1 textAlign='center'> Choisis entre 2 modes de gestion </Heading1>
+    <Heading1 textAlign="center" px="10px">Choisis entre 2 modes de gestion</Heading1>
 
 
     <Box width="100%" flexDirection="column">
-
       <Box flexDirection="column" alignItems="flex-end" mr={40} textAlign="center">
         <Box flexDirection="column" width={["90%", "100%", "60%"]}>
           <Box>

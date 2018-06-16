@@ -60,14 +60,6 @@ button[type='submit'] {
   border-radius: 50%;
 }
 
-.yellow {
-  color: rgb(248, 210, 101);
-}
-
-.blue {
-  color: #07c;
-}
-
 .red {
   color: #da2b2b;
 }
@@ -107,16 +99,6 @@ button[type='submit'] {
   opacity: 1;
 }
 
-.CoachingFreelancing li {
-  list-style: square inside url('../assets/Arrow.png');
-  padding-bottom: 6px;
-}
-
-.FreanLanceAsService li {
-  list-style: square inside url('../assets/ArrowBlue.png');
-  padding-bottom: 6px;
-}
-
 .youtube-video {
   width: 640px;
   height: 390px;
@@ -153,6 +135,7 @@ button[type='submit'] {
 }
 
 .title {
+  margin: 0 auto;
   margin-top: 40px;
   max-width: 80%;
   animation-duration: 0.6s;
@@ -160,7 +143,6 @@ button[type='submit'] {
 }
 
 .secondTitle {
-  width: auto;
   animation-duration: 1s;
   animation-name: slideUp;
 }

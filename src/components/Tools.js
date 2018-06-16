@@ -31,7 +31,7 @@ const Tools = () => (
     flexDirection="column"
     bg="white"
   >
-    <Heading1 textAlign="center">
+    <Heading1 textAlign="center" px="10px">
       Des outils et un support permanent <br />pour gérer sereinement
     </Heading1>
 

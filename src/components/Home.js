@@ -23,35 +23,29 @@ const Home = () => (
     color="rgb(254, 209, 54)"
     backgroundImage="http://res.cloudinary.com/kevin-even-io/image/upload/ar_4:3,c_fill/c_scale,w_auto,dpr_auto/road.png"
     textAlign="center"
+    flexDirection="column"
   >
-    <Box flexDirection="column" width="100%" height="100vh" alignItems="center">
-      <img src={logoJaune} className="title" width="700px" />
+    <img src={logoJaune} className="title" width="700px" />
 
-      <Heading1
-        color="white"
-        mt="260px"
-        fontWeight="700"
-        className="secondTitle"
-      >
-        Freelancing is cool
-      </Heading1>
+    <Heading1 color="white" mt="260px" fontWeight="700" className="secondTitle">
+      Freelancing is cool
+    </Heading1>
 
-      <Heading2 color="white" fontSize="2rem" className="thirdTitle">
-        Solutions pour devenir freelance
-      </Heading2>
+    <Heading2 color="white" fontSize="2rem" className="thirdTitle">
+      Solutions pour devenir freelance
+    </Heading2>
 
-      <Box
-        flexDirection="column"
-        position="absolute"
-        className="social-container slideUp"
-      >
-        <Text mb="5px" color="white">
-          suivez-nous
-        </Text>
-        <Box justifyContent="space-around" alignItems="center">
-          <Social link={link.linkedin} img={Linkedin} />
-          <Social link={link.twitter} img={Twitter} />
-        </Box>
+    <Box
+      flexDirection="column"
+      position="absolute"
+      className="social-container slideUp"
+    >
+      <Text mb="5px" color="white">
+        suivez-nous
+      </Text>
+      <Box justifyContent="space-around" alignItems="center">
+        <Social link={link.linkedin} img={Linkedin} />
+        <Social link={link.twitter} img={Twitter} />
       </Box>
     </Box>
   </Box>

@@ -50,7 +50,7 @@ const Formation = () => (
         <Heading2 textAlign="center" color="yellow">
           Parcours
         </Heading2>
-        <Box justifyContent="center" width={['90%', '76%', '76%']}>
+        <Box justifyContent="center" width={['100%', '76%', '76%']} px={['5px', 0, 0]}>
           <ul className="square">
             <li>
               Se lancer, choisir le statut le plus pertinent et créer sa société
