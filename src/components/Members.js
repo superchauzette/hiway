@@ -53,8 +53,8 @@ const Members = () => (
       <Heading2 color="yellow">
         Ensemble, nous avons créé CLUSTER, la 1ère communauté collaborative et
         solidaire de développeurs et experts de la Tech freelances :{' '}
-        <a className="red" href="www. cluster-freelance.io">
-          www. cluster-freelance.io
+        <a className="red" href="http://www.cluster-freelance.io">
+          www.cluster-freelance.io
         </a>
       </Heading2>
     </Box>
