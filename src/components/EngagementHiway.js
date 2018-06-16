@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Text } from '../components'
+import { Box, Text, Heading1, Heading2 } from '../components'
 
 const Engagement = ({ title, text }) => (
   <Box
@@ -19,48 +19,19 @@ const Engagement = ({ title, text }) => (
   </Box>
 )
 
-const Line = ({ top, translateX = -15 }) => (
-  <Box
-    mt={[top]}
-    style={{
-      position: 'absolute',
-      transform: `translateX(${translateX}px)`,
-    }}
-    width={[0, 0, '100%']} // pas visible en mobile
-    className="dotted-gradient yellow"
-  />
-)
-
-const Road = ({ top }) => (
-  <Box
-    mt={[top]}
-    bg="grey"
-    style={{
-      position: 'absolute',
-      height: '80px',
-    }}
-    width={[0, 0, '100%']} // pas visible en mobile
-  />
-)
-
 const EngagementHiway = () => (
   <Box
     backgroundImage="http://res.cloudinary.com/kevin-even-io/image/upload/ar_4:3,c_fill/c_scale,w_auto,dpr_auto/freelance.jpg"
-    style={{
-      backgroundAttachment: 'fixed',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
-      backgroundSize: 'cover'
-    }}
+    style={{ backgroundAttachment: 'fixed' }}
     p="30px"
     flexDirection="column"
     alignItems="center"
     textAlign="center"
   >
-    <h1 style={{ color: 'white' }}>L’engagement d’hiway</h1>
-    <h2 className="yellow">
+    <Heading1 color="white">L’engagement d’hiway</Heading1>
+    <Heading2 color="yellow">
       Hiway t’accompagne pour devenir freelance et garantit ta réussite
-    </h2>
+    </Heading2>
 
     <Box flexDirection="column" textAlign="center" width="90%">
       <Box justifyContent="space-around" mt="60px" flexWrap="wrap">

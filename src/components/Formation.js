@@ -1,22 +1,30 @@
 import React from 'react'
-import { Box } from '../components'
+import { Box, Heading1, Heading2 } from '../components'
 import rocket from '../assets/rocket.png'
 import coffee from '../assets/coffee.png'
 
 const Formation = () => (
-  <Box bg="gray" width="100%" py={40} alignItems="center" flexDirection="column">
-
-    <h1 style={{ textAlign: 'center' }}> Une formation pour devenir un bon chef d’entreprise </h1>
+  <Box
+    bg="gray"
+    width="100%"
+    py={40}
+    alignItems="center"
+    flexDirection="column"
+  >
+    <Heading1 textAlign="center">
+      Une formation pour devenir un bon chef d’entreprise
+    </Heading1>
 
     <Box justifyContent="space-around" width="100%" flexWrap="wrap">
-
-      <Box flexDirection="column" width={["100%", "50%", "50%"]} >
+      <Box flexDirection="column" width={['100%', '50%', '50%']}>
         <Box justifyContent="center" mb="20px">
-          <Box width="100px" >
+          <Box width="100px">
             <img src={coffee} width="100%" height="100%" />
           </Box>
         </Box>
-        <h2 style={{ textAlign: 'center' }} className="yellow">Format</h2>
+        <Heading2 textAlign="center" color="yellow">
+          Format
+        </Heading2>
         <Box justifyContent="center">
           <ul className="square">
             <li> Un parcours d’apprentissage en 13 ateliers </li>
@@ -29,16 +37,24 @@ const Formation = () => (
         </Box>
       </Box>
 
-      <Box flexDirection="column" width={["100%", "50%", "50%"]} alignItems="center">
+      <Box
+        flexDirection="column"
+        width={['100%', '50%', '50%']}
+        alignItems="center"
+      >
         <Box justifyContent="center" mb="20px">
-          <Box width="100px" >
+          <Box width="100px">
             <img src={rocket} width="100%" height="100%" />
           </Box>
         </Box>
-        <h2 style={{ textAlign: 'center' }} className="yellow">Parcours</h2>
-        <Box justifyContent="center" width={["90%", "76%", "76%"]}>
+        <Heading2 textAlign="center" color="yellow">
+          Parcours
+        </Heading2>
+        <Box justifyContent="center" width={['90%', '76%', '76%']}>
           <ul className="square">
-            <li>Se lancer, choisir le statut le plus pertinent et créer sa société</li>
+            <li>
+              Se lancer, choisir le statut le plus pertinent et créer sa société
+            </li>
             <li>Mettre en place une protection sociale sur mesure</li>
             <li>Trouver sa mission rapidement </li>
             <li>Contractualiser dans les meilleures conditions</li>
@@ -49,9 +65,8 @@ const Formation = () => (
           </ul>
         </Box>
       </Box>
-
     </Box>
-  </Box >
+  </Box>
 )
 
 export default Formation

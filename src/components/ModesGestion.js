@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Text } from '../components'
+import { Box, Text, Heading1 } from '../components'
 import check from '../assets/check.svg'
 
 const TextImg = ({ text }) =>
@@ -31,7 +31,7 @@ const Row = ({ text1, text2, text3, text4, text5 }) => (
 const ModesGestion = () => (
   <Box bg="silver" width="100%" py={40} alignItems="center" flexDirection="column">
 
-    <h1 style={{ textAlign: 'center' }}> Choisis entre 2 modes de gestion </h1>
+    <Heading1 textAlign='center'> Choisis entre 2 modes de gestion </Heading1>
 
 
     <Box width="100%" flexDirection="column">
@@ -68,7 +68,6 @@ const ModesGestion = () => (
         <Text width="12%" fontWeight="bold" style={{overflowX: 'hidden'}}>hiway</Text>
       </Box>
     </Box>
-
 
     <Row text1="Édition du CRA" text3={check} text4={check} text5="" />
     <Row text1="Contractualisation, facturation et relance client" text2={check} text4={check} text5="" />

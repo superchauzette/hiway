@@ -68,6 +68,10 @@ button[type='submit'] {
   color: #07c;
 }
 
+.red {
+  color: #da2b2b;
+}
+
 .way h3 {
   font-size: 24px;
 }

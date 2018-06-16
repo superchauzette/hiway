@@ -1,15 +1,15 @@
 import React from 'react'
-import { Box, Text } from '../components'
+import { Box, Text, Heading1, Heading2 } from '../components'
 import vince from '../assets/vince.jpg'
 import alex from '../assets/alex.jpg'
 import maxime from '../assets/maxime.png'
 import clement from '../assets/clement.jpg'
 import experts_comptables from '../assets/experts_comptables.jpg'
 
-const Team = ({ name, photo, styleImg, children }) => (
+const Team = ({ name, photo,  children, props }) => (
   <Box flexDirection="column" p="10px" alignItems="center">
     <img
-      {...styleImg}
+      {...props}
       src={photo}
       className="picture"
       alt={name}
@@ -31,10 +31,10 @@ const Teams = () => (
     alignItems="center"
     textAlign="center"
   >
-    <h1>Une équipe à ton service</h1>
-    <h2 className="yellow">
+    <Heading1>Une équipe à ton service</Heading1>
+    <Heading2 color="yellow">
       Des spécialistes convaincus que le freelancing est le meilleur statut
-    </h2>
+    </Heading2>
 
     <Box
       width="100%"
