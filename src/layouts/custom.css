@@ -24,7 +24,6 @@ h2 {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0 0 1.45rem;
-
 }
 
 h3 {
@@ -166,11 +165,16 @@ ul {
 }
 
 .secondTitle {
+  color: white;
+  margin-top: 250px;
+  font-weight: 700;
   animation-duration: 1s;
   animation-name: slideUp;
 }
 
 .thirdTitle {
+  color: white;
+  font-size: 2rem;
   animation-duration: 1.1s;
   animation-name: slideUp;
 }
