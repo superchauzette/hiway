@@ -42,7 +42,7 @@ const Formation = () => (
 
       <Box
         flexDirection="column"
-        width={['100%', '50%', '50%']}
+        width={['95%', '50%', '50%']}
         alignItems="center"
       >
         <Box justifyContent="center" mb="20px">

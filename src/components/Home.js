@@ -25,13 +25,22 @@ const Home = () => (
     textAlign="center"
     flexDirection="column"
   >
-    <img src={logoJaune} className="title" width="700px" />
+    <img
+      src={logoJaune}
+      className="title"
+      width="700px"
+      style={{
+        margin: '0 auto',
+        marginTop: '50px',
+        maxWidth: '80%'
+      }}
+    />
 
-    <Heading1 color="white" mt="260px" fontWeight="700" className="secondTitle">
+    <Heading1 color="white" mt="250px" fontWeight="700" className="secondTitle">
       Freelancing is cool
     </Heading1>
 
-    <Heading2 color="white" fontSize="2rem" className="thirdTitle" mb="10px">
+    <Heading2 color="white" fontSize="2rem" className="thirdTitle">
       Solutions pour devenir freelance
     </Heading2>
 
@@ -48,8 +57,6 @@ const Home = () => (
         <Social link={link.twitter} img={Twitter} />
       </Box>
     </Box>
-
-
   </Box>
 )
 

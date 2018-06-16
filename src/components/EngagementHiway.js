@@ -3,8 +3,8 @@ import { Box, Text, Heading1, Heading2 } from '../components'
 
 const Engagement = ({ title, text }) => (
   <Box
-    width="300px"
-    height="235px"
+    width="260px"
+    height="185px"
     flexDirection="column"
     justifyContent="center"
     alignItems="center"

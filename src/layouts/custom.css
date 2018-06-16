@@ -1,3 +1,10 @@
+body {
+  margin: 0;
+  font-family: 'Roboto';
+  background-color: #cfcdcd;
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3 {
@@ -5,36 +12,45 @@ h3 {
   font-size: 2.75rem;
   line-height: 1em;
   font-weight: 100;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 h1 {
   font-size: 2.75rem;
+  margin: 0 0 1.45rem;
 }
 
 h2 {
   font-size: 1.5rem;
   font-weight: bold;
+  margin: 0 0 1.45rem;
+
 }
 
 h3 {
   font-size: 1.1rem;
   font-weight: 600;
+  margin: 0 0 1.45rem;
 }
 
 p {
   color: rgb(119, 119, 119);
+  margin: 0 0 1.45rem;
 }
 
 input {
   background-color: transparent;
   border: 0;
+  margin: 0;
   border-bottom: 1px solid gray;
+  font: inherit;
 }
 
 textarea {
   background-color: transparent;
   padding: 5px;
   border-color: gray;
+  font: inherit;
 }
 
 textarea:focus,
@@ -54,6 +70,12 @@ button[type='submit'] {
   border-color: transparent;
   background: rgb(248, 210, 101);
   border-radius: 4px;
+  font: inherit;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 .picture {
@@ -107,6 +129,7 @@ button[type='submit'] {
 .square li {
   color: #3c3c3c;
   list-style: none;
+  margin-bottom: 5px;
 }
 
 .square li::before {
@@ -182,5 +205,6 @@ button[type='submit'] {
   .social-container {
     right: 10px;
     top: 0px;
+    animation-name: slideDown;
   }
 }

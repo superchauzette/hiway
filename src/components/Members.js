@@ -38,7 +38,7 @@ const Member = ({ name, metier, formation, src, temoignage }) => (
         </Text>
       </Box>
     </Box>
-    <Text color="black" textAlign="center" pt="10px">
+    <Text color="black" textAlign="center">
       &ldquo;{temoignage}&rdquo;
     </Text>
   </Box>
@@ -49,6 +49,7 @@ const Members = () => (
     bg="white"
     flexDirection="column"
     p={['5px', '30px', '30px']}
+    pt="40px"
     alignItems="center"
     textAlign="center"
   >
