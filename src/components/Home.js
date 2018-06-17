@@ -24,15 +24,9 @@ const Home = () => (
 
     <Heading2 className="thirdTitle">Solutions pour devenir freelance</Heading2>
 
-    <Box
-      flexDirection="column"
-      position="absolute"
-      className="social-container slideUp"
-    >
-      <Text mb="5px" color="white">
-        suivez-nous
-      </Text>
-      <Box justifyContent="space-around" alignItems="center">
+    <Box className="social-container slideUp">
+      <Text className="text-social">suivez-nous</Text>
+      <Box className="link-social-container">
         <Social link={link.linkedin} img={Linkedin} />
         <Social link={link.twitter} img={Twitter} />
       </Box>
