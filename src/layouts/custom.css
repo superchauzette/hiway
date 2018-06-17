@@ -140,7 +140,6 @@ ul {
 }
 
 .home-container {
-  padding: 10px;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -204,6 +203,7 @@ ul {
 
 .thirdTitle {
   color: white;
+  padding-bottom: 10px;
   font-size: 2rem;
   animation-duration: 1.1s;
   animation-name: slideUp;
