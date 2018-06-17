@@ -17,32 +17,12 @@ const Social = ({ link, img }) => (
 )
 
 const Home = () => (
-  <Box
-    height="100vh"
-    width="100%"
-    backgroundImage="http://res.cloudinary.com/kevin-even-io/image/upload/q_auto/f_auto/c_scale,w_auto,dpr_auto/road.png"
-    textAlign="center"
-    flexDirection="column"
-    className="home-container"
-  >
-    <img
-      src={logoJaune}
-      className="title"
-      width="700px"
-      style={{
-        margin: '0 auto',
-        marginTop: '50px',
-        maxWidth: '80%'
-      }}
-    />
+  <Box className="home-container">
+    <img src={logoJaune} className="title" />
 
-    <Heading1 color="white" mt="250px" fontWeight="700" className="secondTitle">
-      Freelancing is cool
-    </Heading1>
+    <Heading1 className="secondTitle">Freelancing is cool</Heading1>
 
-    <Heading2 color="white" fontSize="2rem" className="thirdTitle">
-      Solutions pour devenir freelance
-    </Heading2>
+    <Heading2 className="thirdTitle">Solutions pour devenir freelance</Heading2>
 
     <Box
       flexDirection="column"
