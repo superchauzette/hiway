@@ -12,7 +12,13 @@ const link = {
 
 const Social = ({ link, img }) => (
   <a target="_blank" href={link}>
-    <img className="social" src={img} width="35px" height="35px" />
+    <img
+      className="social"
+      src={img}
+      rel="noopener"
+      width="35px"
+      height="35px"
+    />
   </a>
 )
 

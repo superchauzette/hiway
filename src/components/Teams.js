@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, Text, Heading1, Heading2 } from '../components'
 
 const srcImg = (name, extention = 'jpg') =>
-  `http://res.cloudinary.com/kevin-even-io/image/upload/c_scale,w_auto,dpr_auto/hiway/${name}.${extention}`
+  `https://res.cloudinary.com/kevin-even-io/image/upload/c_scale,w_auto,dpr_auto/hiway/${name}.${extention}`
 const vince = srcImg('vince')
 const alex = srcImg('alex')
 const maxime = srcImg('maxime', 'png')
