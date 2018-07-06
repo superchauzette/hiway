@@ -38,9 +38,7 @@ const Member = ({ name, metier, formation, src, temoignage }) => (
         </Text>
       </Box>
     </Box>
-    <Text color="black" textAlign="center">
-      &ldquo;{temoignage}&rdquo;
-    </Text>
+    <Text textAlign="center">&ldquo;{temoignage}&rdquo;</Text>
   </Box>
 )
 

@@ -1,10 +1,16 @@
 import React from 'react'
-import { Box, Heading1, Heading2 } from '../components'
+import { Box, Heading1, Heading2, Text } from '../components'
 
 const srcImg = name =>
   `https://res.cloudinary.com/kevin-even-io/image/upload/c_scale,w_auto,dpr_auto/hiway/${name}.png`
 const coffee = srcImg('coffee')
 const rocket = srcImg('rocket')
+
+const Li = ({ children }) => (
+  <li style={{display: 'flex'}}>
+    <Text m={0}>{children}</Text>
+  </li>
+)
 
 const Formation = () => (
   <Box
@@ -30,12 +36,12 @@ const Formation = () => (
         </Heading2>
         <Box justifyContent="center">
           <ul className="square">
-            <li> Un parcours d’apprentissage en 13 ateliers </li>
-            <li>100% individualisé</li>
-            <li>100% en présentiel</li>
-            <li>Des rdv où tu veux</li>
-            <li>Un agenda adapté à tes disponibilités</li>
-            <li>Dans des cadres de travail agréables</li>
+            <Li>Un parcours d’apprentissage en 13 ateliers</Li>
+            <Li>100% individualisé</Li>
+            <Li>100% en présentiel</Li>
+            <Li>Des rdv où tu veux</Li>
+            <Li>Un agenda adapté à tes disponibilités</Li>
+            <Li>Dans des cadres de travail agréables</Li>
           </ul>
         </Box>
       </Box>
@@ -59,16 +65,16 @@ const Formation = () => (
           px={['5px', 0, 0]}
         >
           <ul className="square">
-            <li>
+            <Li>
               Se lancer, choisir le statut le plus pertinent et créer sa société
-            </li>
-            <li>Mettre en place une protection sociale sur mesure</li>
-            <li>Trouver sa mission rapidement </li>
-            <li>Contractualiser dans les meilleures conditions</li>
-            <li>Gérer son entreprise efficacement et sans erreur</li>
-            <li>Optimiser sa fiscalité et maximiser sa rémunération</li>
-            <li>Faire son bilan comptable</li>
-            <li>Préparer l’avenir et construire son patrimoine</li>
+            </Li>
+            <Li>Mettre en place une protection sociale sur mesure</Li>
+            <Li>Trouver sa mission rapidement </Li>
+            <Li>Contractualiser dans les meilleures conditions</Li>
+            <Li>Gérer son entreprise efficacement et sans erreur</Li>
+            <Li>Optimiser sa fiscalité et maximiser sa rémunération</Li>
+            <Li>Faire son bilan comptable</Li>
+            <Li>Préparer l’avenir et construire son patrimoine</Li>
           </ul>
         </Box>
       </Box>

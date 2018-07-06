@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import PropTypes from 'prop-types'
 import {
   space,
   color,
@@ -21,11 +20,5 @@ const Text = styled.p`
 `
 
 Text.displayName = 'Text'
-
-const numberStringOrArray = PropTypes.oneOfType([
-  PropTypes.number,
-  PropTypes.string,
-  PropTypes.array,
-])
 
 export default Text
