@@ -1,4 +1,5 @@
 import React from 'react'
+import Fade from 'react-reveal/Fade'
 import { Box, Text, Heading1, Heading2 } from '../components'
 
 const Engagement = ({ title, text }) => (

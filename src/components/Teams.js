@@ -3,6 +3,7 @@ import { Box, Text, Heading1, Heading2 } from '../components'
 
 const srcImg = (name, extention = 'jpg') =>
   `https://res.cloudinary.com/kevin-even-io/image/upload/c_scale,w_auto,dpr_auto/hiway/${name}.${extention}`
+
 const vince = srcImg('vince')
 const alex = srcImg('alex')
 const maxime = srcImg('maxime', 'png')
@@ -10,20 +11,22 @@ const clement = srcImg('clement')
 const experts_comptables = srcImg('experts_comptables')
 
 const Team = ({ name, photo, children, props }) => (
-  <Box flexDirection="column" p="10px" alignItems="center">
-    <img
-      {...props}
-      src={photo}
-      className="picture"
-      alt={name}
-      width="150px"
-      height="150px"
-    />
-    <Box mt="10px" flexDirection="column">
-      <h3 className="yellow">{name}</h3>
-      <Text width="200px">{children}</Text>
+  <Fade>
+    <Box flexDirection="column" p="10px" alignItems="center">
+      <img
+        {...props}
+        src={photo}
+        className="picture"
+        alt={name}
+        width="150px"
+        height="150px"
+      />
+      <Box mt="10px" flexDirection="column">
+        <h3 className="yellow">{name}</h3>
+        <Text width="200px">{children}</Text>
+      </Box>
     </Box>
-  </Box>
+  </Fade>
 )
 
 const Teams = () => (

@@ -1,4 +1,5 @@
 import React from 'react'
+import Zoom from 'react-reveal/Zoom'
 import { Box, Text, Heading1, Heading2, Heading3 } from '../components'
 import freedom from '../assets/freedom.svg'
 import coins from '../assets/coins.svg'
@@ -13,11 +14,13 @@ const Svg = ({ src }) => (
 )
 
 const Point = ({ title, src, text }) => (
-  <Box width="200px" flexDirection="column" mx="30px">
-    <Svg src={src} />
-    <Heading3 color="yellow">{title}</Heading3>
-    <Text px={['8px']}>{text}</Text>
-  </Box>
+  <Zoom>
+    <Box width="200px" flexDirection="column" mx="30px">
+      <Svg src={src} />
+      <Heading3 color="yellow">{title}</Heading3>
+      <Text px={['8px']}>{text}</Text>
+    </Box>
+  </Zoom>
 )
 
 const Frenlancing = () => (

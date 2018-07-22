@@ -1,4 +1,5 @@
 import React from 'react'
+import Fade from 'react-reveal/Fade'
 import { Box, Text } from '../components'
 import Banque from '../assets/maxime.png'
 import Axa from '../assets/clement.jpg'
@@ -7,41 +8,45 @@ import vince from '../assets/vince.jpg'
 import alex from '../assets/alex.jpg'
 
 const Partenaire = ({ src, subtitle, tab, styleImg }) => (
-  <Box flexDirection="column" alignItems="center">
-    <Box width="120px" {...styleImg}>
-      <img src={src} width="100%" height="100%" />
+  <Fade>
+    <Box flexDirection="column" alignItems="center">
+      <Box width="120px" {...styleImg}>
+        <img src={src} width="100%" height="100%" />
+      </Box>
+      <Text mt="10px" fontWeight="bold" textAlign="center">
+        {subtitle}
+      </Text>
+      <ul style={{ listStyle: 'none', textAlign: 'center', marginLeft: 0 }}>
+        {tab.map(i => (
+          <li key={i}>
+            <Text m={0}>{i}</Text>
+          </li>
+        ))}
+      </ul>
     </Box>
-    <Text mt="10px" fontWeight="bold" textAlign="center">
-      {subtitle}
-    </Text>
-    <ul style={{ listStyle: 'none', textAlign: 'center', marginLeft: 0 }}>
-      {tab.map(i => (
-        <li key={i}>
-          <Text m={0}>{i}</Text>
-        </li>
-      ))}
-    </ul>
-  </Box>
+  </Fade>
 )
 
 const Team = ({ name, photo, children }) => (
-  <Box flexDirection="column" p={[0, 0, '10px']} alignItems="center">
-    <img
-      src={photo}
-      className="picture"
-      alt={name}
-      width="150px"
-      height="150px"
-    />
-    <Box mt="10px" flexDirection="column">
-      <h3 className="yellow" style={{ textAlign: 'center' }}>
-        {name}
-      </h3>
-      <Text width="200px" style={{ textAlign: 'center' }}>
-        {children}
-      </Text>
+  <Fade>
+    <Box flexDirection="column" p={[0, 0, '10px']} alignItems="center">
+      <img
+        src={photo}
+        className="picture"
+        alt={name}
+        width="150px"
+        height="150px"
+      />
+      <Box mt="10px" flexDirection="column">
+        <h3 className="yellow" style={{ textAlign: 'center' }}>
+          {name}
+        </h3>
+        <Text width="200px" style={{ textAlign: 'center' }}>
+          {children}
+        </Text>
+      </Box>
     </Box>
-  </Box>
+  </Fade>
 )
 
 const Partenaires = () => (
