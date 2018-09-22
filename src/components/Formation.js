@@ -36,7 +36,7 @@ const Formation = () => (
         </Heading2>
         <Box justifyContent="center">
           <ul className="square">
-            <Li>Un parcours d’apprentissage en 13 ateliers</Li>
+            <Li>Un parcours d’apprentissage en 11 ateliers</Li>
             <Li>100% individualisé</Li>
             <Li>100% en présentiel</Li>
             <Li>Des rdv où tu veux</Li>

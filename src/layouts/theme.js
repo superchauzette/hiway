@@ -1,4 +1,3 @@
-// theme.js
 const colors = {
   text: '#024',
   blue: '#07c',

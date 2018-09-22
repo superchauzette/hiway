@@ -3,6 +3,8 @@ import { Box, Text, Contact, Heading1, Heading2 } from './index'
 import logoJaune from '../assets/LOGO-HIWAY-2018-Y.png'
 import Linkedin from '../assets/linkedin.svg'
 import Twitter from '../assets/twitter.svg'
+import HomeImg from '../assets/home.jpg'
+
 
 const link = {
   linkedin:
@@ -23,12 +25,10 @@ const Social = ({ link, img }) => (
 )
 
 const Home = () => (
-  <Box className="home-container">
+  <Box className="home-container" backgroundImage={HomeImg}>
     <img src={logoJaune} className="title" />
 
-    <Heading1 className="secondTitle">Freelancing is cool</Heading1>
-
-    <Heading2 className="thirdTitle">Solutions pour devenir freelance</Heading2>
+    <Heading1 className="secondTitle">C'est le moment de devenir freelance</Heading1>
 
     <Box className="social-container slideUp">
       <Text className="text-social">suivez-nous</Text>

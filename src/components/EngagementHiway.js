@@ -1,6 +1,7 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
 import { Box, Text, Heading1, Heading2 } from '../components'
+import road from '../assets/road.jpg'
 
 const Engagement = ({ title, text }) => (
   <Box
@@ -22,15 +23,15 @@ const Engagement = ({ title, text }) => (
 
 const EngagementHiway = () => (
   <Box
-    backgroundImage="https://res.cloudinary.com/kevin-even-io/image/upload/ar_4:3,c_fill/c_scale,w_auto,dpr_auto/freelance.jpg"
+    backgroundImage={road}
     style={{ backgroundAttachment: 'fixed' }}
     p="30px"
     flexDirection="column"
     alignItems="center"
     textAlign="center"
   >
-    <Heading1 color="white">L’engagement d’hiway</Heading1>
-    <Heading2 color="yellow">
+    <Heading1 color="chalk">L’engagement d’hiway</Heading1>
+    <Heading2 color="chalk">
       Hiway t’accompagne pour devenir freelance et garantit ta réussite
     </Heading2>
 
@@ -49,8 +50,8 @@ const EngagementHiway = () => (
           title="Entoure-toi de spécialistes"
           text={() => (
             <span>
-              2 coachs <br />
-              1 expert-comptable<br />
+              2 coachs<br />
+              1 équipe comptable<br />
               1 banquier<br />
               1 assureur
             </span>

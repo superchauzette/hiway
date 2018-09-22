@@ -39,7 +39,7 @@ const Teams = () => (
   >
     <Heading1>Une équipe à ton service</Heading1>
     <Heading2 color="yellow" px="10px">
-      Des spécialistes convaincus que le freelancing est le meilleur statut
+      Des spécialistes en chair et en os
     </Heading2>
 
     <Box

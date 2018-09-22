@@ -145,7 +145,6 @@ ul {
   display: flex;
   text-align: center;
   flex-direction: column;
-  background-image: url('http://res.cloudinary.com/kevin-even-io/image/upload/q_auto/f_auto/c_scale,w_auto,dpr_auto/road.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

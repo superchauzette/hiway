@@ -3,9 +3,9 @@ import Zoom from 'react-reveal/Zoom'
 import { Box, Text, Heading1, Heading2, Heading3 } from '../components'
 import freedom from '../assets/freedom.svg'
 import coins from '../assets/coins.svg'
-import happy from '../assets/happiness.svg'
 import skills from '../assets/skills.svg'
 import missions from '../assets/handshake.svg'
+import home from '../assets/home.svg'
 
 const Svg = ({ src }) => (
   <Box height="100px" mb={'20px'} justifyContent="center">
@@ -46,9 +46,9 @@ const Frenlancing = () => (
         />
         <Point src={coins} title="Revenus" text="Gagne 2 fois plus qu’en CDI" />
         <Point
-          src={happy}
-          title="Bonheur"
-          text="Organise ta vie comme tu veux et fais toi plaisir"
+          src={home}
+          title="Patrimoine"
+          text="prépare ton avenir..."
         />
 
         <Point

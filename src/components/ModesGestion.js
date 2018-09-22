@@ -47,7 +47,7 @@ const ModesGestion = () => (
         <Box flexDirection="column" width={["100%", "100%", "60%"]} mr={["0px", "50px", "50px"]}>
           <Box>
             <Text px={[0, "20px", "20px"]}>
-              Fais ton CRA et Hiway s’occupe de tout le reste. <br />Tous les mois, tu reçois des dashboards de ta situation avec le montant de ta rémunération optimisée
+              Hiway révolutionne le freelancing en te libérant entièrement de la gestion de ton entreprise
             </Text>
             <Text px={[0, "20px", "20px"]}>
               Gère ton entreprise en autonomie avec le coaching et le support permanent d’Hiway
@@ -72,11 +72,11 @@ const ModesGestion = () => (
     <Row text1="Contractualisation, facturation et relance client" text2={check} text4={check} text5="" />
     <Row text1="Traitement du courrier" text2={check} text4={check} />
     <Row text1="Gestion des obligations fiscales" text2={check} text4={check} text5="" />
+    <Row text1="Gestion des obligations sociales" text2={check} text4={check} text5="" />
     <Row text1="Tenue de la comptabilité" text2={check} text4={check} text5="" />
-    <Row text1="Calcul de la rémunération" text2={check} text4={check} />
-    <Row text1="Pilotage des partenaires et de l’administration" text2={check} text4={check} />
+    <Row text1="Calcul de la rémunération optimisée" text2={check} text4={check} />
 
-  </Box >
+  </Box>
 )
 
 export default ModesGestion
