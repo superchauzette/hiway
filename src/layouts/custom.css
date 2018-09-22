@@ -145,6 +145,7 @@ ul {
   display: flex;
   text-align: center;
   flex-direction: column;
+  background: url('../assets/home.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

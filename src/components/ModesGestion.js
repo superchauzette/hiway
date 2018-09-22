@@ -5,14 +5,12 @@ import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css'
 import { Box, Text, Heading1 } from '../components'
 import check from '../assets/check.svg'
 
-const TextImg = ({ text }) =>
-  text === undefined ? (
-    <Text />
-  ) : (
-    <Box justifyContent="center">
-      <img width="25px" height="25px" src={text} />
-    </Box>
-  )
+const TextImg = ({ text }) => (
+  <Box justifyContent="center">
+    <img width="25px" height="25px" src={text} />
+  </Box>
+)
+
 
 const Row = ({ text }) => (
   <Tr>
