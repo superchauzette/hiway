@@ -21,14 +21,10 @@ const Row = ({ text }) => (
         {text}
       </Text>
     </Td>
-    <Td>
-      <TextImg text={check} />
-    </Td>
-    <Td />
-    <Td>
-      <TextImg text={check} />
-    </Td>
-    <Td />
+    <Td><TextImg text={check} /></Td>
+    <Td><Text/></Td>
+    <Td><TextImg text={check} /></Td>
+    <Td><Text/></Td>
   </Tr>
 )
 
@@ -97,14 +93,10 @@ const ModesGestion = () => (
             <Td>
               <Text fontWeight="bold">Édition du CRA</Text>
             </Td>
-            <Td />
-            <Td>
-              <TextImg text={check} />
-            </Td>
-            <Td>
-              <TextImg text={check} />
-            </Td>
-            <Td />
+            <Td><Text/></Td>
+            <Td><TextImg text={check} /></Td>
+            <Td><TextImg text={check} /></Td>
+            <Td><Text/></Td>
           </Tr>
           <Row text="Contractualisation, facturation et relance client" />
           <Row text="Traitement du courrier" />
