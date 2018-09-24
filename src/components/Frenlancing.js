@@ -48,7 +48,7 @@ const Frenlancing = () => (
         <Point
           src={home}
           title="Patrimoine"
-          text="prépare ton avenir..."
+          text="Prépare ton avenir"
         />
 
         <Point
