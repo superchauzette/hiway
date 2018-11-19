@@ -57,7 +57,7 @@ const Tools = () => (
         </Tool>
 
         <Box flexDirection="column" alignItems="center" width="250px">
-          <img src={forum} width='100px' height="100%" />
+          <img src={forum} width='100px' height="100px" />
           <p style={{ textAlign: 'center', marginTop: '10px' }}>
             Support permanent <br />sur tous les sujets
           </p>
