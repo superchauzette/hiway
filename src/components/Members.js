@@ -171,7 +171,7 @@ const Members = () => (
       />
       <Member
         name="Nicolas V"
-        src={NicolasV}
+        src={'https://res.cloudinary.com/kevin-even-io/image/upload/c_crop,h_3648,w_3648/v1542660136/hiway/Nicolas_Viry.jpg'}
         metier="Dev Mobile"
         formation="Univ Toulon 2014"
         temoignage="Grâce à HIWAY, j’ai pu démarrer mon activité dans les meilleurs conditions et apprendre à gérer ma société sereinement"
