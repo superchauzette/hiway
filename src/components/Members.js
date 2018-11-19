@@ -1,5 +1,10 @@
 import React from 'react'
 import { Box, Text, Heading1, Heading2 } from '../components'
+import Charley from '../assets/CharleyFROMAGE.jpg'
+import NicolasV from '../assets/NicolasViry.jpg'
+import NicolasR from '../assets/NicolasROSADO.jpg'
+import AlexandreLANGUE from '../assets/AlexandreLANGUE.jpg'
+import FrancoisBOULAIS from '../assets/FrancoisBOULAIS.jpg'
 
 const srcImg = name =>
   `https://res.cloudinary.com/kevin-even-io/image/upload/c_scale,w_auto,dpr_auto/hiway/${name}.jpg`
@@ -25,7 +30,13 @@ const Member = ({ name, metier, formation, src, temoignage }) => (
     width={['100%', '300px', '320px']}
   >
     <Box justifyContent="space-around">
-      <img src={src} alt={name} height="150px" className="picture" />
+      <img
+        src={src}
+        alt={name}
+        height="150px"
+        width="150px"
+        className="picture"
+      />
     </Box>
     <Box>
       <Box flexDirection="column" p="10px" width="100%" m="0">
@@ -91,16 +102,9 @@ const Members = () => (
       <Member
         name="Charly"
         src={Charly}
-        metier="Dev PHP Symphony"
+        metier="Dev PHP Symfony"
         formation="EPITECH 2014"
         temoignage="Je ne me serais jamais lancé sans eux. Aujourd'hui, je recommande Hiway à tous mes amis"
-      />
-      <Member
-        name="Alexandre"
-        src={Alexandre}
-        metier=" Lead Dev Front"
-        formation="Gobelins 2014"
-        temoignage="Hiway m'a conseillé sur le meilleur statut et s'est chargé de toutes les démarches de création de ma société"
       />
       <Member
         name="Kevin"
@@ -135,7 +139,7 @@ const Members = () => (
         src={Matthieu}
         metier="Dev React.js"
         formation="ESIAL 2011"
-        temoignage="Un seul RDV avec Hiway, via une recommandation, m'a décidé à me lancer dans le freelancing"
+        temoignage="Depuis le début de mon aventure freelance fin 2017, HIWAY est mon guide et mon filet de sécurité qui me laisse me concentrer sereinement sur ma mission"
       />
       <Member
         name="Raphaël"
@@ -148,7 +152,7 @@ const Members = () => (
         name="Christopher"
         src={Christopher}
         metier="Lead Dev Mobile"
-        formation="EEPITA 2012"
+        formation="EPITA 2012"
         temoignage="Avec Hiway, je connais, mois après mois, le montant optimal de ma rémunération"
       />
       <Member
@@ -157,6 +161,41 @@ const Members = () => (
         metier="Dev IOS"
         formation="ESPRIT 2012"
         temoignage="J'avais jamais entendu parlé d'optimisation financière, maintenant je l'applique au quotidien"
+      />
+      <Member
+        name="Charley"
+        src={Charley}
+        metier="Dev IOS"
+        formation="Polytech Nantes 2011"
+        temoignage="Depuis Hiway, c'est moi et moi seul qui récolte tout les fruits de mon travail !"
+      />
+      <Member
+        name="Nicolas V"
+        src={NicolasV}
+        metier="Dev Mobile"
+        formation="Univ Toulon 2014"
+        temoignage="Grâce à HIWAY, j’ai pu démarrer mon activité dans les meilleurs conditions et apprendre à gérer ma société sereinement"
+      />
+      <Member
+        name="Alexandre"
+        src={AlexandreLANGUE}
+        metier="Scrum Master"
+        formation="EPSI Arras 2012"
+        temoignage="Grâce à Hiway, je suis passé de freelance junior à freelance confirmé en l'espace d'un mois. Hiway a changé la vision que j'avais du freelancing, je ne peux pas être mieux accompagné !"
+      />
+      <Member
+        name="Nicolas R"
+        src={NicolasR}
+        metier="Dev Full-Stack"
+        formation="PolyTech Tours 2013"
+        temoignage="Hiway m’a permis de concrétiser mon envie d’entreprendre. Grâce à leur accompagnement je me suis lancé dans ce projet en toute confiance !"
+      />
+      <Member
+        name="François"
+        src={FrancoisBOULAIS}
+        metier="Dev iOS"
+        formation="ESIR 2014"
+        temoignage="Une transition du salariat au freelancing on ne peut plus facile et agréable avec Hiway. La promesse est largement tenue"
       />
     </Box>
   </Box>
