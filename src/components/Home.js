@@ -26,7 +26,9 @@ const Home = () => (
   <Box className="home-container">
     <img src={logoJaune} className="title" />
 
-    <Heading1 className="secondTitle">C'est le moment de devenir freelance</Heading1>
+    <Heading1 className="secondTitle">
+      Réalise parfaitement ton projet de devenir freelance
+    </Heading1>
 
     <Box className="social-container slideUp">
       <Text className="text-social">suivez-nous</Text>

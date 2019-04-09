@@ -8,7 +8,7 @@ class Video extends React.Component {
     return (
       <Box
         flexDirection="column"
-        bg="gray"
+        bg="#343a5e"
         width="100%"
         justifyContent="center"
         alignItems="center"

@@ -10,7 +10,10 @@ import {
   Formation,
   ModesGestion,
   Tools,
-  Partenaires
+  Partenaires,
+  MissionHiway,
+  Speetch,
+  Parcours,
 } from '../components'
 
 const IndexPage = () => (
@@ -18,14 +21,16 @@ const IndexPage = () => (
     <Home />
     <Video />
     <Frenlancing />
-    <EngagementHiway />
-    <Formation />
-    <ModesGestion />
-    <Tools />
+    <MissionHiway />
+    <Speetch />
+    <Parcours />
+    {/* <Formation /> */}
+    {/* <ModesGestion />
+    <Tools /> */}
     <Partenaires />
     <Members />
     <Contact />
-  </Box >
+  </Box>
 )
 
 export default IndexPage

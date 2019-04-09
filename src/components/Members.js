@@ -62,7 +62,7 @@ const Members = () => (
     alignItems="center"
     textAlign="center"
   >
-    <Heading1>Une communauté de 60 freelances</Heading1>
+    <Heading1>Une communauté de 100 freelances</Heading1>
     <Box px={[0, 150, 150]}>
       <Heading2 color="yellow">
         Ensemble, nous avons créé CLUSTER, la 1ère communauté collaborative et
@@ -171,7 +171,9 @@ const Members = () => (
       />
       <Member
         name="Nicolas V"
-        src={'https://res.cloudinary.com/kevin-even-io/image/upload/c_crop,h_3648,w_3648/v1542660136/hiway/Nicolas_Viry.jpg'}
+        src={
+          'https://res.cloudinary.com/kevin-even-io/image/upload/c_crop,h_3648,w_3648/v1542660136/hiway/Nicolas_Viry.jpg'
+        }
         metier="Dev Mobile"
         formation="Univ Toulon 2014"
         temoignage="Grâce à HIWAY, j’ai pu démarrer mon activité dans les meilleurs conditions et apprendre à gérer ma société sereinement"

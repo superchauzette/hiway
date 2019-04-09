@@ -3,9 +3,7 @@ import Zoom from 'react-reveal/Zoom'
 import { Box, Text, Heading1, Heading2, Heading3 } from '../components'
 import freedom from '../assets/freedom.svg'
 import coins from '../assets/coins.svg'
-import skills from '../assets/skills.svg'
 import missions from '../assets/handshake.svg'
-import home from '../assets/home.svg'
 
 const Svg = ({ src }) => (
   <Box height="100px" mb={'20px'} justifyContent="center">
@@ -13,53 +11,68 @@ const Svg = ({ src }) => (
   </Box>
 )
 
-const Point = ({ title, src, text }) => (
-  <Zoom>
-    <Box width="200px" flexDirection="column" mx="30px">
-      <Svg src={src} />
-      <Heading3 color="yellow">{title}</Heading3>
-      <Text px={['8px']}>{text}</Text>
+const Point = ({ title, src, text, bgt, bgb, revert = false, ...props }) => (
+  <Box flexDirection="column" width="100%" {...props}>
+    {!revert && (
+      <Box bg={bgt} justifyContent="center" height="100px">
+        <Svg src={src} />
+      </Box>
+    )}
+    <Box bg={bgb} height="100px" flexDirection="column" alignItems="center">
+      <Heading2 mt="10px" color="white">
+        {title}
+      </Heading2>
+      <Text color="white" fontSize="11px">
+        {text}
+      </Text>
     </Box>
-  </Zoom>
+    {revert && (
+      <Box bg={bgt} justifyContent="center" height="100px">
+        <Svg src={src} />
+      </Box>
+    )}
+  </Box>
 )
 
 const Frenlancing = () => (
   <Box
     bg="white"
     flexDirection="column"
-    p="30px"
+    pt="30px"
     alignItems="center"
     textAlign="center"
   >
     <Heading1>C’est le moment de devenir freelance</Heading1>
     <Heading2 color="yellow">
-      Le freelancing est le meilleur statut pour s’épanouir dans sa vie comme
-      dans son job
+      Le marché de la Tech réunit toutes les conditions pour se lancer dans le
+      freelancing et ça vaut vraiment le coup
     </Heading2>
 
-    <Box flexDirection="column" textAlign="center" width="100%">
-      <Box justifyContent="space-around" mt="60px" flexWrap="wrap">
+    <Box flexDirection="column" textAlign="center" width="70%" mb="40px">
+      <Box justifyContent="space-around" mt="30px">
         <Point
-          src={freedom}
+          src={
+            'https://res.cloudinary.com/hopwork/image/upload/q_auto,dpr_1.0/v1531831629/home-malt/sesame-home.jpg'
+          }
           title="Liberté"
-          text="Sois libre de décider : missions, clients, durée, technos, tarifs"
+          text="C’est toi qui décide : projet, client, stack, durée, remote, tarif"
+          bgt="white"
+          bgb="yellow"
         />
-        <Point src={coins} title="Revenus" text="Gagne 2 fois plus qu’en CDI" />
         <Point
-          src={home}
-          title="Patrimoine"
-          text="Prépare ton avenir"
-        />
-
-        <Point
-          src={skills}
-          title="Compétences"
-          text="Deviens un chef d’entreprise"
+          src={coins}
+          title="Revenus"
+          text="Gagne 2 fois plus qu’en CDI"
+          bgt="white"
+          bgb="blue"
+          revert
         />
         <Point
           src={missions}
-          title="Missions"
-          text="Tes compétences sont très recherchées"
+          title="Entrepreneuriat"
+          text="Ouvre-toi à de nouvelles perspectives"
+          bgt="white"
+          bgb="blue"
         />
       </Box>
     </Box>
