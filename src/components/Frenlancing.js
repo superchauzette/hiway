@@ -51,9 +51,7 @@ const Frenlancing = () => (
     <Box flexDirection="column" textAlign="center" width="70%" mb="40px">
       <Box justifyContent="space-around" mt="30px">
         <Point
-          src={
-            'https://res.cloudinary.com/hopwork/image/upload/q_auto,dpr_1.0/v1531831629/home-malt/sesame-home.jpg'
-          }
+          src={freedom}
           title="Liberté"
           text="C’est toi qui décide : projet, client, stack, durée, remote, tarif"
           bgt="white"
@@ -64,7 +62,7 @@ const Frenlancing = () => (
           title="Revenus"
           text="Gagne 2 fois plus qu’en CDI"
           bgt="white"
-          bgb="blue"
+          bgb="yellow"
           revert
         />
         <Point
@@ -72,7 +70,7 @@ const Frenlancing = () => (
           title="Entrepreneuriat"
           text="Ouvre-toi à de nouvelles perspectives"
           bgt="white"
-          bgb="blue"
+          bgb="yellow"
         />
       </Box>
     </Box>

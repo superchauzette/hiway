@@ -14,6 +14,7 @@ import {
   MissionHiway,
   Speetch,
   Parcours,
+  Faas,
 } from '../components'
 
 const IndexPage = () => (
@@ -24,9 +25,7 @@ const IndexPage = () => (
     <MissionHiway />
     <Speetch />
     <Parcours />
-    {/* <Formation /> */}
-    {/* <ModesGestion />
-    <Tools /> */}
+    <Faas />
     <Partenaires />
     <Members />
     <Contact />
