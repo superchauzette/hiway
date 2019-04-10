@@ -12,7 +12,7 @@ export const Speetch = () => (
   >
     <Box
       style={{
-        position: 'absolute',
+        position: 'fixed',
         height: '100%',
         top: 0,
         width: '100%',

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Box, Text, Heading1, Heading2, Heading3 } from '.'
+import { Zoom, Slide } from 'react-reveal'
 
 const BB = ({ text, bg }) => (
   <Box
@@ -14,24 +15,17 @@ const BB = ({ text, bg }) => (
 )
 
 const AAImg = ({ textImg, src, revert }) => (
-  <Box
-    width="40%"
-    style={{ overflow: 'hidden' }}
-    justifyContent="center"
-    alignItems="center"
-    bg="#00000070"
-  >
-    <Heading2 color="white">{textImg}</Heading2>
-    <div
-      style={{
-        position: 'absolute',
-        height: '300px',
-        overflow: 'hidden',
-        zIndex: -1,
-      }}
+  <Box width="40%" bg="#00000070" position="relative">
+    <img style={{ height: '300px', width: '100%' }} src={src} />
+    <Box
+      width="100%"
+      position="absolute"
+      style={{ height: '100%' }}
+      alignItems="center"
+      justifyContent="center"
     >
-      <img style={{ height: 'auto', maxWidth: '100%' }} src={src} />
-    </div>
+      <Heading2 color="white">{textImg}</Heading2>
+    </Box>
   </Box>
 )
 
@@ -44,47 +38,59 @@ const Item = ({ text, textImg, src, revert, bg }) => (
 )
 
 export const Faas = () => (
-  <Box flexDirection="column" alignItems="center" pt="30px">
-    <Heading1>Faas</Heading1>
+  <Box flexDirection="column" alignItems="center" pt="30px" bg="gray">
+    <Zoom>
+      <Heading1>
+        <b>F</b>reelance <b>a</b>s <b>a</b> <b>s</b>ervice
+      </Heading1>
+    </Zoom>
 
     <Box flexDirection="column" width="100%">
       <Item
         text={
-          <div color="white">
-            <Heading2 color="white">
-              Hiway gère tout ton administratif commercial
-            </Heading2>
-            <Text color="#ffffffa1">Édition de ton contrat de prestation</Text>
-            <Text color="#ffffffa1">
-              Facturation mensuelle de tes prestations
-            </Text>
-            <Text color="#ffffffa1">Suivi des paiements</Text>
-            <Text color="#ffffffa1">Relance en cas de retard de paiement </Text>
+          <div>
+            <Slide right>
+              <Heading2 color="white">
+                Hiway gère tout ton administratif commercial
+              </Heading2>
+              <Text color="#ffffffa1">
+                Édition de ton contrat de prestation
+              </Text>
+              <Text color="#ffffffa1">
+                Facturation mensuelle de tes prestations
+              </Text>
+              <Text color="#ffffffa1">Suivi des paiements</Text>
+              <Text color="#ffffffa1">
+                Relance en cas de retard de paiement{' '}
+              </Text>
+            </Slide>
           </div>
         }
         textImg="Facturation mensuelle & contrats gérés"
         src="https://images.pexels.com/photos/2096580/pexels-photo-2096580.jpeg?cs=srgb&dl=architecture-black-and-white-building-exterior-2096580.jpg&fm=jpg"
-        bg="grey"
+        bg="#ff396c"
       />
       <Item
         text={
           <div>
-            <Heading2>
-              Hiway gère tout le fiscal et le social de ta société
-            </Heading2>
-            <Text>Création des comptes impôts.gouv, SSI, URSSAF, CIPAV</Text>
-            <Text>
-              Calcul des montants dus : TVA, Impôt sur les Sociétés, Cotisation
-              Financière des Entreprises, URSSAF, CIPAV
-            </Text>
-            <Text>Mise en paiement et suivi</Text>
-            <Text>Relation avec les organismes fiscaux et sociaux</Text>
+            <Slide left>
+              <Heading2>
+                Hiway gère tout le fiscal et le social de ta société
+              </Heading2>
+              <Text>Création des comptes impôts.gouv, SSI, URSSAF, CIPAV</Text>
+              <Text>
+                Calcul des montants dus : TVA, Impôt sur les Sociétés,
+                Cotisation Financière des Entreprises, URSSAF, CIPAV
+              </Text>
+              <Text>Mise en paiement et suivi</Text>
+              <Text>Relation avec les organismes fiscaux et sociaux</Text>
+            </Slide>
           </div>
         }
         textImg="Obligations fiscales et sociales traitées"
         src="https://images.pexels.com/photos/2068411/pexels-photo-2068411.jpeg?cs=srgb&dl=blurred-background-close-up-colors-2068411.jpg&fm=jpg"
         revert
-        bg="white"
+        bg="yellow"
       />
       <Item
         text={
@@ -99,22 +105,26 @@ export const Faas = () => (
         }
         textImg="Gagne un maximum d’argent tous les mois"
         src="https://images.pexels.com/photos/2084239/pexels-photo-2084239.jpeg?cs=srgb&dl=4k-wallpaper-citrus-fruit-close-up-2084239.jpg&fm=jpg"
-        bg="grey"
+        bg="#343a5e"
       />
       <Item
         text={
           <div>
-            <Heading2>Hiway gère tout l’administratif</Heading2>
-            <Text>Gestion permanente et en temps réel de ta comptabilité</Text>
-            <Text>Réception, traitement et classement du courrier</Text>
-            <Text>Création de documents à la demande</Text>
-            <Text>Support permanent sur tous les sujets</Text>
+            <Heading2 color="white">Hiway gère tout l’administratif</Heading2>
+            <Text color="#ffffffa1">
+              Gestion permanente et en temps réel de ta comptabilité
+            </Text>
+            <Text color="#ffffffa1">
+              Réception, traitement et classement du courrier
+            </Text>
+            <Text color="#ffffffa1">Création de documents à la demande</Text>
+            <Text color="#ffffffa1">Support permanent sur tous les sujets</Text>
           </div>
         }
         textImg="Concentre-toi sur ton job"
         src="https://images.pexels.com/photos/1093904/pexels-photo-1093904.jpeg?cs=srgb&dl=afternoon-background-beverage-1093904.jpg&fm=jpg"
         revert
-        bg="white"
+        bg="grey"
       />
     </Box>
   </Box>

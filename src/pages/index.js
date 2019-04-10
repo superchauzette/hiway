@@ -15,6 +15,7 @@ import {
   Speetch,
   Parcours,
   Faas,
+  Hipay,
 } from '../components'
 
 const IndexPage = () => (
@@ -26,6 +27,7 @@ const IndexPage = () => (
     <Speetch />
     <Parcours />
     <Faas />
+    <Hipay />
     <Partenaires />
     <Members />
     <Contact />
