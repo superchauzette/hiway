@@ -135,7 +135,7 @@ const stepsData = [
   },
 ]
 
-const Step = ({ index, title, items }) => (
+const Step = ({ title, items }) => (
   <Box mb="25px" flexDirection="column">
     <Heading3 color="red" mb="10px">{`${title}`}</Heading3>
     <ul>
@@ -162,7 +162,7 @@ export const Parcours = () => (
     <Box width="80%" flexDirection="column">
       <Heading1>Parcours</Heading1>
       <Box flexDirection="column" width="80%" mt="30px">
-        {stepsData.map((step, index) => <Step {...step} index={index} />)}
+        {stepsData.map((step, index) => <Step {...step} />)}
       </Box>
     </Box>
   </Box>

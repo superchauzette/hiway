@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, Text, Heading1, Heading2 } from '.'
 import { Zoom, Slide } from 'react-reveal'
 
-const BB = ({ text, bg }) => (
+const BlocText = ({ text, bg }) => (
   <Box
     width={['100%', '60%']}
     bg={bg}
@@ -14,7 +14,7 @@ const BB = ({ text, bg }) => (
   </Box>
 )
 
-const AAImg = ({ textImg, src, revert }) => (
+const BlocImg = ({ textImg, src }) => (
   <Box width={['100%', '40%']} bg="#00000070" position="relative">
     <img
       style={{ minHeight: '100%', height: '300px', width: '100%' }}
@@ -35,9 +35,9 @@ const AAImg = ({ textImg, src, revert }) => (
 
 const Item = ({ text, textImg, src, revert, bg }) => (
   <Box style={{ position: 'relative' }} flexWrap={['wrap', 'noWrap']}>
-    {!revert && <AAImg textImg={textImg} src={src} revert={revert} />}
-    <BB text={text} bg={bg} />
-    {revert && <AAImg textImg={textImg} src={src} />}
+    {!revert && <BlocImg textImg={textImg} src={src} />}
+    <BlocText text={text} bg={bg} />
+    {revert && <BlocImg textImg={textImg} src={src} />}
   </Box>
 )
 
@@ -65,7 +65,7 @@ export const Faas = () => (
               </Text>
               <Text color="#ffffffa1">Suivi des paiements</Text>
               <Text color="#ffffffa1">
-                Relance en cas de retard de paiement{' '}
+                Relance en cas de retard de paiement
               </Text>
             </Slide>
           </div>

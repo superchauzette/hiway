@@ -1,6 +1,6 @@
 import React from 'react'
 import YouTube from 'react-youtube'
-import { Box, Text, Heading2 } from './index'
+import { Box, Heading2 } from './index'
 
 class Video extends React.Component {
   _onReady = event => event.target.playVideo()

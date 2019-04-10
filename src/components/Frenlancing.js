@@ -1,6 +1,5 @@
 import React from 'react'
-import Zoom from 'react-reveal/Zoom'
-import { Box, Text, Heading1, Heading2, Heading3 } from '../components'
+import { Box, Text, Heading1, Heading2 } from '../components'
 import freedom from '../assets/freedom.svg'
 import coins from '../assets/coins.svg'
 import missions from '../assets/handshake.svg'

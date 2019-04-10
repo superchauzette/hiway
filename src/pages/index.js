@@ -2,20 +2,21 @@ import React from 'react'
 import {
   Box,
   Home,
-  Frenlancing,
-  EngagementHiway,
-  Members,
-  Contact,
   Video,
-  Formation,
-  ModesGestion,
-  Tools,
-  Partenaires,
+  Frenlancing,
   MissionHiway,
   Speetch,
   Parcours,
   Faas,
   Hipay,
+  Partenaires,
+  Members,
+  Contact,
+
+  // EngagementHiway,
+  // Formation,
+  // ModesGestion,
+  // Tools,
 } from '../components'
 
 const IndexPage = () => (

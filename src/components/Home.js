@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Text, Contact, Heading1, Heading2 } from './index'
+import { Box, Text, Heading1 } from './index'
 import logoJaune from '../assets/LOGO-HIWAY-2018-Y.png'
 import Linkedin from '../assets/linkedin.svg'
 import Twitter from '../assets/twitter.svg'

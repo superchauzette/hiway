@@ -49,5 +49,3 @@ export const Speetch = () => (
     </Box>
   </Box>
 )
-
-export default Speetch
