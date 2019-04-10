@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Text, Heading1, Heading2, Heading3 } from '.'
+import { Box, Text, Heading1, Heading2 } from '.'
 import { Zoom, Slide } from 'react-reveal'
 
 const BB = ({ text, bg }) => (
@@ -99,12 +99,14 @@ export const Faas = () => (
       <Item
         text={
           <div>
-            <Heading2 color="white">
-              Hiway pilote les finances de ta société
-            </Heading2>
-            <Text color="#ffffffa1">Calcul mensuel de ta rémunération</Text>
-            <Text color="#ffffffa1">Optimisation de ta fiscalité</Text>
-            <Text color="#ffffffa1">Sécurisation de ta trésorerie</Text>
+            <Slide right>
+              <Heading2 color="white">
+                Hiway pilote les finances de ta société
+              </Heading2>
+              <Text color="#ffffffa1">Calcul mensuel de ta rémunération</Text>
+              <Text color="#ffffffa1">Optimisation de ta fiscalité</Text>
+              <Text color="#ffffffa1">Sécurisation de ta trésorerie</Text>
+            </Slide>
           </div>
         }
         textImg="Gagne un maximum d’argent tous les mois"
@@ -114,15 +116,19 @@ export const Faas = () => (
       <Item
         text={
           <div>
-            <Heading2 color="white">Hiway gère tout l’administratif</Heading2>
-            <Text color="#ffffffa1">
-              Gestion permanente et en temps réel de ta comptabilité
-            </Text>
-            <Text color="#ffffffa1">
-              Réception, traitement et classement du courrier
-            </Text>
-            <Text color="#ffffffa1">Création de documents à la demande</Text>
-            <Text color="#ffffffa1">Support permanent sur tous les sujets</Text>
+            <Slide left>
+              <Heading2 color="white">Hiway gère tout l’administratif</Heading2>
+              <Text color="#ffffffa1">
+                Gestion permanente et en temps réel de ta comptabilité
+              </Text>
+              <Text color="#ffffffa1">
+                Réception, traitement et classement du courrier
+              </Text>
+              <Text color="#ffffffa1">Création de documents à la demande</Text>
+              <Text color="#ffffffa1">
+                Support permanent sur tous les sujets
+              </Text>
+            </Slide>
           </div>
         }
         textImg="Concentre-toi sur ton job"
