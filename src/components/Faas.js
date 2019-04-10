@@ -4,7 +4,7 @@ import { Zoom, Slide } from 'react-reveal'
 
 const BB = ({ text, bg }) => (
   <Box
-    width="60%"
+    width={['100%', '60%']}
     bg={bg}
     p="30px"
     flexDirection="column"
@@ -15,14 +15,18 @@ const BB = ({ text, bg }) => (
 )
 
 const AAImg = ({ textImg, src, revert }) => (
-  <Box width="40%" bg="#00000070" position="relative">
-    <img style={{ height: '300px', width: '100%' }} src={src} />
+  <Box width={['100%', '40%']} bg="#00000070" position="relative">
+    <img
+      style={{ minHeight: '100%', height: '300px', width: '100%' }}
+      src={src}
+    />
     <Box
       width="100%"
       position="absolute"
       style={{ height: '100%' }}
       alignItems="center"
       justifyContent="center"
+      textAlign="center"
     >
       <Heading2 color="white">{textImg}</Heading2>
     </Box>
@@ -30,7 +34,7 @@ const AAImg = ({ textImg, src, revert }) => (
 )
 
 const Item = ({ text, textImg, src, revert, bg }) => (
-  <Box style={{ height: '300px', position: 'relative' }}>
+  <Box style={{ position: 'relative' }} flexWrap={['wrap', 'noWrap']}>
     {!revert && <AAImg textImg={textImg} src={src} revert={revert} />}
     <BB text={text} bg={bg} />
     {revert && <AAImg textImg={textImg} src={src} />}
@@ -67,7 +71,7 @@ export const Faas = () => (
           </div>
         }
         textImg="Facturation mensuelle & contrats gérés"
-        src="https://images.pexels.com/photos/2096580/pexels-photo-2096580.jpeg?cs=srgb&dl=architecture-black-and-white-building-exterior-2096580.jpg&fm=jpg"
+        src="https://images.pexels.com/photos/1435192/pexels-photo-1435192.jpeg?cs=srgb&dl=cash-close-up-counting-1435192.jpg&fm=jpg"
         bg="#ff396c"
       />
       <Item

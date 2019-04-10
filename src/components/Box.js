@@ -10,7 +10,6 @@ import {
   propTypes,
   position,
   height,
-  background,
   textAlign,
 } from 'styled-system'
 
@@ -20,12 +19,14 @@ const backgroundImage = props =>
         backgroundImage: `url(${props.backgroundImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center center',
-        backgroundRepeat: 'no-repeat'
+        backgroundRepeat: 'no-repeat',
       }
     : null
 
+const getDisplay = props => `display: ${props.display || 'flex'};`
+
 const Box = styled.div`
-  display: flex;
+  ${getDisplay}
   ${space} ${width} ${color} ${textAlign} ${backgroundImage} ${alignItems} ${justifyContent} ${flexWrap} ${flexDirection} ${position} ${height};
 `
 

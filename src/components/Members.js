@@ -1,7 +1,6 @@
 import React from 'react'
 import { Box, Text, Heading1, Heading2 } from '../components'
 import Charley from '../assets/CharleyFROMAGE.jpg'
-import NicolasV from '../assets/NicolasViry.jpg'
 import NicolasR from '../assets/NicolasROSADO.jpg'
 import AlexandreLANGUE from '../assets/AlexandreLANGUE.jpg'
 import FrancoisBOULAIS from '../assets/FrancoisBOULAIS.jpg'
@@ -15,7 +14,7 @@ const Hedi = srcImg('Hedi')
 const Kevin = srcImg('Kevin')
 const Christopher = srcImg('Christopher')
 const Matthieu = srcImg('Matthieu')
-const Alexandre = srcImg('Alexandre')
+// const Alexandre = srcImg('Alexandre')
 const Antoine = srcImg('Antoine')
 const Charly = srcImg('Charly')
 const Raphael = srcImg('Raphael')

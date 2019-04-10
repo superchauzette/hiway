@@ -26,10 +26,10 @@ export const Hipay = () => (
         et mobile pour simplifier ta vie de freelance
       </Heading2>
     </Box>
-    <Box>
+    <Box mb="20px">
       <Box
         flexDirection="column"
-        width="60%"
+        width={['100%', '60%']}
         mt="30px"
         justifyContent="space-between"
       >
@@ -49,7 +49,11 @@ export const Hipay = () => (
           revert
         />
       </Box>
-      <Box style={{ height: '350px' }} width="40%">
+      <Box
+        style={{ height: '350px' }}
+        width={['0%', '40%']}
+        display={['none', 'flex']}
+      >
         <img
           src="https://images.pexels.com/photos/2084974/pexels-photo-2084974.jpeg?cs=srgb&dl=brunette-computer-computer-keyboard-2084974.jpg&fm=jpg"
           style={{ height: 'auto', maxWidth: '100%' }}
