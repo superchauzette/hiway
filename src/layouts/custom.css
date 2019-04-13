@@ -141,6 +141,8 @@ ul {
 
 .home-container {
   height: 83vh;
+  min-height: 83vh;
+  max-height: 83vh;
   width: 100%;
   display: flex;
   text-align: center;
