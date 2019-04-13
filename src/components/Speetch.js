@@ -13,11 +13,16 @@ export const Speetch = () => (
       textAlign="center"
       bg="#00000070"
     >
-      <Heading1 color="white" width="70%">
+      <Heading1 color="white" width={['100%', '70%']}>
         Hiway révolutionne le freelancing en créant le Freelancing as a Service
       </Heading1>
 
-      <Box flexDirection="column" textAlign="center" width="60%" mt="30px">
+      <Box
+        flexDirection="column"
+        textAlign="center"
+        width={['100%', '60%']}
+        mt="30px"
+      >
         <Heading3 color="white">
           Les compétences Tech sont très demandées et le statut de freelance
           offre des atouts majeurs. Un expert de la Tech a donc tout intérêt à

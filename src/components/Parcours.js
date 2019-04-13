@@ -165,9 +165,14 @@ const Step = ({ title, items }) => (
 )
 
 export const Parcours = () => (
-  <Box p="30px" flexDirection="column" alignItems="center" bg="gray">
+  <Box
+    p={['15px', '30px']}
+    flexDirection="column"
+    alignItems="center"
+    bg="gray"
+  >
     <Heading1>Parcours</Heading1>
-    <Box flexDirection="column" mt="30px">
+    <Box flexDirection="column" mt={['0px', '30px']}>
       <VerticalTimeline>
         {stepsData.map((step, index) => <Step {...step} />)}
       </VerticalTimeline>

@@ -32,7 +32,7 @@ const MissionHiway = () => (
     bg="blue"
   >
     <Heading1 color="white">La mission d’Hiway</Heading1>
-    <Heading2 color="yellow" width="70%">
+    <Heading2 color="yellow" width={['100%', '70%']}>
       Hiway est la solution qui rassemble tout ce dont tu as besoin pour te
       lancer et réussir dans le freelancing
     </Heading2>

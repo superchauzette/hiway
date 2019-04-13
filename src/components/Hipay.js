@@ -24,7 +24,7 @@ export const Hipay = () => (
   >
     <Box flexDirection="column" alignItems="center" textAlign="center">
       <Heading1 color="white">Hipay</Heading1>
-      <Heading2 width="60%" color="#ffffffa1">
+      <Heading2 width={['100%', '60%']} color="#ffffffa1">
         Les freelances de la communauté Hiway ont développé une application web
         et mobile pour simplifier ta vie de freelance
       </Heading2>

@@ -44,7 +44,7 @@ const Item = ({ text, textImg, src, revert, bg }) => (
 export const Faas = () => (
   <Box flexDirection="column" alignItems="center" pt="30px" bg="white">
     <Zoom>
-      <Heading1>
+      <Heading1 textAlign="center">
         <b>F</b>reelance <b>a</b>s <b>a</b> <b>s</b>ervice
       </Heading1>
     </Zoom>

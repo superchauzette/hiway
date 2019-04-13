@@ -26,7 +26,12 @@ const Home = () => (
   <Box className="home-container">
     <img src={logoJaune} className="title" />
 
-    <Heading1 className="secondTitle">
+    <Heading1
+      className="secondTitle"
+      fontSize={['28px', '2.75rem']}
+      mx="10px"
+      mb="5px"
+    >
       Réalise parfaitement ton projet de devenir freelance
     </Heading1>
 

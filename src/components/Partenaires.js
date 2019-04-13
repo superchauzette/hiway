@@ -1,6 +1,6 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
-import { Box, Text } from '../components'
+import { Box, Text, Heading1, Heading2 } from '../components'
 import Banque from '../assets/maxime.png'
 import Axa from '../assets/clement.jpg'
 import expertsComptables from '../assets/experts_comptables.jpg'
@@ -57,10 +57,10 @@ const Partenaires = () => (
     alignItems="center"
     flexDirection="column"
   >
-    <h1 style={{ textAlign: 'center' }}>Une équipe à ton service</h1>
-    <h2 className="yellow" style={{ textAlign: 'center' }}>
+    <Heading1 textAlign="center">Une équipe à ton service</Heading1>
+    <Heading2 className="yellow" textAlign="center" px="5px">
       Des spécialistes convaincus que le freelancing est le meilleur statut
-    </h2>
+    </Heading2>
 
     <Box
       justifyContent="space-around"

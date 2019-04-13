@@ -11,13 +11,19 @@ const Svg = ({ src }) => (
 )
 
 const Point = ({ title, src, text, bgt, bgb, revert = false, ...props }) => (
-  <Box flexDirection="column" width="100%" {...props}>
+  <Box flexDirection="column" width={'100%'} {...props}>
     {!revert && (
       <Box bg={bgt} justifyContent="center" height="100px">
         <Svg src={src} />
       </Box>
     )}
-    <Box bg={bgb} height="100px" flexDirection="column" alignItems="center">
+    <Box
+      bg={bgb}
+      height="100px"
+      flexDirection="column"
+      alignItems="center"
+      px="10px"
+    >
       <Heading2 mt="10px" color="white">
         {title}
       </Heading2>
@@ -42,13 +48,22 @@ const Frenlancing = () => (
     textAlign="center"
   >
     <Heading1>C’est le moment de devenir freelance</Heading1>
-    <Heading2 color="yellow">
+    <Heading2 color="yellow" px="10px">
       Le marché de la Tech réunit toutes les conditions pour se lancer dans le
       freelancing et ça vaut vraiment le coup
     </Heading2>
 
-    <Box flexDirection="column" textAlign="center" width="70%" mb="40px">
-      <Box justifyContent="space-around" mt="30px">
+    <Box
+      flexDirection="column"
+      textAlign="center"
+      width={['100%', '70%']}
+      mb="40px"
+    >
+      <Box
+        justifyContent="space-around"
+        mt="30px"
+        flexWrap={['wrap', 'nowrap']}
+      >
         <Point
           src={freedom}
           title="Liberté"
