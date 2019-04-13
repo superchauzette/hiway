@@ -42,7 +42,7 @@ const Item = ({ text, textImg, src, revert, bg }) => (
 )
 
 export const Faas = () => (
-  <Box flexDirection="column" alignItems="center" pt="30px" bg="gray">
+  <Box flexDirection="column" alignItems="center" pt="30px" bg="white">
     <Zoom>
       <Heading1>
         <b>F</b>reelance <b>a</b>s <b>a</b> <b>s</b>ervice
@@ -72,7 +72,7 @@ export const Faas = () => (
         }
         textImg="Facturation mensuelle & contrats gérés"
         src="https://images.pexels.com/photos/1435192/pexels-photo-1435192.jpeg?cs=srgb&dl=cash-close-up-counting-1435192.jpg&fm=jpg"
-        bg="#ff396c"
+        bg="#343a5e"
       />
       <Item
         text={
@@ -111,7 +111,7 @@ export const Faas = () => (
         }
         textImg="Gagne un maximum d’argent tous les mois"
         src="https://images.pexels.com/photos/2084239/pexels-photo-2084239.jpeg?cs=srgb&dl=4k-wallpaper-citrus-fruit-close-up-2084239.jpg&fm=jpg"
-        bg="#343a5e"
+        bg="#ff396c"
       />
       <Item
         text={

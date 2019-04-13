@@ -1,5 +1,10 @@
 import React from 'react'
 import { Box, Heading1, Heading3, Text } from '.'
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from 'react-vertical-timeline-component'
+import 'react-vertical-timeline-component/style.min.css'
 
 const stepsData = [
   {
@@ -136,34 +141,36 @@ const stepsData = [
 ]
 
 const Step = ({ title, items }) => (
-  <Box mb="25px" flexDirection="column">
-    <Heading3 color="red" mb="10px">{`${title}`}</Heading3>
-    <ul>
-      {items.map(item => (
-        <li>
-          <Text mb="3px" style={{ fontWeight: 'bold' }}>
-            {item.title}
-          </Text>
-          <Text mb="7px">{item.description}</Text>
-        </li>
-      ))}
-    </ul>
-  </Box>
+  <VerticalTimelineElement
+    className="vertical-timeline-element--work"
+    date={<Heading3 color="red">{title}</Heading3>}
+    icon={
+      <img src="https://res.cloudinary.com/hopwork/image/upload/v1508844479/home-malt/check.svg" />
+    }
+    iconStyle={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      background: 'rgb(33, 150, 243)',
+      color: '#fff',
+    }}
+  >
+    {items.map(item => (
+      <Box m="0px" flexDirection="column">
+        <Text style={{ fontWeight: 'bold', margin: 0 }}>{item.title}</Text>
+        <Text style={{ margin: '4px 0 8px' }}>{item.description}</Text>
+      </Box>
+    ))}
+  </VerticalTimelineElement>
 )
 
 export const Parcours = () => (
-  <Box
-    p="30px"
-    flexDirection="column"
-    alignItems="center"
-    style={{ position: 'relative' }}
-    bg="white"
-  >
-    <Box width="80%" flexDirection="column">
-      <Heading1>Parcours</Heading1>
-      <Box flexDirection="column" width="80%" mt="30px">
+  <Box p="30px" flexDirection="column" alignItems="center" bg="gray">
+    <Heading1>Parcours</Heading1>
+    <Box flexDirection="column" mt="30px">
+      <VerticalTimeline>
         {stepsData.map((step, index) => <Step {...step} />)}
-      </Box>
+      </VerticalTimeline>
     </Box>
   </Box>
 )
