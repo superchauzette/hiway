@@ -1,15 +1,18 @@
 import React from 'react'
 import { Box, Heading1, Heading2, Heading3, Text } from '.'
+import { Zoom } from 'react-reveal'
 
 const Item = ({ title, text, revert }) => (
-  <Box justifyContent={revert ? 'flex-end' : 'flex-start'}>
-    <Box flexDirection="column" width="60%">
-      <Heading3 color="white" mb="5px">
-        {title}
-      </Heading3>
-      <Text color="#ffffffa1">{text}</Text>
+  <Zoom right>
+    <Box justifyContent={revert ? 'flex-end' : 'flex-start'}>
+      <Box flexDirection="column" width="60%">
+        <Heading3 color="white" mb="5px">
+          {title}
+        </Heading3>
+        <Text color="#ffffffa1">{text}</Text>
+      </Box>
     </Box>
-  </Box>
+  </Zoom>
 )
 
 export const Hipay = () => (

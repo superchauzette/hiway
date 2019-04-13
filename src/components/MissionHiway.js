@@ -1,23 +1,26 @@
 import React from 'react'
 import { Box, Text, Heading1, Heading2, Heading3 } from '.'
+import { Fade } from 'react-reveal'
 
 const Engagement = ({ title, text }) => (
-  <Box
-    width="260px"
-    height="185px"
-    flexDirection="column"
-    alignItems="flex-start"
-  >
-    <Box mb="10px">
-      <img src="https://res.cloudinary.com/hopwork/image/upload/v1508844479/home-malt/check.svg" />
+  <Fade>
+    <Box
+      width="260px"
+      height="185px"
+      flexDirection="column"
+      alignItems="flex-start"
+    >
+      <Box mb="10px">
+        <img src="https://res.cloudinary.com/hopwork/image/upload/v1508844479/home-malt/check.svg" />
+      </Box>
+      <Heading3 color="yellow" mb="5px">
+        {title}
+      </Heading3>
+      <Text textAlign="left" color="white">
+        {text}
+      </Text>
     </Box>
-    <Heading3 color="yellow" mb="5px">
-      {title}
-    </Heading3>
-    <Text textAlign="left" color="white">
-      {text}
-    </Text>
-  </Box>
+  </Fade>
 )
 
 const MissionHiway = () => (
