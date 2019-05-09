@@ -9,17 +9,11 @@ import {
   Parcours,
   Faas,
   Hipay,
-  Partenaires,
   Members,
   Contact,
-
-  // EngagementHiway,
-  // Formation,
-  // ModesGestion,
-  // Tools,
 } from '../components'
 
-const IndexPage = () => (
+export default () => (
   <Box flexDirection="column" width="100%">
     <Home />
     <Video />
@@ -29,10 +23,7 @@ const IndexPage = () => (
     <Parcours />
     <Faas />
     <Hipay />
-    <Partenaires />
     <Members />
     <Contact />
   </Box>
 )
-
-export default IndexPage

@@ -4,42 +4,7 @@ import freedom from '../assets/freedom.svg'
 import coins from '../assets/coins.svg'
 import missions from '../assets/handshake.svg'
 
-const Svg = ({ src }) => (
-  <Box height="100px" mb={'20px'} justifyContent="center">
-    <img src={src} height="100px" />
-  </Box>
-)
-
-const Point = ({ title, src, text, bgt, bgb, revert = false, ...props }) => (
-  <Box flexDirection="column" width={'100%'} {...props}>
-    {!revert && (
-      <Box bg={bgt} justifyContent="center" height="100px">
-        <Svg src={src} />
-      </Box>
-    )}
-    <Box
-      bg={bgb}
-      height="100px"
-      flexDirection="column"
-      alignItems="center"
-      px="10px"
-    >
-      <Heading2 mt="10px" color="white">
-        {title}
-      </Heading2>
-      <Text color="white" fontSize="11px">
-        {text}
-      </Text>
-    </Box>
-    {revert && (
-      <Box bg={bgt} justifyContent="center" height="100px">
-        <Svg src={src} />
-      </Box>
-    )}
-  </Box>
-)
-
-const Frenlancing = () => (
+export const Frenlancing = () => (
   <Box
     bg="white"
     flexDirection="column"
@@ -48,10 +13,6 @@ const Frenlancing = () => (
     textAlign="center"
   >
     <Heading1>C’est le moment de devenir freelance</Heading1>
-    <Heading2 color="yellow" px="10px">
-      Le marché de la Tech réunit toutes les conditions pour se lancer dans le
-      freelancing et ça vaut vraiment le coup
-    </Heading2>
 
     <Box
       flexDirection="column"
@@ -91,4 +52,39 @@ const Frenlancing = () => (
   </Box>
 )
 
-export default Frenlancing
+function Point({ title, src, text, bgt, bgb, revert = false, ...props }) {
+  const Svg = ({ src }) => (
+    <Box height="100px" mb={'20px'} justifyContent="center">
+      <img src={src} height="100px" />
+    </Box>
+  )
+
+  return (
+    <Box flexDirection="column" width={'100%'} {...props}>
+      {!revert && (
+        <Box bg={bgt} justifyContent="center" height="100px">
+          <Svg src={src} />
+        </Box>
+      )}
+      <Box
+        bg={bgb}
+        height="100px"
+        flexDirection="column"
+        alignItems="center"
+        px="10px"
+      >
+        <Heading2 mt="10px" color="white">
+          {title}
+        </Heading2>
+        <Text color="white" fontSize="11px">
+          {text}
+        </Text>
+      </Box>
+      {revert && (
+        <Box bg={bgt} justifyContent="center" height="100px">
+          <Svg src={src} />
+        </Box>
+      )}
+    </Box>
+  )
+}

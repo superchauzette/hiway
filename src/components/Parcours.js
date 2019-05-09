@@ -33,12 +33,12 @@ const stepsData = [
       {
         title: 'BNP Paribas',
         description:
-          'Dépôt de capital social, ouverture du compte bancaire professionnel, services bancaires, solutions d’avance de trésorerie, financement de projets patrimoniaux',
+          'Compte pro, solutions de financement et accompagnement patrimonial',
       },
       {
         title: 'AXA',
         description:
-          'Contrat d’assurance de responsabilité civile professionnelle et obtention de l’attestation en 48h. Protection sociale personnalisée (mutuelle, prévoyance, retraite)',
+          'Assurance professionnelle et protection sociale personnalisée',
       },
     ],
   },
@@ -46,7 +46,7 @@ const stepsData = [
     title: 'Coaching commercial',
     items: [
       {
-        title: 'Recherche de missions',
+        title: 'Mise en visibilité',
         description:
           'Profil value, CV, mise en visibilité, préparation aux entretiens, suivi des opportunités',
       },
@@ -105,16 +105,17 @@ const stepsData = [
       'Comptabilité: Partenariat avec un cabinet d’expertise-comptable intégré dans l’accompagnement Hiway',
     items: [
       {
-        title: 'Conseil personnalisé et validation des opérations comptables',
-        description: '',
+        description:
+          'Conseil personnalisé et validation des opérations comptables',
+        title: '',
       },
       {
-        title: 'Bilan et liasse fiscale',
-        description: '',
+        description: 'Bilan et liasse fiscale',
+        title: '',
       },
       {
-        title: 'Assemblée générale et dépôt des comptes',
-        description: '',
+        description: 'Assemblée générale et dépôt des comptes',
+        title: '',
       },
     ],
   },
@@ -122,19 +123,19 @@ const stepsData = [
     title: 'Préparation de l’avenir',
     items: [
       {
-        title:
+        title: '',
+        description:
           'Accompagnement par un gestionnaire de patrimoine partenaire d’Hiway',
-        description: '',
       },
       {
-        title:
+        title: '',
+        description:
           'Définition d’une stratégie personnalisée d’investissements et de placements',
-        description: '',
       },
       {
-        title:
+        title: '',
+        description:
           'Conseil et mise en place des montages juridiques, fiscaux et financierss',
-        description: '',
       },
     ],
   },
@@ -179,5 +180,3 @@ export const Parcours = () => (
     </Box>
   </Box>
 )
-
-export default Parcours
