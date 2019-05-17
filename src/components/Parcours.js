@@ -12,18 +12,12 @@ const stepsData = [
     items: [
       {
         title: 'Choix de la forme juridique et rédaction des statuts',
-        description:
-          'Analyse de toutes les possibilités en matière juridique, fiscale, sociale ainsi que leur impact sur la rémunération et préconisation du statut juridique le plus intéressant',
       },
       {
         title: 'Constitution du dossier d’immatriculation',
-        description:
-          'Formulaires obligatoires, attestation de dépôt du capital social, annonce légale, contrat de domiciliation du siège social',
       },
       {
         title: 'Immatriculation et obtention du Kbis',
-        description:
-          'Immatriculation auprès du Greffe du Tribunal de Commerce et obtention du Kbis en 48h',
       },
     ],
   },
@@ -47,18 +41,12 @@ const stepsData = [
     items: [
       {
         title: 'Mise en visibilité',
-        description:
-          'Profil value, CV, mise en visibilité, préparation aux entretiens, suivi des opportunités',
       },
       {
         title: 'Négociation & contractualisation',
-        description:
-          'Définition du tarif, négociation, étude des contrats clients, templates (devis, contrats, etc.)',
       },
       {
         title: 'Proposition de missions',
-        description:
-          'Mise en relation directe avec des clients finaux, partenariats avec des plateformes de freelances et ESN, cooptation entre freelances de la communauté Hiway',
       },
     ],
   },
@@ -67,18 +55,12 @@ const stepsData = [
     items: [
       {
         title: 'Gestion commerciale',
-        description:
-          'Règles commerciales, contractualisation, suivi des contrats, facturation, suivi des paiements, gestion de la relation client',
       },
       {
         title: 'Gestion des dépenses',
-        description:
-          'Règles, formalisme, classement, comptabilisation, gestion de trésorerie.	Achat de matériel, frais de repas, déplacements, dépenses courantes',
       },
       {
         title: 'Gestion fiscale et sociale',
-        description:
-          'Règles, taux, calendrier, process. TVA, Impôt sur les sociétés, Cotisation Foncière des Entreprises, SSI, URSSAF, CIPAV',
       },
     ],
   },
@@ -87,16 +69,12 @@ const stepsData = [
     items: [
       {
         title: 'Règles comptables et financières',
-        description: 'Produits, charges, amortissements, rentabilité',
       },
       {
         title: 'Rémunération du dirigeant',
-        description: 'Calcul, optimisation, déclaration',
       },
       {
         title: 'Sécurisation de la trésorerie',
-        description:
-          'Gestion des variations d’activité, anticipation de la fiscalité et des cotisations sociales',
       },
     ],
   },
